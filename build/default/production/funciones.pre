@@ -6302,7 +6302,7 @@ extern __nonreentrant void _delaywdt(unsigned long);
 #pragma intrinsic(_delay3)
 extern __nonreentrant void _delay3(unsigned char);
 
-# 38 "funciones.h"
+# 45 "funciones.h"
 void mcu_init(void);
 
 # 41 "pwm.h"

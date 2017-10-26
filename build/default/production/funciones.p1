@@ -4873,7 +4873,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;pic18.h: 147: extern __nonreentrant void _delay(unsigned long);
 [; ;pic18.h: 149: extern __nonreentrant void _delaywdt(unsigned long);
 [; ;pic18.h: 151: extern __nonreentrant void _delay3(unsigned char);
-[; ;funciones.h: 38: void mcu_init(void);
+[; ;funciones.h: 45: void mcu_init(void);
 [; ;pwm.h: 41: void PWM_init1(unsigned char period);
 [; ;pwm.h: 42: void PWM_DutyCycle1(unsigned char percentageDuty );
 [; ;pwm.h: 43: void PWM_init2(unsigned char period);

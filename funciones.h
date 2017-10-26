@@ -31,9 +31,16 @@
 #ifndef XC_HEADER_TEMPLATE_H
 #define	XC_HEADER_TEMPLATE_H
 
+
 #define _XTAL_FREQ 8000000
 
+
+
+
 #include <xc.h> // include processor files - each processor file is guarded.  
+
+
+
 
 void mcu_init(void);
 

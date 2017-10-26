@@ -2,6 +2,32 @@ Version 3.2 HI-TECH Software Intermediate Code
 [p mainexit ]
 "28 main.c
 [v _mcu_init `(i ~T0 @X0 0 ef ]
+"2575 C:\Program Files\Microchip\xc8\v1.33\include\pic18f4550.h
+[s S193 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S193 . RA0 RA1 RA2 RA3 RA4 RA5 RA6 ]
+"2584
+[s S194 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S194 . AN0 AN1 AN2 AN3 T0CKI AN4 OSC2 ]
+"2593
+[s S195 :2 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S195 . . VREFM VREFP . LVDIN ]
+"2600
+[s S196 :5 `uc 1 :1 `uc 1 ]
+[n S196 . . HLVDIN ]
+"2604
+[s S197 :7 `uc 1 :1 `uc 1 ]
+[n S197 . . RA7 ]
+"2608
+[s S198 :7 `uc 1 :1 `uc 1 ]
+[n S198 . . RJPU ]
+"2612
+[s S199 :1 `uc 1 ]
+[n S199 . ULPWUIN ]
+"2574
+[u S192 `S193 1 `S194 1 `S195 1 `S196 1 `S197 1 `S198 1 `S199 1 ]
+[n S192 . . . . . . . . ]
+"2616
+[v _PORTAbits `VS192 ~T0 @X0 0 e@3968 ]
 "51 fuzzy.h
 [v _fuzzy_system_single1 `(d ~T0 @X0 0 ef1`d ]
 "52 cny70.h
@@ -5050,60 +5076,63 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;main.c: 28: mcu_init();
 "28
 [e ( _mcu_init ..  ]
-[; ;main.c: 31: while(1){
-"31
+[; ;main.c: 29: PORTAbits.RA0 = 1;
+"29
+[e = . . _PORTAbits 0 0 -> -> 1 `i `uc ]
+[; ;main.c: 32: while(1){
+"32
 [e :U 600 ]
 {
-"32
+"33
 [v _a `d ~T0 @X0 1 a ]
 [v _b `d ~T0 @X0 1 a ]
-[; ;main.c: 32: double a, b;
-[; ;main.c: 41: a = fuzzy_system_single1(getCNY70Value());
-"41
-[e = _a ( _fuzzy_system_single1 (1 -> ( _getCNY70Value ..  `d ]
-[; ;main.c: 42: b = fuzzy_system_single2(a);
+[; ;main.c: 33: double a, b;
+[; ;main.c: 42: a = fuzzy_system_single1(getCNY70Value());
 "42
+[e = _a ( _fuzzy_system_single1 (1 -> ( _getCNY70Value ..  `d ]
+[; ;main.c: 43: b = fuzzy_system_single2(a);
+"43
 [e = _b ( _fuzzy_system_single2 (1 _a ]
-[; ;main.c: 44: if(PORTBbits.RB2 == 1 && PORTBbits.RB3 == 1 && PORTBbits.RB0 == 1 && PORTBbits.RB4 == 1 && PORTBbits.RB1 == 1){
-"44
+[; ;main.c: 45: if(PORTBbits.RB2 == 1 && PORTBbits.RB3 == 1 && PORTBbits.RB0 == 1 && PORTBbits.RB4 == 1 && PORTBbits.RB1 == 1){
+"45
 [e $ ! && && && && == -> . . _PORTBbits 0 2 `i -> 1 `i == -> . . _PORTBbits 0 3 `i -> 1 `i == -> . . _PORTBbits 0 0 `i -> 1 `i == -> . . _PORTBbits 0 4 `i -> 1 `i == -> . . _PORTBbits 0 1 `i -> 1 `i 602  ]
 {
-[; ;main.c: 45: go_back(100,100);
-"45
-[e ( _go_back (2 , -> -> 100 `i `uc -> -> 100 `i `uc ]
+[; ;main.c: 46: go_back(100,100);
 "46
-}
-[; ;main.c: 46: }
-[e $U 603  ]
+[e ( _go_back (2 , -> -> 100 `i `uc -> -> 100 `i `uc ]
 "47
-[e :U 602 ]
-[; ;main.c: 47: else{
-{
-[; ;main.c: 48: motor_forward();
+}
+[; ;main.c: 47: }
+[e $U 603  ]
 "48
-[e ( _motor_forward ..  ]
-[; ;main.c: 49: PWM_DutyCycle1(a);
+[e :U 602 ]
+[; ;main.c: 48: else{
+{
+[; ;main.c: 49: motor_forward();
 "49
-[e ( _PWM_DutyCycle1 (1 -> _a `uc ]
-[; ;main.c: 50: PWM_DutyCycle1(b);
+[e ( _motor_forward ..  ]
+[; ;main.c: 50: PWM_DutyCycle1(a);
 "50
-[e ( _PWM_DutyCycle1 (1 -> _b `uc ]
+[e ( _PWM_DutyCycle1 (1 -> _a `uc ]
+[; ;main.c: 51: PWM_DutyCycle1(b);
 "51
+[e ( _PWM_DutyCycle1 (1 -> _b `uc ]
+"52
 }
 [e :U 603 ]
-"55
+"56
 }
 [e :U 599 ]
-"31
+"32
 [e $U 600  ]
 [e :U 601 ]
-[; ;main.c: 51: }
-[; ;main.c: 55: }
-[; ;main.c: 57: return 0;
-"57
+[; ;main.c: 52: }
+[; ;main.c: 56: }
+[; ;main.c: 58: return 0;
+"58
 [e ) -> 0 `i ]
 [e $UE 598  ]
-[; ;main.c: 58: }
-"58
+[; ;main.c: 59: }
+"59
 [e :UE 598 ]
 }

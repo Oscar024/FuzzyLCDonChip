@@ -5,7 +5,7 @@ Linker command line:
 -W-3 --edf=C:\Program Files\Microchip\xc8\v1.33\dat\en_msgs.txt -cs \
   -h+dist/default/production\fuzzy.X.production.sym \
   --cmf=dist/default/production\fuzzy.X.production.cmf -z -Q18F4550 \
-  -oC:\Users\MCC\AppData\Local\Temp\s7as.6 \
+  -oC:\Users\MCC\AppData\Local\Temp\s5q0.6 \
   -Mdist/default/production/fuzzy.X.production.map -E1 -ver=XC8 \
   -ASTACK=06F0h-07ffh -pstack=STACK -ACODE=00h-07FFFh -ACONST=00h-07FFFh \
   -ASMALLCONST=0800h-08FFhx120 -AMEDIUMCONST=0800h-07FFFh -ACOMRAM=01h-05Fh \
@@ -22,7 +22,7 @@ Linker command line:
   -pfarbss=FARRAM,fardata=FARRAM,nvFARRAM=FARRAM \
   -pintsave_regs=BIGRAM,bigbss=BIGRAM,bigdata=BIGRAM -pbss=RAM \
   -pidata=CODE,irdata=CODE,ibigdata=CODE,ifardata=CODE \
-  C:\Users\MCC\AppData\Local\Temp\s7as.obj \
+  C:\Users\MCC\AppData\Local\Temp\s5q0.obj \
   dist/default/production\fuzzy.X.production.obj 
 
 Object code version is 3.11
@@ -35,43 +35,43 @@ Call graph: (short form)
 
 
                 Name                               Link     Load   Length Selector   Space Scale
-C:\Users\MCC\AppData\Local\Temp\s7as.obj
+C:\Users\MCC\AppData\Local\Temp\s5q0.obj
                 end_init                              0        0        4        0       0
                 idloc                            200000   200000        8   200000       0
                 config                           300000   300000        E   300000       0
 dist/default/production\fuzzy.X.production.obj
-                text31                             69EA     69EA       A8     34F5       0
+                text31                             69E8     69E8       A8     34F4       0
                 text30                             7310     7310      1AC     3988       0
                 text29                             6CE8     6CE8       D6     3674       0
                 text28                             6DBE     6DBE       E4     36DF       0
-                text27                             667C     667C       26     333E       0
+                text27                             667A     667A       26     333D       0
                 text26                             71AE     71AE      162     38D7       0
-                text25                             67A0     67A0       48     33D0       0
+                text25                             679E     679E       48     33CF       0
                 text24                             6F8A     6F8A      102     37C5       0
-                text23                             68BC     68BC       90     345E       0
+                text23                             68BA     68BA       90     345D       0
                 text22                             76A2     76A2      25A     3B51       0
                 text21                             6EA2     6EA2       E8     3751       0
-                text20                             66A2     66A2       26     3351       0
+                text20                             66A0     66A0       26     3350       0
                 text19                             74BC     74BC      1E6     3A5E       0
                 text18                             708C     708C      122     3846       0
                 text17                             78FC     78FC      382     3C7E       0
                 text16                             7C7E     7C7E      382     3E3F       0
-                text15                             6A92     6A92       B8     3549       0
-                text14                             66F2     66F2       3A     3379       0
+                text15                             6A90     6A90       B8     3548       0
+                text14                             66F0     66F0       3A     3378       0
                 text13                             6C14     6C14       D4     360A       0
-                text12                             6658     6658       24     332C       0
-                text11                             67E8     67E8       6A     33F4       0
-                text10                             672C     672C       3A     3396       0
-                text9                              6852     6852       6A     3429       0
-                text8                              65E2     65E2        A     32F1       0
-                text7                              6608     6608       14     3304       0
-                text6                              65F6     65F6       12     32FB       0
-                text5                              661C     661C       1E     330E       0
-                text4                              6766     6766       3A     33B3       0
-                text3                              663A     663A       1E     331D       0
-                text2                              694C     694C       9E     34A6       0
-                text1                              65EC     65EC        A     32F6       0
-                text0                              6B4A     6B4A       CA     35A5       0
+                text12                             6656     6656       24     332B       0
+                text11                             67E6     67E6       6A     33F3       0
+                text10                             672A     672A       3A     3395       0
+                text9                              6850     6850       6A     3428       0
+                text8                              65E0     65E0        A     32F0       0
+                text7                              6606     6606       14     3303       0
+                text6                              65F4     65F4       12     32FA       0
+                text5                              661A     661A       1E     330D       0
+                text4                              6764     6764       3A     33B2       0
+                text3                              6638     6638       1E     331C       0
+                text2                              694A     694A       9E     34A5       0
+                text1                              65EA     65EA        A     32F5       0
+                text0                              6B48     6B48       CC     35A4       0
                 cstackCOMRAM                          1        1       5E        1       1
                 cstackBANK0                          60       60       8A       60       1
                 cstackBANK1                         100      100       F0      100       1
@@ -83,48 +83,48 @@ dist/default/production\fuzzy.X.production.obj
                 dataBANK0                            EE       EE        2       60       1
                 bssBANK0                             EA       EA        4       60       1
                 bssCOMRAM                            5F       5F        1        1       1
-                cinit                              66C8     66C8       2A     3364       0
-                idataBANK0                         65E0     65E0        2     65E0       0
+                cinit                              66C6     66C6       2A     3363       0
+                idataBANK0                         65DE     65DE        2     65DE       0
 
 TOTAL           Name                               Link     Load   Length     Space
         CLASS   STACK          
 
         CLASS   CODE           
                 end_init                              0        0        4         0
-                text31                             69EA     69EA       A8         0
+                text31                             69E8     69E8       A8         0
                 text30                             7310     7310      1AC         0
                 text29                             6CE8     6CE8       D6         0
                 text28                             6DBE     6DBE       E4         0
-                text27                             667C     667C       26         0
+                text27                             667A     667A       26         0
                 text26                             71AE     71AE      162         0
-                text25                             67A0     67A0       48         0
+                text25                             679E     679E       48         0
                 text24                             6F8A     6F8A      102         0
-                text23                             68BC     68BC       90         0
+                text23                             68BA     68BA       90         0
                 text22                             76A2     76A2      25A         0
                 text21                             6EA2     6EA2       E8         0
-                text20                             66A2     66A2       26         0
+                text20                             66A0     66A0       26         0
                 text19                             74BC     74BC      1E6         0
                 text18                             708C     708C      122         0
                 text17                             78FC     78FC      382         0
                 text16                             7C7E     7C7E      382         0
-                text15                             6A92     6A92       B8         0
-                text14                             66F2     66F2       3A         0
+                text15                             6A90     6A90       B8         0
+                text14                             66F0     66F0       3A         0
                 text13                             6C14     6C14       D4         0
-                text12                             6658     6658       24         0
-                text11                             67E8     67E8       6A         0
-                text10                             672C     672C       3A         0
-                text9                              6852     6852       6A         0
-                text8                              65E2     65E2        A         0
-                text7                              6608     6608       14         0
-                text6                              65F6     65F6       12         0
-                text5                              661C     661C       1E         0
-                text4                              6766     6766       3A         0
-                text3                              663A     663A       1E         0
-                text2                              694C     694C       9E         0
-                text1                              65EC     65EC        A         0
-                text0                              6B4A     6B4A       CA         0
-                cinit                              66C8     66C8       2A         0
-                idataBANK0                         65E0     65E0        2         0
+                text12                             6656     6656       24         0
+                text11                             67E6     67E6       6A         0
+                text10                             672A     672A       3A         0
+                text9                              6850     6850       6A         0
+                text8                              65E0     65E0        A         0
+                text7                              6606     6606       14         0
+                text6                              65F4     65F4       12         0
+                text5                              661A     661A       1E         0
+                text4                              6764     6764       3A         0
+                text3                              6638     6638       1E         0
+                text2                              694A     694A       9E         0
+                text1                              65EA     65EA        A         0
+                text0                              6B48     6B48       CC         0
+                cinit                              66C6     66C6       2A         0
+                idataBANK0                         65DE     65DE        2         0
 
         CLASS   CONST          
 
@@ -192,28 +192,28 @@ SEGMENTS        Name                           Load    Length   Top    Selector 
                 cstackBANK4                    000400  0000F0  0004F0       400       1  BANK4   
                 cstackBANK5                    000500  0000F0  0005F0       500       1  BANK5   
                 cstackBANK6                    000600  0000F0  0006F0       600       1  BANK6   
-                idataBANK0                     0065E0  000002  0065E2      65E0       0  CODE    
-                text8                          0065E2  00000A  0065EC      32F1       0  CODE    
-                text1                          0065EC  00000A  0065F6      32F6       0  CODE    
-                text6                          0065F6  000012  006608      32FB       0  CODE    
-                text7                          006608  000014  00661C      3304       0  CODE    
-                text5                          00661C  00001E  00663A      330E       0  CODE    
-                text3                          00663A  00001E  006658      331D       0  CODE    
-                text12                         006658  000024  00667C      332C       0  CODE    
-                text27                         00667C  000026  0066A2      333E       0  CODE    
-                text20                         0066A2  000026  0066C8      3351       0  CODE    
-                cinit                          0066C8  00002A  0066F2      3364       0  CODE    
-                text14                         0066F2  00003A  00672C      3379       0  CODE    
-                text10                         00672C  00003A  006766      3396       0  CODE    
-                text4                          006766  00003A  0067A0      33B3       0  CODE    
-                text25                         0067A0  000048  0067E8      33D0       0  CODE    
-                text11                         0067E8  00006A  006852      33F4       0  CODE    
-                text9                          006852  00006A  0068BC      3429       0  CODE    
-                text23                         0068BC  000090  00694C      345E       0  CODE    
-                text2                          00694C  00009E  0069EA      34A6       0  CODE    
-                text31                         0069EA  0000A8  006A92      34F5       0  CODE    
-                text15                         006A92  0000B8  006B4A      3549       0  CODE    
-                text0                          006B4A  0000CA  006C14      35A5       0  CODE    
+                idataBANK0                     0065DE  000002  0065E0      65DE       0  CODE    
+                text8                          0065E0  00000A  0065EA      32F0       0  CODE    
+                text1                          0065EA  00000A  0065F4      32F5       0  CODE    
+                text6                          0065F4  000012  006606      32FA       0  CODE    
+                text7                          006606  000014  00661A      3303       0  CODE    
+                text5                          00661A  00001E  006638      330D       0  CODE    
+                text3                          006638  00001E  006656      331C       0  CODE    
+                text12                         006656  000024  00667A      332B       0  CODE    
+                text27                         00667A  000026  0066A0      333D       0  CODE    
+                text20                         0066A0  000026  0066C6      3350       0  CODE    
+                cinit                          0066C6  00002A  0066F0      3363       0  CODE    
+                text14                         0066F0  00003A  00672A      3378       0  CODE    
+                text10                         00672A  00003A  006764      3395       0  CODE    
+                text4                          006764  00003A  00679E      33B2       0  CODE    
+                text25                         00679E  000048  0067E6      33CF       0  CODE    
+                text11                         0067E6  00006A  006850      33F3       0  CODE    
+                text9                          006850  00006A  0068BA      3428       0  CODE    
+                text23                         0068BA  000090  00694A      345D       0  CODE    
+                text2                          00694A  00009E  0069E8      34A5       0  CODE    
+                text31                         0069E8  0000A8  006A90      34F4       0  CODE    
+                text15                         006A90  0000B8  006B48      3548       0  CODE    
+                text0                          006B48  0000CC  006C14      35A4       0  CODE    
                 text13                         006C14  0000D4  006CE8      360A       0  CODE    
                 text29                         006CE8  0000D6  006DBE      3674       0  CODE    
                 text28                         006DBE  0000E4  006EA2      36DF       0  CODE    
@@ -248,10 +248,10 @@ UNUSED ADDRESS RANGES
                          0004F0-0004FF               10
                          0005F0-0005FF               10
                          0006F0-0007FF              110
-        CODE             000004-0065DF             65DC
-        CONST            000004-0065DF             65DC
+        CODE             000004-0065DD             65DA
+        CONST            000004-0065DD             65DA
         EEDATA           F00000-F000FF              100
-        MEDIUMCONST      000800-0065DF             5DE0
+        MEDIUMCONST      000800-0065DD             5DDE
         RAM              0000F0-0000FF               10
                          0001F0-0001FF               10
                          0002F0-0002FF               10
@@ -260,7 +260,7 @@ UNUSED ADDRESS RANGES
                          0005F0-0005FF               10
                          0006F0-0007FF               10
         SFR              000F60-000FFF               A0
-        SMALLCONST       000800-0065DF              100
+        SMALLCONST       000800-0065DD              100
         STACK            0006F0-0007FF              110
 
                                   Symbol Table
@@ -300,11 +300,12 @@ _CCPR1L                                 (abs)        000FBE
 _CCPR2L                                 (abs)        000FBB
 _DutyCycle                              bssBANK0     0000EA
 _OSCCONbits                             (abs)        000FD3
-_OpenPWM1                               text6        0065F6
-_OpenPWM2                               text4        006766
+_OpenPWM1                               text6        0065F4
+_OpenPWM2                               text4        006764
 _PIE1bits                               (abs)        000F9D
 _PIR1bits                               (abs)        000F9E
 _PORTA                                  (abs)        000F80
+_PORTAbits                              (abs)        000F80
 _PORTB                                  (abs)        000F81
 _PORTBbits                              (abs)        000F81
 _PORTC                                  (abs)        000F82
@@ -312,12 +313,12 @@ _PORTD                                  (abs)        000F83
 _PORTDbits                              (abs)        000F83
 _PORTE                                  (abs)        000F84
 _PR2                                    (abs)        000FCB
-_PWM_DutyCycle1                         text11       0067E8
-_PWM_DutyCycle2                         text9        006852
-_PWM_init1                              text5        00661C
-_PWM_init2                              text3        00663A
-_SetDCPWM1                              text14       0066F2
-_SetDCPWM2                              text10       00672C
+_PWM_DutyCycle1                         text11       0067E6
+_PWM_DutyCycle2                         text9        006850
+_PWM_init1                              text5        00661A
+_PWM_init2                              text3        006638
+_SetDCPWM1                              text14       0066F0
+_SetDCPWM2                              text10       00672A
 _T2CON                                  (abs)        000FCA
 _T2CONbits                              (abs)        000FCA
 _TMR2                                   (abs)        000FCC
@@ -575,7 +576,7 @@ __Ltext9                                text9        000000
 __S0                                    (abs)        30000E
 __S1                                    (abs)        0006F0
 __S2                                    (abs)        000000
-___awtoft                               text25       0067A0
+___awtoft                               text25       00679E
 ___awtoft@c                             cstackCOMRAM 000009
 ___awtoft@sign                          cstackCOMRAM 00000C
 ___ftadd                                text30       007310
@@ -591,7 +592,7 @@ ___ftdiv@f1                             cstackCOMRAM 000028
 ___ftdiv@f2                             cstackCOMRAM 00002B
 ___ftdiv@f3                             cstackCOMRAM 000032
 ___ftdiv@sign                           cstackCOMRAM 000036
-___ftge                                 text23       0068BC
+___ftge                                 text23       0068BA
 ___ftge@ff1                             cstackCOMRAM 000007
 ___ftge@ff2                             cstackCOMRAM 00000A
 ___ftmul                                text28       006DBE
@@ -601,9 +602,9 @@ ___ftmul@f1                             cstackCOMRAM 00000D
 ___ftmul@f2                             cstackCOMRAM 000010
 ___ftmul@f3_as_product                  cstackCOMRAM 000017
 ___ftmul@sign                           cstackCOMRAM 00001B
-___ftneg                                text20       0066A2
+___ftneg                                text20       0066A0
 ___ftneg@f1                             cstackCOMRAM 000001
-___ftpack                               text31       0069EA
+___ftpack                               text31       0069E8
 ___ftpack@arg                           cstackCOMRAM 000001
 ___ftpack@exp                           cstackCOMRAM 000004
 ___ftpack@sign                          cstackCOMRAM 000005
@@ -614,53 +615,53 @@ ___fttol@lval                           cstackCOMRAM 000026
 ___fttol@sign1                          cstackCOMRAM 000025
 ___inthi_sp                             stack        000000
 ___intlo_sp                             stack        000000
-___lbtoft                               text12       006658
+___lbtoft                               text12       006656
 ___lbtoft@c                             cstackCOMRAM 00000C
 ___sp                                   stack        000000
-___wmul                                 text27       00667C
+___wmul                                 text27       00667A
 ___wmul@multiplicand                    cstackCOMRAM 000003
 ___wmul@multiplier                      cstackCOMRAM 000001
 ___wmul@product                         cstackCOMRAM 000005
 __accesstop                             (abs)        000060
 __activetblptr                          (abs)        000003
-__end_of_OpenPWM1                       text6        006608
-__end_of_OpenPWM2                       text4        0067A0
-__end_of_PWM_DutyCycle1                 text11       006852
-__end_of_PWM_DutyCycle2                 text9        0068BC
-__end_of_PWM_init1                      text5        00663A
-__end_of_PWM_init2                      text3        006658
-__end_of_SetDCPWM1                      text14       00672C
-__end_of_SetDCPWM2                      text10       006766
-__end_of___awtoft                       text25       0067E8
+__end_of_OpenPWM1                       text6        006606
+__end_of_OpenPWM2                       text4        00679E
+__end_of_PWM_DutyCycle1                 text11       006850
+__end_of_PWM_DutyCycle2                 text9        0068BA
+__end_of_PWM_init1                      text5        006638
+__end_of_PWM_init2                      text3        006656
+__end_of_SetDCPWM1                      text14       00672A
+__end_of_SetDCPWM2                      text10       006764
+__end_of___awtoft                       text25       0067E6
 __end_of___ftadd                        text30       0074BC
 __end_of___ftdiv                        text29       006DBE
-__end_of___ftge                         text23       00694C
+__end_of___ftge                         text23       00694A
 __end_of___ftmul                        text28       006EA2
-__end_of___ftneg                        text20       0066C8
-__end_of___ftpack                       text31       006A92
+__end_of___ftneg                        text20       0066C6
+__end_of___ftpack                       text31       006A90
 __end_of___fttol                        text13       006CE8
-__end_of___lbtoft                       text12       00667C
-__end_of___wmul                         text27       0066A2
-__end_of__initialization                cinit        0066EC
+__end_of___lbtoft                       text12       00667A
+__end_of___wmul                         text27       0066A0
+__end_of__initialization                cinit        0066EA
 __end_of_defuzzy                        text26       007310
 __end_of_fuzzy_system_single1           text17       007C7E
 __end_of_fuzzy_system_single2           text16       008000
-__end_of_getCNY70Value                  text15       006B4A
-__end_of_go_back                        text7        00661C
+__end_of_getCNY70Value                  text15       006B48
+__end_of_go_back                        text7        00661A
 __end_of_linspace                       text24       00708C
 __end_of_main                           text0        006C14
-__end_of_mcu_init                       text2        0069EA
-__end_of_motor_Backforward              text8        0065EC
-__end_of_motor_forward                  text1        0065F6
+__end_of_mcu_init                       text2        0069E8
+__end_of_motor_Backforward              text8        0065EA
+__end_of_motor_forward                  text1        0065F4
 __end_of_out_mf                         text22       0078FC
 __end_of_qualified                      text21       006F8A
 __end_of_tri_mf                         text18       0071AE
 __end_of_triangular                     text19       0076A2
-__initialization                        cinit        0066C8
+__initialization                        cinit        0066C6
 __mediumconst                           mediumconst  000000
 __pbssBANK0                             bssBANK0     0000EA
 __pbssCOMRAM                            bssCOMRAM    00005F
-__pcinit                                cinit        0066C8
+__pcinit                                cinit        0066C6
 __pcstackBANK0                          cstackBANK0  000060
 __pcstackBANK1                          cstackBANK1  000100
 __pcstackBANK2                          cstackBANK2  000200
@@ -670,39 +671,39 @@ __pcstackBANK5                          cstackBANK5  000500
 __pcstackBANK6                          cstackBANK6  000600
 __pcstackCOMRAM                         cstackCOMRAM 000001
 __pdataBANK0                            dataBANK0    0000EE
-__pidataBANK0                           idataBANK0   0065E0
-__ptext0                                text0        006B4A
-__ptext1                                text1        0065EC
-__ptext10                               text10       00672C
-__ptext11                               text11       0067E8
-__ptext12                               text12       006658
+__pidataBANK0                           idataBANK0   0065DE
+__ptext0                                text0        006B48
+__ptext1                                text1        0065EA
+__ptext10                               text10       00672A
+__ptext11                               text11       0067E6
+__ptext12                               text12       006656
 __ptext13                               text13       006C14
-__ptext14                               text14       0066F2
-__ptext15                               text15       006A92
+__ptext14                               text14       0066F0
+__ptext15                               text15       006A90
 __ptext16                               text16       007C7E
 __ptext17                               text17       0078FC
 __ptext18                               text18       00708C
 __ptext19                               text19       0074BC
-__ptext2                                text2        00694C
-__ptext20                               text20       0066A2
+__ptext2                                text2        00694A
+__ptext20                               text20       0066A0
 __ptext21                               text21       006EA2
 __ptext22                               text22       0076A2
-__ptext23                               text23       0068BC
+__ptext23                               text23       0068BA
 __ptext24                               text24       006F8A
-__ptext25                               text25       0067A0
+__ptext25                               text25       00679E
 __ptext26                               text26       0071AE
-__ptext27                               text27       00667C
+__ptext27                               text27       00667A
 __ptext28                               text28       006DBE
 __ptext29                               text29       006CE8
-__ptext3                                text3        00663A
+__ptext3                                text3        006638
 __ptext30                               text30       007310
-__ptext31                               text31       0069EA
-__ptext4                                text4        006766
-__ptext5                                text5        00661C
-__ptext6                                text6        0065F6
-__ptext7                                text7        006608
-__ptext8                                text8        0065E2
-__ptext9                                text9        006852
+__ptext31                               text31       0069E8
+__ptext4                                text4        006764
+__ptext5                                text5        00661A
+__ptext6                                text6        0065F4
+__ptext7                                text7        006606
+__ptext8                                text8        0065E0
+__ptext9                                text9        006850
 __ramtop                                ramtop       000800
 __size_of_OpenPWM1                      (abs)        000000
 __size_of_OpenPWM2                      (abs)        000000
@@ -741,15 +742,15 @@ _countup                                dataBANK0    0000EE
 _defuzzy                                text26       0071AE
 _fuzzy_system_single1                   text17       0078FC
 _fuzzy_system_single2                   text16       007C7E
-_getCNY70Value                          text15       006A92
-_go_back                                text7        006608
+_getCNY70Value                          text15       006A90
+_go_back                                text7        006606
 _i                                      bssBANK0     0000EC
 _linspace                               text24       006F8A
-_main                                   text0        006B4A
-_main$1392                              cstackBANK0  0000E4
-_mcu_init                               text2        00694C
-_motor_Backforward                      text8        0065E2
-_motor_forward                          text1        0065EC
+_main                                   text0        006B48
+_main$1474                              cstackBANK0  0000E4
+_mcu_init                               text2        00694A
+_motor_Backforward                      text8        0065E0
+_motor_forward                          text1        0065EA
 _out_mf                                 text22       0076A2
 _qualified                              text21       006EA2
 _tri_mf                                 text18       00708C
@@ -760,7 +761,7 @@ defuzzy@out                             cstackCOMRAM 00003B
 defuzzy@sum1                            cstackCOMRAM 00003E
 defuzzy@sum2                            cstackCOMRAM 000041
 defuzzy@x                               cstackCOMRAM 000037
-end_of_initialization                   cinit        0066EC
+end_of_initialization                   cinit        0066EA
 fuzzy_system_single1@ante_mf1           cstackBANK1  000100
 fuzzy_system_single1@ante_mf2           cstackBANK1  000178
 fuzzy_system_single1@ante_mf3           cstackBANK2  000278
@@ -822,7 +823,7 @@ qualified@y                             cstackCOMRAM 000010
 stackhi                                 (abs)        0007FF
 stacklo                                 (abs)        0006F0
 start                                   init         000000
-start_initialization                    cinit        0066C8
+start_initialization                    cinit        0066C6
 tri_mf@a                                cstackCOMRAM 00004A
 tri_mf@b                                cstackCOMRAM 00004D
 tri_mf@c                                cstackCOMRAM 000050
@@ -848,7 +849,7 @@ FUNCTION INFORMATION:
   a               3  135[BANK0 ] PTR 
   b               3  129[BANK0 ] PTR 
  Return value:  Size  Location     Type
-                  2   18[COMRAM] int 
+                  2   20[COMRAM] int 
  Registers used:
 		wreg, fsr1l, fsr1h, fsr2l, fsr2h, status,2, status,0, tblptrl, tblptrh, tblptru, prodl, prodh, cstack
  Tracked objects:
@@ -1101,7 +1102,7 @@ Total ram usage:        2 bytes
  Auto vars:     Size  Location     Type
 		None
  Return value:  Size  Location     Type
-                  2  203[COMRAM] int 
+                  2  205[COMRAM] int 
  Registers used:
 		None
  Tracked objects:
@@ -1985,17 +1986,17 @@ MODULE INFORMATION
 
 Module		Function		Class		Link	Load	Size
 C:\Program Files\Microchip\xc8\v1.33\sources\common\ftge.c
-		___ftge        		CODE           	68BC	0000	144
+		___ftge        		CODE           	68BA	0000	144
 
 C:\Program Files\Microchip\xc8\v1.33\sources\common\ftge.c estimated size: 144
 
 C:\Program Files\Microchip\xc8\v1.33\sources\pic18\plib\PWM\pw1setdc.c
-		_SetDCPWM1     		CODE           	66F2	0000	58
+		_SetDCPWM1     		CODE           	66F0	0000	58
 
 C:\Program Files\Microchip\xc8\v1.33\sources\pic18\plib\PWM\pw1setdc.c estimated size: 58
 
 C:\Program Files\Microchip\xc8\v1.33\sources\pic18\plib\PWM\pw1open.c
-		_OpenPWM1      		CODE           	65F6	0000	18
+		_OpenPWM1      		CODE           	65F4	0000	18
 
 C:\Program Files\Microchip\xc8\v1.33\sources\pic18\plib\PWM\pw1open.c estimated size: 18
 
@@ -2022,25 +2023,25 @@ C:\Program Files\Microchip\xc8\v1.33\sources\common\ftdiv.c
 C:\Program Files\Microchip\xc8\v1.33\sources\common\ftdiv.c estimated size: 214
 
 C:\Program Files\Microchip\xc8\v1.33\sources\common\awtoft.c
-		___awtoft      		CODE           	67A0	0000	72
+		___awtoft      		CODE           	679E	0000	72
 
 C:\Program Files\Microchip\xc8\v1.33\sources\common\awtoft.c estimated size: 72
 
 C:\Program Files\Microchip\xc8\v1.33\sources\common\lbtoft.c
-		___lbtoft      		CODE           	6658	0000	36
+		___lbtoft      		CODE           	6656	0000	36
 
 C:\Program Files\Microchip\xc8\v1.33\sources\common\lbtoft.c estimated size: 36
 
 pwm.c
-		_PWM_DutyCycle1		CODE           	67E8	0000	106
-		_PWM_DutyCycle2		CODE           	6852	0000	106
-		_PWM_init1     		CODE           	661C	0000	30
-		_PWM_init2     		CODE           	663A	0000	30
+		_PWM_DutyCycle1		CODE           	67E6	0000	106
+		_PWM_DutyCycle2		CODE           	6850	0000	106
+		_PWM_init1     		CODE           	661A	0000	30
+		_PWM_init2     		CODE           	6638	0000	30
 
 pwm.c estimated size: 272
 
 funciones.c
-		_mcu_init      		CODE           	694C	0000	158
+		_mcu_init      		CODE           	694A	0000	158
 
 funciones.c estimated size: 158
 
@@ -2050,8 +2051,8 @@ C:\Program Files\Microchip\xc8\v1.33\sources\common\fttol.c
 C:\Program Files\Microchip\xc8\v1.33\sources\common\fttol.c estimated size: 212
 
 motor.c
-		_motor_Backforw		CODE           	65E2	0000	10
-		_motor_forward 		CODE           	65EC	0000	10
+		_motor_Backforw		CODE           	65E0	0000	10
+		_motor_forward 		CODE           	65EA	0000	10
 
 motor.c estimated size: 20
 
@@ -2061,43 +2062,43 @@ C:\Program Files\Microchip\xc8\v1.33\sources\common\ftadd.c
 C:\Program Files\Microchip\xc8\v1.33\sources\common\ftadd.c estimated size: 428
 
 shared
-		__initializatio		CODE           	66C8	0000	36
+		__initializatio		CODE           	66C6	0000	36
 
 shared estimated size: 36
 
 C:\Program Files\Microchip\xc8\v1.33\sources\common\Umul16.c
-		___wmul        		CODE           	667C	0000	38
+		___wmul        		CODE           	667A	0000	38
 
 C:\Program Files\Microchip\xc8\v1.33\sources\common\Umul16.c estimated size: 38
 
 C:\Program Files\Microchip\xc8\v1.33\sources\common\ftneg.c
-		___ftneg       		CODE           	66A2	0000	38
+		___ftneg       		CODE           	66A0	0000	38
 
 C:\Program Files\Microchip\xc8\v1.33\sources\common\ftneg.c estimated size: 38
 
 C:\Program Files\Microchip\xc8\v1.33\sources\pic18\plib\PWM\pw2setdc.c
-		_SetDCPWM2     		CODE           	672C	0000	58
+		_SetDCPWM2     		CODE           	672A	0000	58
 
 C:\Program Files\Microchip\xc8\v1.33\sources\pic18\plib\PWM\pw2setdc.c estimated size: 58
 
 C:\Program Files\Microchip\xc8\v1.33\sources\common\float.c
-		___ftpack      		CODE           	69EA	0000	168
+		___ftpack      		CODE           	69E8	0000	168
 
 C:\Program Files\Microchip\xc8\v1.33\sources\common\float.c estimated size: 168
 
 main.c
-		_main          		CODE           	6B4A	0000	202
+		_main          		CODE           	6B48	0000	204
 
-main.c estimated size: 202
+main.c estimated size: 204
 
 C:\Program Files\Microchip\xc8\v1.33\sources\pic18\plib\PWM\pw2open.c
-		_OpenPWM2      		CODE           	6766	0000	58
+		_OpenPWM2      		CODE           	6764	0000	58
 
 C:\Program Files\Microchip\xc8\v1.33\sources\pic18\plib\PWM\pw2open.c estimated size: 58
 
 cny70.c
-		_getCNY70Value 		CODE           	6A92	0000	184
-		_go_back       		CODE           	6608	0000	20
+		_getCNY70Value 		CODE           	6A90	0000	184
+		_go_back       		CODE           	6606	0000	20
 
 cny70.c estimated size: 204
 

@@ -15,17 +15,18 @@
 #include<stdlib.h>
 #include<string.h>
 #include "pic18f4550config.h"
-#include "funciones.h"
 #include <pic18f4550.h>
 #include "fuzzy.h"
 #include "pwm.h"
 #include "cny70.h"
 #include "motor.h"
+#include "funciones.h"
 
 int main()
 {
 
   mcu_init();
+  PORTAbits.RA0 = 1;
   
   
   while(1){

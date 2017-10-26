@@ -11,43 +11,43 @@
 # All addresses and the length are given in unqualified hexadecimal
 # in delta units.  Any other numeric values are decimal.
 %PSECTS
-$C:\Users\MCC\AppData\Local\Temp\s7as.obj
+$C:\Users\MCC\AppData\Local\Temp\s5q0.obj
 end_init CODE 0 0 0 4 1
 idloc IDLOC 0 200000 200000 8 1
 config CONFIG 0 300000 300000 E 1
 $dist/default/production\fuzzy.X.production.obj
-text31 CODE 0 69EA 69EA A8 1
+text31 CODE 0 69E8 69E8 A8 1
 text30 CODE 0 7310 7310 1AC 1
 text29 CODE 0 6CE8 6CE8 D6 1
 text28 CODE 0 6DBE 6DBE E4 1
-text27 CODE 0 667C 667C 26 1
+text27 CODE 0 667A 667A 26 1
 text26 CODE 0 71AE 71AE 162 1
-text25 CODE 0 67A0 67A0 48 1
+text25 CODE 0 679E 679E 48 1
 text24 CODE 0 6F8A 6F8A 102 1
-text23 CODE 0 68BC 68BC 90 1
+text23 CODE 0 68BA 68BA 90 1
 text22 CODE 0 76A2 76A2 25A 1
 text21 CODE 0 6EA2 6EA2 E8 1
-text20 CODE 0 66A2 66A2 26 1
+text20 CODE 0 66A0 66A0 26 1
 text19 CODE 0 74BC 74BC 1E6 1
 text18 CODE 0 708C 708C 122 1
 text17 CODE 0 78FC 78FC 382 1
 text16 CODE 0 7C7E 7C7E 382 1
-text15 CODE 0 6A92 6A92 B8 1
-text14 CODE 0 66F2 66F2 3A 1
+text15 CODE 0 6A90 6A90 B8 1
+text14 CODE 0 66F0 66F0 3A 1
 text13 CODE 0 6C14 6C14 D4 1
-text12 CODE 0 6658 6658 24 1
-text11 CODE 0 67E8 67E8 6A 1
-text10 CODE 0 672C 672C 3A 1
-text9 CODE 0 6852 6852 6A 1
-text8 CODE 0 65E2 65E2 A 1
-text7 CODE 0 6608 6608 14 1
-text6 CODE 0 65F6 65F6 12 1
-text5 CODE 0 661C 661C 1E 1
-text4 CODE 0 6766 6766 3A 1
-text3 CODE 0 663A 663A 1E 1
-text2 CODE 0 694C 694C 9E 1
-text1 CODE 0 65EC 65EC A 1
-text0 CODE 0 6B4A 6B4A CA 1
+text12 CODE 0 6656 6656 24 1
+text11 CODE 0 67E6 67E6 6A 1
+text10 CODE 0 672A 672A 3A 1
+text9 CODE 0 6850 6850 6A 1
+text8 CODE 0 65E0 65E0 A 1
+text7 CODE 0 6606 6606 14 1
+text6 CODE 0 65F4 65F4 12 1
+text5 CODE 0 661A 661A 1E 1
+text4 CODE 0 6764 6764 3A 1
+text3 CODE 0 6638 6638 1E 1
+text2 CODE 0 694A 694A 9E 1
+text1 CODE 0 65EA 65EA A 1
+text0 CODE 0 6B48 6B48 CC 1
 cstackCOMRAM COMRAM 1 1 1 5E 1
 cstackBANK0 BANK0 1 60 60 8A 1
 cstackBANK1 BANK1 1 100 100 F0 1
@@ -59,8 +59,8 @@ cstackBANK6 BANK6 1 600 600 F0 1
 dataBANK0 BANK0 1 EE EE 2 1
 bssBANK0 BANK0 1 EA EA 4 1
 bssCOMRAM COMRAM 1 5F 5F 1 1
-cinit CODE 0 66C8 66C8 2A 1
-idataBANK0 CODE 0 65E0 65E0 2 1
+cinit CODE 0 66C6 66C6 2A 1
+idataBANK0 CODE 0 65DE 65DE 2 1
 # %UNUSED Section
 # This section enumerates the unused ranges of each CLASS. Each entry
 # is described on a single line as follows:
@@ -82,10 +82,10 @@ BIGRAM 0003F0-0003FF 1
 BIGRAM 0004F0-0004FF 1
 BIGRAM 0005F0-0005FF 1
 BIGRAM 0006F0-0007FF 1
-CODE 000004-0065DF 1
-CONST 000004-0065DF 1
+CODE 000004-0065DD 1
+CONST 000004-0065DD 1
 EEDATA F00000-F000FF 1
-MEDIUMCONST 000800-0065DF 1
+MEDIUMCONST 000800-0065DD 1
 RAM 0000F0-0000FF 1
 RAM 0001F0-0001FF 1
 RAM 0002F0-0002FF 1
@@ -94,7 +94,7 @@ RAM 0004F0-0004FF 1
 RAM 0005F0-0005FF 1
 RAM 0006F0-0007FF 1
 SFR 000F60-000FFF 1
-SMALLCONST 000800-0065DF 1
+SMALLCONST 000800-0065DD 1
 STACK 0006F0-0007FF 1
 # %LINETAB Section
 # This section enumerates the file/line to address mappings.
@@ -110,200 +110,201 @@ STACK 0006F0-0007FF 1
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/production\fuzzy.X.production.obj
-"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\motor.c":57 65E2 text8 CODE
-"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\motor.c":59 65E2 text8 CODE
-"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\motor.c":60 65E4 text8 CODE
-"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\motor.c":61 65E6 text8 CODE
-"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\motor.c":62 65E8 text8 CODE
-"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\motor.c":65 65EA text8 CODE
-"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\motor.c":47 65EC text1 CODE
-"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\motor.c":49 65EC text1 CODE
-"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\motor.c":50 65EE text1 CODE
-"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\motor.c":51 65F0 text1 CODE
-"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\motor.c":52 65F2 text1 CODE
-"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\motor.c":55 65F4 text1 CODE
-"C:\Program Files\Microchip\xc8\v1.33\sources\pic18\plib\PWM\pw1open.c":8 65F6 text6 CODE
-"C:\Program Files\Microchip\xc8\v1.33\sources\pic18\plib\PWM\pw1open.c":11 65F8 text6 CODE
-"C:\Program Files\Microchip\xc8\v1.33\sources\pic18\plib\PWM\pw1open.c":13 65FC text6 CODE
-"C:\Program Files\Microchip\xc8\v1.33\sources\pic18\plib\PWM\pw1open.c":15 65FE text6 CODE
-"C:\Program Files\Microchip\xc8\v1.33\sources\pic18\plib\PWM\pw1open.c":16 6600 text6 CODE
-"C:\Program Files\Microchip\xc8\v1.33\sources\pic18\plib\PWM\pw1open.c":17 6604 text6 CODE
-"C:\Program Files\Microchip\xc8\v1.33\sources\pic18\plib\PWM\pw1open.c":19 6606 text6 CODE
-"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\cny70.c":125 6608 text7 CODE
-"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\cny70.c":127 660A text7 CODE
-"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\cny70.c":128 660E text7 CODE
-"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\cny70.c":129 6614 text7 CODE
-"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\cny70.c":131 661A text7 CODE
-"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\pwm.c":20 661C text5 CODE
-"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\pwm.c":21 661E text5 CODE
-"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\pwm.c":22 6622 text5 CODE
-"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\pwm.c":25 6628 text5 CODE
-"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\pwm.c":26 662C text5 CODE
-"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\pwm.c":27 662E text5 CODE
-"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\pwm.c":28 6630 text5 CODE
-"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\pwm.c":29 6632 text5 CODE
-"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\pwm.c":32 6638 text5 CODE
-"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\pwm.c":42 663A text3 CODE
-"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\pwm.c":43 663C text3 CODE
-"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\pwm.c":44 6640 text3 CODE
-"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\pwm.c":47 6646 text3 CODE
-"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\pwm.c":48 664A text3 CODE
-"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\pwm.c":49 664C text3 CODE
-"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\pwm.c":50 664E text3 CODE
-"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\pwm.c":51 6650 text3 CODE
-"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\pwm.c":54 6656 text3 CODE
-"C:\Program Files\Microchip\xc8\v1.33\sources\common\lbtoft.c":27 6658 text12 CODE
-"C:\Program Files\Microchip\xc8\v1.33\sources\common\lbtoft.c":29 665A text12 CODE
-"C:\Program Files\Microchip\xc8\v1.33\sources\common\lbtoft.c":30 667A text12 CODE
-"C:\Program Files\Microchip\xc8\v1.33\sources\common\Umul16.c":15 667C text27 CODE
-"C:\Program Files\Microchip\xc8\v1.33\sources\common\Umul16.c":37 667C text27 CODE
-"C:\Program Files\Microchip\xc8\v1.33\sources\common\Umul16.c":38 6688 text27 CODE
-"C:\Program Files\Microchip\xc8\v1.33\sources\common\Umul16.c":39 6690 text27 CODE
-"C:\Program Files\Microchip\xc8\v1.33\sources\common\Umul16.c":52 6698 text27 CODE
-"C:\Program Files\Microchip\xc8\v1.33\sources\common\Umul16.c":53 66A0 text27 CODE
-"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftneg.c":15 66A2 text20 CODE
-"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftneg.c":17 66A2 text20 CODE
-"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftneg.c":18 66AE text20 CODE
-"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftneg.c":19 66BA text20 CODE
-"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftneg.c":20 66C6 text20 CODE
-"C:\Users\MCC\AppData\Local\Temp\s7as.":2055 66C8 cinit CODE
-"C:\Users\MCC\AppData\Local\Temp\s7as.":2057 66C8 cinit CODE
-"C:\Users\MCC\AppData\Local\Temp\s7as.":2060 66C8 cinit CODE
-"C:\Users\MCC\AppData\Local\Temp\s7as.":2092 66C8 cinit CODE
-"C:\Users\MCC\AppData\Local\Temp\s7as.":2093 66CA cinit CODE
-"C:\Users\MCC\AppData\Local\Temp\s7as.":2094 66CC cinit CODE
-"C:\Users\MCC\AppData\Local\Temp\s7as.":2095 66CE cinit CODE
-"C:\Users\MCC\AppData\Local\Temp\s7as.":2096 66D0 cinit CODE
-"C:\Users\MCC\AppData\Local\Temp\s7as.":2099 66D2 cinit CODE
-"C:\Users\MCC\AppData\Local\Temp\s7as.":2104 66D4 cinit CODE
-"C:\Users\MCC\AppData\Local\Temp\s7as.":2105 66D6 cinit CODE
-"C:\Users\MCC\AppData\Local\Temp\s7as.":2106 66D8 cinit CODE
-"C:\Users\MCC\AppData\Local\Temp\s7as.":2107 66DA cinit CODE
-"C:\Users\MCC\AppData\Local\Temp\s7as.":2108 66DC cinit CODE
-"C:\Users\MCC\AppData\Local\Temp\s7as.":2109 66DE cinit CODE
-"C:\Users\MCC\AppData\Local\Temp\s7as.":2110 66E0 cinit CODE
-"C:\Users\MCC\AppData\Local\Temp\s7as.":2111 66E2 cinit CODE
-"C:\Users\MCC\AppData\Local\Temp\s7as.":2112 66E6 cinit CODE
-"C:\Users\MCC\AppData\Local\Temp\s7as.":2113 66E8 cinit CODE
-"C:\Users\MCC\AppData\Local\Temp\s7as.":2119 66EC cinit CODE
-"C:\Users\MCC\AppData\Local\Temp\s7as.":2120 66EC cinit CODE
-"C:\Users\MCC\AppData\Local\Temp\s7as.":2121 66EE cinit CODE
-"C:\Program Files\Microchip\xc8\v1.33\sources\pic18\plib\PWM\pw1setdc.c":7 66F2 text14 CODE
-"C:\Program Files\Microchip\xc8\v1.33\sources\pic18\plib\PWM\pw1setdc.c":12 66F2 text14 CODE
-"C:\Program Files\Microchip\xc8\v1.33\sources\pic18\plib\PWM\pw1setdc.c":15 670E text14 CODE
-"C:\Program Files\Microchip\xc8\v1.33\sources\pic18\plib\PWM\pw1setdc.c":18 6712 text14 CODE
-"C:\Program Files\Microchip\xc8\v1.33\sources\pic18\plib\PWM\pw1setdc.c":19 672A text14 CODE
-"C:\Program Files\Microchip\xc8\v1.33\sources\pic18\plib\PWM\pw2setdc.c":7 672C text10 CODE
-"C:\Program Files\Microchip\xc8\v1.33\sources\pic18\plib\PWM\pw2setdc.c":12 672C text10 CODE
-"C:\Program Files\Microchip\xc8\v1.33\sources\pic18\plib\PWM\pw2setdc.c":15 6748 text10 CODE
-"C:\Program Files\Microchip\xc8\v1.33\sources\pic18\plib\PWM\pw2setdc.c":18 674C text10 CODE
-"C:\Program Files\Microchip\xc8\v1.33\sources\pic18\plib\PWM\pw2setdc.c":19 6764 text10 CODE
-"C:\Program Files\Microchip\xc8\v1.33\sources\pic18\plib\PWM\pw2open.c":18 6766 text4 CODE
-"C:\Program Files\Microchip\xc8\v1.33\sources\pic18\plib\PWM\pw2open.c":33 6768 text4 CODE
-"C:\Program Files\Microchip\xc8\v1.33\sources\pic18\plib\PWM\pw2open.c":35 676C text4 CODE
-"C:\Program Files\Microchip\xc8\v1.33\sources\pic18\plib\PWM\pw2open.c":36 6782 text4 CODE
-"C:\Program Files\Microchip\xc8\v1.33\sources\pic18\plib\PWM\pw2open.c":38 6786 text4 CODE
-"C:\Program Files\Microchip\xc8\v1.33\sources\pic18\plib\PWM\pw2open.c":55 678A text4 CODE
-"C:\Program Files\Microchip\xc8\v1.33\sources\pic18\plib\PWM\pw2open.c":56 6794 text4 CODE
-"C:\Program Files\Microchip\xc8\v1.33\sources\pic18\plib\PWM\pw2open.c":70 6796 text4 CODE
-"C:\Program Files\Microchip\xc8\v1.33\sources\pic18\plib\PWM\pw2open.c":71 6798 text4 CODE
-"C:\Program Files\Microchip\xc8\v1.33\sources\pic18\plib\PWM\pw2open.c":72 679C text4 CODE
-"C:\Program Files\Microchip\xc8\v1.33\sources\pic18\plib\PWM\pw2open.c":80 679E text4 CODE
-"C:\Program Files\Microchip\xc8\v1.33\sources\common\awtoft.c":32 67A0 text25 CODE
-"C:\Program Files\Microchip\xc8\v1.33\sources\common\awtoft.c":36 67A0 text25 CODE
-"C:\Program Files\Microchip\xc8\v1.33\sources\common\awtoft.c":37 67A4 text25 CODE
-"C:\Program Files\Microchip\xc8\v1.33\sources\common\awtoft.c":38 67B8 text25 CODE
-"C:\Program Files\Microchip\xc8\v1.33\sources\common\awtoft.c":39 67C0 text25 CODE
-"C:\Program Files\Microchip\xc8\v1.33\sources\common\awtoft.c":41 67C4 text25 CODE
-"C:\Program Files\Microchip\xc8\v1.33\sources\common\awtoft.c":42 67E6 text25 CODE
-"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\pwm.c":33 67E8 text11 CODE
-"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\pwm.c":35 67EA text11 CODE
-"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\pwm.c":37 67FA text11 CODE
-"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\pwm.c":38 6844 text11 CODE
-"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\pwm.c":40 6850 text11 CODE
-"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\pwm.c":55 6852 text9 CODE
-"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\pwm.c":57 6854 text9 CODE
-"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\pwm.c":59 6864 text9 CODE
-"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\pwm.c":60 68AE text9 CODE
-"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\pwm.c":62 68BA text9 CODE
-"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftge.c":4 68BC text23 CODE
-"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftge.c":6 68BC text23 CODE
-"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftge.c":7 68C0 text23 CODE
-"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftge.c":8 68EC text23 CODE
-"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftge.c":9 68F0 text23 CODE
-"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftge.c":10 691C text23 CODE
-"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftge.c":11 6928 text23 CODE
-"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftge.c":12 6934 text23 CODE
-"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftge.c":13 694A text23 CODE
-"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\funciones.c":14 694C text2 CODE
-"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\funciones.c":16 694C text2 CODE
-"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\funciones.c":17 6960 text2 CODE
-"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\funciones.c":21 6974 text2 CODE
-"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\funciones.c":22 697C text2 CODE
-"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\funciones.c":23 698C text2 CODE
-"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\funciones.c":28 6992 text2 CODE
-"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\funciones.c":29 69A6 text2 CODE
-"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\funciones.c":30 69BA text2 CODE
-"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\funciones.c":31 69BC text2 CODE
-"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\funciones.c":34 69BE text2 CODE
-"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\funciones.c":35 69C2 text2 CODE
-"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\funciones.c":36 69C6 text2 CODE
-"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\funciones.c":37 69C8 text2 CODE
-"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\funciones.c":38 69CA text2 CODE
-"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\funciones.c":39 69CC text2 CODE
-"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\funciones.c":40 69CE text2 CODE
-"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\funciones.c":46 69D0 text2 CODE
-"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\funciones.c":47 69D6 text2 CODE
-"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\funciones.c":48 69DC text2 CODE
-"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\funciones.c":49 69E2 text2 CODE
-"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\funciones.c":54 69E8 text2 CODE
-"C:\Program Files\Microchip\xc8\v1.33\sources\common\float.c":62 69EA text31 CODE
-"C:\Program Files\Microchip\xc8\v1.33\sources\common\float.c":64 69EA text31 CODE
-"C:\Program Files\Microchip\xc8\v1.33\sources\common\float.c":65 69FA text31 CODE
-"C:\Program Files\Microchip\xc8\v1.33\sources\common\float.c":67 6A08 text31 CODE
-"C:\Program Files\Microchip\xc8\v1.33\sources\common\float.c":68 6A0A text31 CODE
-"C:\Program Files\Microchip\xc8\v1.33\sources\common\float.c":66 6A12 text31 CODE
-"C:\Program Files\Microchip\xc8\v1.33\sources\common\float.c":71 6A30 text31 CODE
-"C:\Program Files\Microchip\xc8\v1.33\sources\common\float.c":72 6A32 text31 CODE
-"C:\Program Files\Microchip\xc8\v1.33\sources\common\float.c":73 6A3E text31 CODE
-"C:\Program Files\Microchip\xc8\v1.33\sources\common\float.c":70 6A46 text31 CODE
-"C:\Program Files\Microchip\xc8\v1.33\sources\common\float.c":76 6A64 text31 CODE
-"C:\Program Files\Microchip\xc8\v1.33\sources\common\float.c":77 6A66 text31 CODE
-"C:\Program Files\Microchip\xc8\v1.33\sources\common\float.c":75 6A6E text31 CODE
-"C:\Program Files\Microchip\xc8\v1.33\sources\common\float.c":79 6A72 text31 CODE
-"C:\Program Files\Microchip\xc8\v1.33\sources\common\float.c":80 6A74 text31 CODE
-"C:\Program Files\Microchip\xc8\v1.33\sources\common\float.c":81 6A76 text31 CODE
-"C:\Program Files\Microchip\xc8\v1.33\sources\common\float.c":82 6A7A text31 CODE
-"C:\Program Files\Microchip\xc8\v1.33\sources\common\float.c":83 6A7E text31 CODE
-"C:\Program Files\Microchip\xc8\v1.33\sources\common\float.c":84 6A82 text31 CODE
-"C:\Program Files\Microchip\xc8\v1.33\sources\common\float.c":85 6A84 text31 CODE
-"C:\Program Files\Microchip\xc8\v1.33\sources\common\float.c":86 6A90 text31 CODE
-"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\cny70.c":4 6A92 text15 CODE
-"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\cny70.c":24 6A92 text15 CODE
-"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\cny70.c":29 6AA2 text15 CODE
-"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\cny70.c":34 6AB2 text15 CODE
-"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\cny70.c":36 6AC2 text15 CODE
-"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\cny70.c":39 6ACA text15 CODE
-"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\cny70.c":44 6ADA text15 CODE
-"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\cny70.c":50 6AEA text15 CODE
-"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\cny70.c":52 6AFA text15 CODE
-"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\cny70.c":55 6B02 text15 CODE
-"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\cny70.c":60 6B12 text15 CODE
-"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\cny70.c":62 6B22 text15 CODE
-"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\cny70.c":65 6B28 text15 CODE
-"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\cny70.c":67 6B38 text15 CODE
-"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\cny70.c":76 6B40 text15 CODE
-"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\cny70.c":97 6B48 text15 CODE
-"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\main.c":25 6B4A text0 CODE
-"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\main.c":28 6B4A text0 CODE
-"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\main.c":41 6B4E text0 CODE
-"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\main.c":42 6B86 text0 CODE
-"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\main.c":44 6BA2 text0 CODE
-"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\main.c":45 6BB2 text0 CODE
-"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\main.c":46 6BBC text0 CODE
-"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\main.c":48 6BBE text0 CODE
-"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\main.c":49 6BC2 text0 CODE
-"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\main.c":50 6BEA text0 CODE
+"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\motor.c":57 65E0 text8 CODE
+"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\motor.c":59 65E0 text8 CODE
+"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\motor.c":60 65E2 text8 CODE
+"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\motor.c":61 65E4 text8 CODE
+"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\motor.c":62 65E6 text8 CODE
+"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\motor.c":65 65E8 text8 CODE
+"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\motor.c":47 65EA text1 CODE
+"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\motor.c":49 65EA text1 CODE
+"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\motor.c":50 65EC text1 CODE
+"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\motor.c":51 65EE text1 CODE
+"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\motor.c":52 65F0 text1 CODE
+"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\motor.c":55 65F2 text1 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\pic18\plib\PWM\pw1open.c":8 65F4 text6 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\pic18\plib\PWM\pw1open.c":11 65F6 text6 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\pic18\plib\PWM\pw1open.c":13 65FA text6 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\pic18\plib\PWM\pw1open.c":15 65FC text6 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\pic18\plib\PWM\pw1open.c":16 65FE text6 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\pic18\plib\PWM\pw1open.c":17 6602 text6 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\pic18\plib\PWM\pw1open.c":19 6604 text6 CODE
+"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\cny70.c":125 6606 text7 CODE
+"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\cny70.c":127 6608 text7 CODE
+"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\cny70.c":128 660C text7 CODE
+"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\cny70.c":129 6612 text7 CODE
+"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\cny70.c":131 6618 text7 CODE
+"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\pwm.c":20 661A text5 CODE
+"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\pwm.c":21 661C text5 CODE
+"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\pwm.c":22 6620 text5 CODE
+"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\pwm.c":25 6626 text5 CODE
+"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\pwm.c":26 662A text5 CODE
+"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\pwm.c":27 662C text5 CODE
+"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\pwm.c":28 662E text5 CODE
+"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\pwm.c":29 6630 text5 CODE
+"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\pwm.c":32 6636 text5 CODE
+"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\pwm.c":42 6638 text3 CODE
+"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\pwm.c":43 663A text3 CODE
+"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\pwm.c":44 663E text3 CODE
+"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\pwm.c":47 6644 text3 CODE
+"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\pwm.c":48 6648 text3 CODE
+"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\pwm.c":49 664A text3 CODE
+"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\pwm.c":50 664C text3 CODE
+"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\pwm.c":51 664E text3 CODE
+"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\pwm.c":54 6654 text3 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\lbtoft.c":27 6656 text12 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\lbtoft.c":29 6658 text12 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\lbtoft.c":30 6678 text12 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\Umul16.c":15 667A text27 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\Umul16.c":37 667A text27 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\Umul16.c":38 6686 text27 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\Umul16.c":39 668E text27 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\Umul16.c":52 6696 text27 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\Umul16.c":53 669E text27 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftneg.c":15 66A0 text20 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftneg.c":17 66A0 text20 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftneg.c":18 66AC text20 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftneg.c":19 66B8 text20 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftneg.c":20 66C4 text20 CODE
+"C:\Users\MCC\AppData\Local\Temp\s5q0.":2057 66C6 cinit CODE
+"C:\Users\MCC\AppData\Local\Temp\s5q0.":2059 66C6 cinit CODE
+"C:\Users\MCC\AppData\Local\Temp\s5q0.":2062 66C6 cinit CODE
+"C:\Users\MCC\AppData\Local\Temp\s5q0.":2094 66C6 cinit CODE
+"C:\Users\MCC\AppData\Local\Temp\s5q0.":2095 66C8 cinit CODE
+"C:\Users\MCC\AppData\Local\Temp\s5q0.":2096 66CA cinit CODE
+"C:\Users\MCC\AppData\Local\Temp\s5q0.":2097 66CC cinit CODE
+"C:\Users\MCC\AppData\Local\Temp\s5q0.":2098 66CE cinit CODE
+"C:\Users\MCC\AppData\Local\Temp\s5q0.":2101 66D0 cinit CODE
+"C:\Users\MCC\AppData\Local\Temp\s5q0.":2106 66D2 cinit CODE
+"C:\Users\MCC\AppData\Local\Temp\s5q0.":2107 66D4 cinit CODE
+"C:\Users\MCC\AppData\Local\Temp\s5q0.":2108 66D6 cinit CODE
+"C:\Users\MCC\AppData\Local\Temp\s5q0.":2109 66D8 cinit CODE
+"C:\Users\MCC\AppData\Local\Temp\s5q0.":2110 66DA cinit CODE
+"C:\Users\MCC\AppData\Local\Temp\s5q0.":2111 66DC cinit CODE
+"C:\Users\MCC\AppData\Local\Temp\s5q0.":2112 66DE cinit CODE
+"C:\Users\MCC\AppData\Local\Temp\s5q0.":2113 66E0 cinit CODE
+"C:\Users\MCC\AppData\Local\Temp\s5q0.":2114 66E4 cinit CODE
+"C:\Users\MCC\AppData\Local\Temp\s5q0.":2115 66E6 cinit CODE
+"C:\Users\MCC\AppData\Local\Temp\s5q0.":2121 66EA cinit CODE
+"C:\Users\MCC\AppData\Local\Temp\s5q0.":2122 66EA cinit CODE
+"C:\Users\MCC\AppData\Local\Temp\s5q0.":2123 66EC cinit CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\pic18\plib\PWM\pw1setdc.c":7 66F0 text14 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\pic18\plib\PWM\pw1setdc.c":12 66F0 text14 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\pic18\plib\PWM\pw1setdc.c":15 670C text14 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\pic18\plib\PWM\pw1setdc.c":18 6710 text14 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\pic18\plib\PWM\pw1setdc.c":19 6728 text14 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\pic18\plib\PWM\pw2setdc.c":7 672A text10 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\pic18\plib\PWM\pw2setdc.c":12 672A text10 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\pic18\plib\PWM\pw2setdc.c":15 6746 text10 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\pic18\plib\PWM\pw2setdc.c":18 674A text10 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\pic18\plib\PWM\pw2setdc.c":19 6762 text10 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\pic18\plib\PWM\pw2open.c":18 6764 text4 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\pic18\plib\PWM\pw2open.c":33 6766 text4 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\pic18\plib\PWM\pw2open.c":35 676A text4 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\pic18\plib\PWM\pw2open.c":36 6780 text4 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\pic18\plib\PWM\pw2open.c":38 6784 text4 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\pic18\plib\PWM\pw2open.c":55 6788 text4 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\pic18\plib\PWM\pw2open.c":56 6792 text4 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\pic18\plib\PWM\pw2open.c":70 6794 text4 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\pic18\plib\PWM\pw2open.c":71 6796 text4 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\pic18\plib\PWM\pw2open.c":72 679A text4 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\pic18\plib\PWM\pw2open.c":80 679C text4 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\awtoft.c":32 679E text25 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\awtoft.c":36 679E text25 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\awtoft.c":37 67A2 text25 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\awtoft.c":38 67B6 text25 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\awtoft.c":39 67BE text25 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\awtoft.c":41 67C2 text25 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\awtoft.c":42 67E4 text25 CODE
+"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\pwm.c":33 67E6 text11 CODE
+"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\pwm.c":35 67E8 text11 CODE
+"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\pwm.c":37 67F8 text11 CODE
+"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\pwm.c":38 6842 text11 CODE
+"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\pwm.c":40 684E text11 CODE
+"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\pwm.c":55 6850 text9 CODE
+"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\pwm.c":57 6852 text9 CODE
+"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\pwm.c":59 6862 text9 CODE
+"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\pwm.c":60 68AC text9 CODE
+"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\pwm.c":62 68B8 text9 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftge.c":4 68BA text23 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftge.c":6 68BA text23 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftge.c":7 68BE text23 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftge.c":8 68EA text23 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftge.c":9 68EE text23 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftge.c":10 691A text23 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftge.c":11 6926 text23 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftge.c":12 6932 text23 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\ftge.c":13 6948 text23 CODE
+"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\funciones.c":14 694A text2 CODE
+"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\funciones.c":16 694A text2 CODE
+"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\funciones.c":17 695E text2 CODE
+"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\funciones.c":21 6972 text2 CODE
+"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\funciones.c":22 697A text2 CODE
+"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\funciones.c":23 698A text2 CODE
+"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\funciones.c":28 6990 text2 CODE
+"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\funciones.c":29 69A4 text2 CODE
+"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\funciones.c":30 69B8 text2 CODE
+"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\funciones.c":31 69BA text2 CODE
+"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\funciones.c":34 69BC text2 CODE
+"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\funciones.c":35 69C0 text2 CODE
+"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\funciones.c":36 69C4 text2 CODE
+"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\funciones.c":37 69C6 text2 CODE
+"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\funciones.c":38 69C8 text2 CODE
+"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\funciones.c":39 69CA text2 CODE
+"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\funciones.c":40 69CC text2 CODE
+"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\funciones.c":46 69CE text2 CODE
+"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\funciones.c":47 69D4 text2 CODE
+"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\funciones.c":48 69DA text2 CODE
+"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\funciones.c":49 69E0 text2 CODE
+"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\funciones.c":54 69E6 text2 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\float.c":62 69E8 text31 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\float.c":64 69E8 text31 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\float.c":65 69F8 text31 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\float.c":67 6A06 text31 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\float.c":68 6A08 text31 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\float.c":66 6A10 text31 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\float.c":71 6A2E text31 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\float.c":72 6A30 text31 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\float.c":73 6A3C text31 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\float.c":70 6A44 text31 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\float.c":76 6A62 text31 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\float.c":77 6A64 text31 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\float.c":75 6A6C text31 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\float.c":79 6A70 text31 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\float.c":80 6A72 text31 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\float.c":81 6A74 text31 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\float.c":82 6A78 text31 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\float.c":83 6A7C text31 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\float.c":84 6A80 text31 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\float.c":85 6A82 text31 CODE
+"C:\Program Files\Microchip\xc8\v1.33\sources\common\float.c":86 6A8E text31 CODE
+"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\cny70.c":4 6A90 text15 CODE
+"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\cny70.c":24 6A90 text15 CODE
+"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\cny70.c":29 6AA0 text15 CODE
+"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\cny70.c":34 6AB0 text15 CODE
+"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\cny70.c":36 6AC0 text15 CODE
+"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\cny70.c":39 6AC8 text15 CODE
+"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\cny70.c":44 6AD8 text15 CODE
+"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\cny70.c":50 6AE8 text15 CODE
+"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\cny70.c":52 6AF8 text15 CODE
+"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\cny70.c":55 6B00 text15 CODE
+"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\cny70.c":60 6B10 text15 CODE
+"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\cny70.c":62 6B20 text15 CODE
+"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\cny70.c":65 6B26 text15 CODE
+"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\cny70.c":67 6B36 text15 CODE
+"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\cny70.c":76 6B3E text15 CODE
+"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\cny70.c":97 6B46 text15 CODE
+"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\main.c":25 6B48 text0 CODE
+"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\main.c":28 6B48 text0 CODE
+"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\main.c":29 6B4C text0 CODE
+"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\main.c":42 6B4E text0 CODE
+"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\main.c":43 6B86 text0 CODE
+"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\main.c":45 6BA2 text0 CODE
+"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\main.c":46 6BB2 text0 CODE
+"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\main.c":47 6BBC text0 CODE
+"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\main.c":49 6BBE text0 CODE
+"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\main.c":50 6BC2 text0 CODE
+"C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\main.c":51 6BEA text0 CODE
 "C:\Program Files\Microchip\xc8\v1.33\sources\common\fttol.c":44 6C14 text13 CODE
 "C:\Program Files\Microchip\xc8\v1.33\sources\common\fttol.c":49 6C14 text13 CODE
 "C:\Program Files\Microchip\xc8\v1.33\sources\common\fttol.c":51 6C2E text13 CODE
@@ -526,7 +527,7 @@ __CFG_XINST$OFF 0 0 ABS 0 - dist/default/production\fuzzy.X.production.obj
 ___lbtoft@c C 0 COMRAM 1 cstackCOMRAM dist/default/production\fuzzy.X.production.obj
 _i EC 0 BANK0 1 bssBANK0 dist/default/production\fuzzy.X.production.obj
 ___awtoft@c 9 0 COMRAM 1 cstackCOMRAM dist/default/production\fuzzy.X.production.obj
-__end_of___ftneg 66C8 0 CODE 0 text20 dist/default/production\fuzzy.X.production.obj
+__end_of___ftneg 66C6 0 CODE 0 text20 dist/default/production\fuzzy.X.production.obj
 linspace@i 43 0 COMRAM 1 cstackCOMRAM dist/default/production\fuzzy.X.production.obj
 _PR2 FCB 0 ABS 0 - dist/default/production\fuzzy.X.production.obj
 __S0 30000E 0 ABS 0 - dist/default/production\fuzzy.X.production.obj
@@ -549,9 +550,9 @@ ___ftadd@f2 1F 0 COMRAM 1 cstackCOMRAM dist/default/production\fuzzy.X.productio
 defuzzy@i 44 0 COMRAM 1 cstackCOMRAM dist/default/production\fuzzy.X.production.obj
 triangular@ux 43 0 COMRAM 1 cstackCOMRAM dist/default/production\fuzzy.X.production.obj
 mcu_init@i 35 0 COMRAM 1 cstackCOMRAM dist/default/production\fuzzy.X.production.obj
-_main 6B4A 0 CODE 0 text0 dist/default/production\fuzzy.X.production.obj
-___sp 0 0 STACK 2 stack C:\Users\MCC\AppData\Local\Temp\s7as.obj
-start 0 0 CODE 0 init C:\Users\MCC\AppData\Local\Temp\s7as.obj
+_main 6B48 0 CODE 0 text0 dist/default/production\fuzzy.X.production.obj
+___sp 0 0 STACK 2 stack C:\Users\MCC\AppData\Local\Temp\s5q0.obj
+start 0 0 CODE 0 init C:\Users\MCC\AppData\Local\Temp\s5q0.obj
 ?___ftadd 1C 0 COMRAM 1 cstackCOMRAM dist/default/production\fuzzy.X.production.obj
 ___fttol@f1 1C 0 COMRAM 1 cstackCOMRAM dist/default/production\fuzzy.X.production.obj
 ___ftmul@f1 D 0 COMRAM 1 cstackCOMRAM dist/default/production\fuzzy.X.production.obj
@@ -574,16 +575,16 @@ _PORTD F83 0 ABS 0 - dist/default/production\fuzzy.X.production.obj
 __LRAM 1 0 ABS 0 - dist/default/production\fuzzy.X.production.obj
 _T2CON FCA 0 ABS 0 - dist/default/production\fuzzy.X.production.obj
 _PORTE F84 0 ABS 0 - dist/default/production\fuzzy.X.production.obj
-__end_of_getCNY70Value 6B4A 0 CODE 0 text15 dist/default/production\fuzzy.X.production.obj
-__end_of_motor_Backforward 65EC 0 CODE 0 text8 dist/default/production\fuzzy.X.production.obj
-_motor_forward 65EC 0 CODE 0 text1 dist/default/production\fuzzy.X.production.obj
+__end_of_getCNY70Value 6B48 0 CODE 0 text15 dist/default/production\fuzzy.X.production.obj
+__end_of_motor_Backforward 65EA 0 CODE 0 text8 dist/default/production\fuzzy.X.production.obj
+_motor_forward 65EA 0 CODE 0 text1 dist/default/production\fuzzy.X.production.obj
 ___ftmul@f2 10 0 COMRAM 1 cstackCOMRAM dist/default/production\fuzzy.X.production.obj
 ___ftdiv@f2 2B 0 COMRAM 1 cstackCOMRAM dist/default/production\fuzzy.X.production.obj
 __CFG_WDTPS$32768 0 0 ABS 0 - dist/default/production\fuzzy.X.production.obj
 __Hconfig 30000E 0 CONFIG 0 config dist/default/production\fuzzy.X.production.obj
 __Lconfig 300000 0 CONFIG 0 config dist/default/production\fuzzy.X.production.obj
 ?___ftneg 1 0 COMRAM 1 cstackCOMRAM dist/default/production\fuzzy.X.production.obj
-___ftpack 69EA 0 CODE 0 text31 dist/default/production\fuzzy.X.production.obj
+___ftpack 69E8 0 CODE 0 text31 dist/default/production\fuzzy.X.production.obj
 __size_of_fuzzy_system_single1 0 0 ABS 0 - dist/default/production\fuzzy.X.production.obj
 main@a E7 0 BANK0 1 cstackBANK0 dist/default/production\fuzzy.X.production.obj
 main@b E1 0 BANK0 1 cstackBANK0 dist/default/production\fuzzy.X.production.obj
@@ -600,7 +601,6 @@ defuzzy@x 37 0 COMRAM 1 cstackCOMRAM dist/default/production\fuzzy.X.production.
 __Lram 0 0 ABS 0 ram dist/default/production\fuzzy.X.production.obj
 __Hcomram 0 0 ABS 0 comram dist/default/production\fuzzy.X.production.obj
 __Lcomram 0 0 ABS 0 comram dist/default/production\fuzzy.X.production.obj
-_main$1392 E4 0 BANK0 1 cstackBANK0 dist/default/production\fuzzy.X.production.obj
 __Hsfr 0 0 ABS 0 sfr dist/default/production\fuzzy.X.production.obj
 PWM_init2@period 4 0 COMRAM 1 cstackCOMRAM dist/default/production\fuzzy.X.production.obj
 __Lsfr 0 0 ABS 0 sfr dist/default/production\fuzzy.X.production.obj
@@ -613,6 +613,7 @@ ___ftge@ff1 7 0 COMRAM 1 cstackCOMRAM dist/default/production\fuzzy.X.production
 __Hnvrram 0 0 COMRAM 1 nvrram dist/default/production\fuzzy.X.production.obj
 __pcstackBANK5 500 0 BANK5 1 cstackBANK5 dist/default/production\fuzzy.X.production.obj
 __Lnvrram 0 0 COMRAM 1 nvrram dist/default/production\fuzzy.X.production.obj
+_main$1474 E4 0 BANK0 1 cstackBANK0 dist/default/production\fuzzy.X.production.obj
 ___ftmul@cntr 1A 0 COMRAM 1 cstackCOMRAM dist/default/production\fuzzy.X.production.obj
 __size_of___ftadd 0 0 ABS 0 - dist/default/production\fuzzy.X.production.obj
 ___ftdiv@cntr 31 0 COMRAM 1 cstackCOMRAM dist/default/production\fuzzy.X.production.obj
@@ -634,8 +635,8 @@ __Hintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production\fuzzy.X.produc
 __Lintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production\fuzzy.X.production.obj
 _CCPR1L FBE 0 ABS 0 - dist/default/production\fuzzy.X.production.obj
 _CCPR2L FBB 0 ABS 0 - dist/default/production\fuzzy.X.production.obj
-___lbtoft 6658 0 CODE 0 text12 dist/default/production\fuzzy.X.production.obj
-_mcu_init 694C 0 CODE 0 text2 dist/default/production\fuzzy.X.production.obj
+___lbtoft 6656 0 CODE 0 text12 dist/default/production\fuzzy.X.production.obj
+_mcu_init 694A 0 CODE 0 text2 dist/default/production\fuzzy.X.production.obj
 __Hbigbss 0 0 BIGRAM 1 bigbss dist/default/production\fuzzy.X.production.obj
 __Lbigbss 0 0 BIGRAM 1 bigbss dist/default/production\fuzzy.X.production.obj
 ?___ftdiv 28 0 COMRAM 1 cstackCOMRAM dist/default/production\fuzzy.X.production.obj
@@ -648,7 +649,7 @@ __Lstruct 0 0 COMRAM 1 struct dist/default/production\fuzzy.X.production.obj
 __Hbigdata 0 0 BIGRAM 1 bigdata dist/default/production\fuzzy.X.production.obj
 __Lbigdata 0 0 BIGRAM 1 bigdata dist/default/production\fuzzy.X.production.obj
 __Hmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/production\fuzzy.X.production.obj
-___awtoft 67A0 0 CODE 0 text25 dist/default/production\fuzzy.X.production.obj
+___awtoft 679E 0 CODE 0 text25 dist/default/production\fuzzy.X.production.obj
 __Lmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/production\fuzzy.X.production.obj
 __Hfarbss 0 0 FARRAM 0 farbss dist/default/production\fuzzy.X.production.obj
 __Lfarbss 0 0 FARRAM 0 farbss dist/default/production\fuzzy.X.production.obj
@@ -667,12 +668,12 @@ fuzzy_system_single1@y 678 0 BANK6 1 cstackBANK6 dist/default/production\fuzzy.X
 fuzzy_system_single2@y 678 0 BANK6 1 cstackBANK6 dist/default/production\fuzzy.X.production.obj
 __HnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production\fuzzy.X.production.obj
 __LnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production\fuzzy.X.production.obj
-__end_of_PWM_DutyCycle1 6852 0 CODE 0 text11 dist/default/production\fuzzy.X.production.obj
-__end_of_PWM_DutyCycle2 68BC 0 CODE 0 text9 dist/default/production\fuzzy.X.production.obj
+__end_of_PWM_DutyCycle1 6850 0 CODE 0 text11 dist/default/production\fuzzy.X.production.obj
+__end_of_PWM_DutyCycle2 68BA 0 CODE 0 text9 dist/default/production\fuzzy.X.production.obj
 __CFG_EBTR1$OFF 0 0 ABS 0 - dist/default/production\fuzzy.X.production.obj
 fuzzy_system_single1@cons_mf1 300 0 BANK3 1 cstackBANK3 dist/default/production\fuzzy.X.production.obj
 fuzzy_system_single2@cons_mf1 300 0 BANK3 1 cstackBANK3 dist/default/production\fuzzy.X.production.obj
-__end_of___ftpack 6A92 0 CODE 0 text31 dist/default/production\fuzzy.X.production.obj
+__end_of___ftpack 6A90 0 CODE 0 text31 dist/default/production\fuzzy.X.production.obj
 ?___ftpack 1 0 COMRAM 1 cstackCOMRAM dist/default/production\fuzzy.X.production.obj
 __CFG_PBADEN$OFF 0 0 ABS 0 - dist/default/production\fuzzy.X.production.obj
 __CFG_EBTR2$OFF 0 0 ABS 0 - dist/default/production\fuzzy.X.production.obj
@@ -685,10 +686,10 @@ ___ftadd@sign 25 0 COMRAM 1 cstackCOMRAM dist/default/production\fuzzy.X.product
 __Hdata 0 0 ABS 0 data dist/default/production\fuzzy.X.production.obj
 __Ldata 0 0 ABS 0 data dist/default/production\fuzzy.X.production.obj
 __CFG_EBTR3$OFF 0 0 ABS 0 - dist/default/production\fuzzy.X.production.obj
-___ftge 68BC 0 CODE 0 text23 dist/default/production\fuzzy.X.production.obj
+___ftge 68BA 0 CODE 0 text23 dist/default/production\fuzzy.X.production.obj
 _tri_mf 708C 0 CODE 0 text18 dist/default/production\fuzzy.X.production.obj
 _out_mf 76A2 0 CODE 0 text22 dist/default/production\fuzzy.X.production.obj
-stackhi 7FF 0 ABS 0 - C:\Users\MCC\AppData\Local\Temp\s7as.obj
+stackhi 7FF 0 ABS 0 - C:\Users\MCC\AppData\Local\Temp\s5q0.obj
 __end_of_tri_mf 71AE 0 CODE 0 text18 dist/default/production\fuzzy.X.production.obj
 fuzzy_system_single1@w1 56 0 COMRAM 1 cstackCOMRAM dist/default/production\fuzzy.X.production.obj
 fuzzy_system_single2@w1 56 0 COMRAM 1 cstackCOMRAM dist/default/production\fuzzy.X.production.obj
@@ -706,14 +707,14 @@ __pcstackBANK0 60 0 BANK0 1 cstackBANK0 dist/default/production\fuzzy.X.producti
 __Htemp 0 0 COMRAM 1 temp dist/default/production\fuzzy.X.production.obj
 __size_of_fuzzy_system_single2 0 0 ABS 0 - dist/default/production\fuzzy.X.production.obj
 __Ltemp 0 0 COMRAM 1 temp dist/default/production\fuzzy.X.production.obj
-stacklo 6F0 0 ABS 0 - C:\Users\MCC\AppData\Local\Temp\s7as.obj
+stacklo 6F0 0 ABS 0 - C:\Users\MCC\AppData\Local\Temp\s5q0.obj
 __Hrbit 0 0 COMRAM 1 rbit dist/default/production\fuzzy.X.production.obj
 __Lrbit 0 0 COMRAM 1 rbit dist/default/production\fuzzy.X.production.obj
 __Hinit 0 0 CODE 0 init dist/default/production\fuzzy.X.production.obj
 __Linit 0 0 CODE 0 init dist/default/production\fuzzy.X.production.obj
 __Hintcodelo 0 0 CODE 0 intcodelo dist/default/production\fuzzy.X.production.obj
 __Lintcodelo 0 0 CODE 0 intcodelo dist/default/production\fuzzy.X.production.obj
-___wmul 667C 0 CODE 0 text27 dist/default/production\fuzzy.X.production.obj
+___wmul 667A 0 CODE 0 text27 dist/default/production\fuzzy.X.production.obj
 __Hrbss 0 0 COMRAM 1 rbss dist/default/production\fuzzy.X.production.obj
 __end_of_main 6C14 0 CODE 0 text0 dist/default/production\fuzzy.X.production.obj
 __Lrbss 0 0 COMRAM 1 rbss dist/default/production\fuzzy.X.production.obj
@@ -728,11 +729,11 @@ __pdataBANK0 EE 0 BANK0 1 dataBANK0 dist/default/production\fuzzy.X.production.o
 __HcstackBANK6 0 0 ABS 0 cstackBANK6 dist/default/production\fuzzy.X.production.obj
 __LcstackBANK6 0 0 ABS 0 cstackBANK6 dist/default/production\fuzzy.X.production.obj
 __size_of___ftneg 0 0 ABS 0 - dist/default/production\fuzzy.X.production.obj
-_PWM_DutyCycle1 67E8 0 CODE 0 text11 dist/default/production\fuzzy.X.production.obj
+_PWM_DutyCycle1 67E6 0 CODE 0 text11 dist/default/production\fuzzy.X.production.obj
 fuzzy_system_single1@cons_mf2 200 0 BANK2 1 cstackBANK2 dist/default/production\fuzzy.X.production.obj
 ___ftmul@sign 1B 0 COMRAM 1 cstackCOMRAM dist/default/production\fuzzy.X.production.obj
 fuzzy_system_single2@cons_mf2 200 0 BANK2 1 cstackBANK2 dist/default/production\fuzzy.X.production.obj
-end_of_initialization 66EC 0 CODE 0 cinit dist/default/production\fuzzy.X.production.obj
+end_of_initialization 66EA 0 CODE 0 cinit dist/default/production\fuzzy.X.production.obj
 __pcstackBANK6 600 0 BANK6 1 cstackBANK6 dist/default/production\fuzzy.X.production.obj
 ___ftdiv@sign 36 0 COMRAM 1 cstackCOMRAM dist/default/production\fuzzy.X.production.obj
 qualified@w 14 0 COMRAM 1 cstackCOMRAM dist/default/production\fuzzy.X.production.obj
@@ -749,14 +750,15 @@ __size_of_PWM_init2 0 0 ABS 0 - dist/default/production\fuzzy.X.production.obj
 _TRISBbits F93 0 ABS 0 - dist/default/production\fuzzy.X.production.obj
 __end_of___ftadd 74BC 0 CODE 0 text30 dist/default/production\fuzzy.X.production.obj
 _TRISCbits F94 0 ABS 0 - dist/default/production\fuzzy.X.production.obj
+_PORTAbits F80 0 ABS 0 - dist/default/production\fuzzy.X.production.obj
 _PORTBbits F81 0 ABS 0 - dist/default/production\fuzzy.X.production.obj
 _PORTDbits F83 0 ABS 0 - dist/default/production\fuzzy.X.production.obj
 _T2CONbits FCA 0 ABS 0 - dist/default/production\fuzzy.X.production.obj
 qualified@y 10 0 COMRAM 1 cstackCOMRAM dist/default/production\fuzzy.X.production.obj
 ?___lbtoft 9 0 COMRAM 1 cstackCOMRAM dist/default/production\fuzzy.X.production.obj
-_SetDCPWM1 66F2 0 CODE 0 text14 dist/default/production\fuzzy.X.production.obj
+_SetDCPWM1 66F0 0 CODE 0 text14 dist/default/production\fuzzy.X.production.obj
 ?___awtoft 9 0 COMRAM 1 cstackCOMRAM dist/default/production\fuzzy.X.production.obj
-_SetDCPWM2 672C 0 CODE 0 text10 dist/default/production\fuzzy.X.production.obj
+_SetDCPWM2 672A 0 CODE 0 text10 dist/default/production\fuzzy.X.production.obj
 __Hibigdata 0 0 CODE 0 ibigdata dist/default/production\fuzzy.X.production.obj
 __Libigdata 0 0 CODE 0 ibigdata dist/default/production\fuzzy.X.production.obj
 _CCP1CON FBD 0 ABS 0 - dist/default/production\fuzzy.X.production.obj
@@ -775,8 +777,8 @@ __Lbank2 0 0 ABS 0 bank2 dist/default/production\fuzzy.X.production.obj
 __Hbank3 0 0 ABS 0 bank3 dist/default/production\fuzzy.X.production.obj
 __Lbank3 0 0 ABS 0 bank3 dist/default/production\fuzzy.X.production.obj
 ___ftmul@exp 16 0 COMRAM 1 cstackCOMRAM dist/default/production\fuzzy.X.production.obj
-__end_of_PWM_init1 663A 0 CODE 0 text5 dist/default/production\fuzzy.X.production.obj
-__end_of_PWM_init2 6658 0 CODE 0 text3 dist/default/production\fuzzy.X.production.obj
+__end_of_PWM_init1 6638 0 CODE 0 text5 dist/default/production\fuzzy.X.production.obj
+__end_of_PWM_init2 6656 0 CODE 0 text3 dist/default/production\fuzzy.X.production.obj
 __Hbank4 0 0 ABS 0 bank4 dist/default/production\fuzzy.X.production.obj
 __Lbank4 0 0 ABS 0 bank4 dist/default/production\fuzzy.X.production.obj
 ___ftdiv@exp 35 0 COMRAM 1 cstackCOMRAM dist/default/production\fuzzy.X.production.obj
@@ -784,7 +786,7 @@ __Hbank5 0 0 ABS 0 bank5 dist/default/production\fuzzy.X.production.obj
 __Lbank5 0 0 ABS 0 bank5 dist/default/production\fuzzy.X.production.obj
 __Hpowerup 0 0 CODE 0 powerup dist/default/production\fuzzy.X.production.obj
 __Lpowerup 0 0 CODE 0 powerup dist/default/production\fuzzy.X.production.obj
-__end_of_go_back 661C 0 CODE 0 text7 dist/default/production\fuzzy.X.production.obj
+__end_of_go_back 661A 0 CODE 0 text7 dist/default/production\fuzzy.X.production.obj
 __Hbank6 0 0 ABS 0 bank6 dist/default/production\fuzzy.X.production.obj
 __Lbank6 0 0 ABS 0 bank6 dist/default/production\fuzzy.X.production.obj
 __Hbank7 0 0 ABS 0 bank7 dist/default/production\fuzzy.X.production.obj
@@ -794,40 +796,40 @@ __Htext0 0 0 ABS 0 text0 dist/default/production\fuzzy.X.production.obj
 __Ltext0 0 0 ABS 0 text0 dist/default/production\fuzzy.X.production.obj
 __Htext1 0 0 ABS 0 text1 dist/default/production\fuzzy.X.production.obj
 __Ltext1 0 0 ABS 0 text1 dist/default/production\fuzzy.X.production.obj
-__ptext0 6B4A 0 CODE 0 text0 dist/default/production\fuzzy.X.production.obj
+__ptext0 6B48 0 CODE 0 text0 dist/default/production\fuzzy.X.production.obj
 __Htext2 0 0 ABS 0 text2 dist/default/production\fuzzy.X.production.obj
 __Ltext2 0 0 ABS 0 text2 dist/default/production\fuzzy.X.production.obj
-__ptext1 65EC 0 CODE 0 text1 dist/default/production\fuzzy.X.production.obj
+__ptext1 65EA 0 CODE 0 text1 dist/default/production\fuzzy.X.production.obj
 __Htext3 0 0 ABS 0 text3 dist/default/production\fuzzy.X.production.obj
 __Ltext3 0 0 ABS 0 text3 dist/default/production\fuzzy.X.production.obj
-__ptext2 694C 0 CODE 0 text2 dist/default/production\fuzzy.X.production.obj
+__ptext2 694A 0 CODE 0 text2 dist/default/production\fuzzy.X.production.obj
 go_back@m_left 34 0 COMRAM 1 cstackCOMRAM dist/default/production\fuzzy.X.production.obj
 __Htext4 0 0 ABS 0 text4 dist/default/production\fuzzy.X.production.obj
 __Ltext4 0 0 ABS 0 text4 dist/default/production\fuzzy.X.production.obj
-__ptext3 663A 0 CODE 0 text3 dist/default/production\fuzzy.X.production.obj
+__ptext3 6638 0 CODE 0 text3 dist/default/production\fuzzy.X.production.obj
 __Htext5 0 0 ABS 0 text5 dist/default/production\fuzzy.X.production.obj
 out_mf@result 10 0 COMRAM 1 cstackCOMRAM dist/default/production\fuzzy.X.production.obj
 __Ltext5 0 0 ABS 0 text5 dist/default/production\fuzzy.X.production.obj
 ?_getCNY70Value 1 0 COMRAM 1 cstackCOMRAM dist/default/production\fuzzy.X.production.obj
-__ptext4 6766 0 CODE 0 text4 dist/default/production\fuzzy.X.production.obj
+__ptext4 6764 0 CODE 0 text4 dist/default/production\fuzzy.X.production.obj
 __Htext6 0 0 ABS 0 text6 dist/default/production\fuzzy.X.production.obj
 __Ltext6 0 0 ABS 0 text6 dist/default/production\fuzzy.X.production.obj
-__ptext5 661C 0 CODE 0 text5 dist/default/production\fuzzy.X.production.obj
+__ptext5 661A 0 CODE 0 text5 dist/default/production\fuzzy.X.production.obj
 __Htext7 0 0 ABS 0 text7 dist/default/production\fuzzy.X.production.obj
 __Ltext7 0 0 ABS 0 text7 dist/default/production\fuzzy.X.production.obj
-__ptext6 65F6 0 CODE 0 text6 dist/default/production\fuzzy.X.production.obj
+__ptext6 65F4 0 CODE 0 text6 dist/default/production\fuzzy.X.production.obj
 __HbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production\fuzzy.X.production.obj
 __LbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production\fuzzy.X.production.obj
 __Htext8 0 0 ABS 0 text8 dist/default/production\fuzzy.X.production.obj
 __Ltext8 0 0 ABS 0 text8 dist/default/production\fuzzy.X.production.obj
-__ptext7 6608 0 CODE 0 text7 dist/default/production\fuzzy.X.production.obj
+__ptext7 6606 0 CODE 0 text7 dist/default/production\fuzzy.X.production.obj
 __pbssCOMRAM 5F 0 COMRAM 1 bssCOMRAM dist/default/production\fuzzy.X.production.obj
 __Htext9 0 0 ABS 0 text9 dist/default/production\fuzzy.X.production.obj
 __HcstackBANK1 0 0 ABS 0 cstackBANK1 dist/default/production\fuzzy.X.production.obj
 __Ltext9 0 0 ABS 0 text9 dist/default/production\fuzzy.X.production.obj
 __LcstackBANK1 0 0 ABS 0 cstackBANK1 dist/default/production\fuzzy.X.production.obj
-__ptext8 65E2 0 CODE 0 text8 dist/default/production\fuzzy.X.production.obj
-__ptext9 6852 0 CODE 0 text9 dist/default/production\fuzzy.X.production.obj
+__ptext8 65E0 0 CODE 0 text8 dist/default/production\fuzzy.X.production.obj
+__ptext9 6850 0 CODE 0 text9 dist/default/production\fuzzy.X.production.obj
 __pcstackBANK1 100 0 BANK1 1 cstackBANK1 dist/default/production\fuzzy.X.production.obj
 __Hclrtext 0 0 ABS 0 clrtext dist/default/production\fuzzy.X.production.obj
 __Lclrtext 0 0 ABS 0 clrtext dist/default/production\fuzzy.X.production.obj
@@ -837,14 +839,14 @@ __size_of_linspace 0 0 ABS 0 - dist/default/production\fuzzy.X.production.obj
 tri_mf@a 4A 0 COMRAM 1 cstackCOMRAM dist/default/production\fuzzy.X.production.obj
 tri_mf@b 4D 0 COMRAM 1 cstackCOMRAM dist/default/production\fuzzy.X.production.obj
 tri_mf@c 50 0 COMRAM 1 cstackCOMRAM dist/default/production\fuzzy.X.production.obj
-__end_of__initialization 66EC 0 CODE 0 cinit dist/default/production\fuzzy.X.production.obj
+__end_of__initialization 66EA 0 CODE 0 cinit dist/default/production\fuzzy.X.production.obj
 OpenPWM1@period 1 0 COMRAM 1 cstackCOMRAM dist/default/production\fuzzy.X.production.obj
 __CFG_USBDIV$2 0 0 ABS 0 - dist/default/production\fuzzy.X.production.obj
 OpenPWM2@period 2 0 COMRAM 1 cstackCOMRAM dist/default/production\fuzzy.X.production.obj
 tri_mf@i D8 0 BANK0 1 cstackBANK0 dist/default/production\fuzzy.X.production.obj
 out_mf@i 18 0 COMRAM 1 cstackCOMRAM dist/default/production\fuzzy.X.production.obj
 PWM_DutyCycle1@DutyCycle 2F 0 COMRAM 1 cstackCOMRAM dist/default/production\fuzzy.X.production.obj
-__end_of___lbtoft 667C 0 CODE 0 text12 dist/default/production\fuzzy.X.production.obj
+__end_of___lbtoft 667A 0 CODE 0 text12 dist/default/production\fuzzy.X.production.obj
 fuzzy_system_single1@input 53 0 COMRAM 1 cstackCOMRAM dist/default/production\fuzzy.X.production.obj
 fuzzy_system_single2@input 53 0 COMRAM 1 cstackCOMRAM dist/default/production\fuzzy.X.production.obj
 __size_of_getCNY70Value 0 0 ABS 0 - dist/default/production\fuzzy.X.production.obj
@@ -858,14 +860,14 @@ __Hrdata 0 0 COMRAM 1 rdata dist/default/production\fuzzy.X.production.obj
 out_mf@x 12 0 COMRAM 1 cstackCOMRAM dist/default/production\fuzzy.X.production.obj
 __Lrdata 0 0 COMRAM 1 rdata dist/default/production\fuzzy.X.production.obj
 out_mf@y 14 0 COMRAM 1 cstackCOMRAM dist/default/production\fuzzy.X.production.obj
-_go_back 6608 0 CODE 0 text7 dist/default/production\fuzzy.X.production.obj
+_go_back 6606 0 CODE 0 text7 dist/default/production\fuzzy.X.production.obj
 __Hidloc 200008 0 IDLOC 0 idloc dist/default/production\fuzzy.X.production.obj
 __Lidloc 200000 0 IDLOC 0 idloc dist/default/production\fuzzy.X.production.obj
 out_mf@z 16 0 COMRAM 1 cstackCOMRAM dist/default/production\fuzzy.X.production.obj
-_motor_Backforward 65E2 0 CODE 0 text8 dist/default/production\fuzzy.X.production.obj
+_motor_Backforward 65E0 0 CODE 0 text8 dist/default/production\fuzzy.X.production.obj
 __Hstack 0 0 STACK 2 stack dist/default/production\fuzzy.X.production.obj
 __Lstack 0 0 STACK 2 stack dist/default/production\fuzzy.X.production.obj
-___ftneg 66A2 0 CODE 0 text20 dist/default/production\fuzzy.X.production.obj
+___ftneg 66A0 0 CODE 0 text20 dist/default/production\fuzzy.X.production.obj
 __Hparam 0 0 ABS 0 rparam dist/default/production\fuzzy.X.production.obj
 __Lparam 0 0 ABS 0 rparam dist/default/production\fuzzy.X.production.obj
 __Hspace_0 30000E 0 ABS 0 - dist/default/production\fuzzy.X.production.obj
@@ -891,11 +893,11 @@ ___ftmul 6DBE 0 CODE 0 text28 dist/default/production\fuzzy.X.production.obj
 __Lcinit 0 0 ABS 0 cinit dist/default/production\fuzzy.X.production.obj
 fuzzy_system_single1@overall_out_mf 578 0 BANK5 1 cstackBANK5 dist/default/production\fuzzy.X.production.obj
 fuzzy_system_single2@overall_out_mf 578 0 BANK5 1 cstackBANK5 dist/default/production\fuzzy.X.production.obj
-__pcinit 66C8 0 CODE 0 cinit dist/default/production\fuzzy.X.production.obj
+__pcinit 66C6 0 CODE 0 cinit dist/default/production\fuzzy.X.production.obj
 __CFG_EBTRB$OFF 0 0 ABS 0 - dist/default/production\fuzzy.X.production.obj
 ___ftdiv 6CE8 0 CODE 0 text29 dist/default/production\fuzzy.X.production.obj
-__ramtop 800 0 RAM 0 ramtop C:\Users\MCC\AppData\Local\Temp\s7as.obj
-__mediumconst 0 0 MEDIUMCONST 0 mediumconst C:\Users\MCC\AppData\Local\Temp\s7as.obj
+__ramtop 800 0 RAM 0 ramtop C:\Users\MCC\AppData\Local\Temp\s5q0.obj
+__mediumconst 0 0 MEDIUMCONST 0 mediumconst C:\Users\MCC\AppData\Local\Temp\s5q0.obj
 __size_of_main 0 0 ABS 0 - dist/default/production\fuzzy.X.production.obj
 __Hconst 0 0 CODE 0 const dist/default/production\fuzzy.X.production.obj
 __Lconst 0 0 CODE 0 const dist/default/production\fuzzy.X.production.obj
@@ -908,7 +910,7 @@ __size_of___ftdiv 0 0 ABS 0 - dist/default/production\fuzzy.X.production.obj
 __LidataBANK0 0 0 ABS 0 idataBANK0 dist/default/production\fuzzy.X.production.obj
 __size_of_go_back 0 0 ABS 0 - dist/default/production\fuzzy.X.production.obj
 __pcstackBANK2 200 0 BANK2 1 cstackBANK2 dist/default/production\fuzzy.X.production.obj
-__pidataBANK0 65E0 0 CODE 0 idataBANK0 dist/default/production\fuzzy.X.production.obj
+__pidataBANK0 65DE 0 CODE 0 idataBANK0 dist/default/production\fuzzy.X.production.obj
 __size_of_OpenPWM1 0 0 ABS 0 - dist/default/production\fuzzy.X.production.obj
 __size_of_OpenPWM2 0 0 ABS 0 - dist/default/production\fuzzy.X.production.obj
 linspace@end 3C 0 COMRAM 1 cstackCOMRAM dist/default/production\fuzzy.X.production.obj
@@ -920,7 +922,7 @@ ___awtoft@sign C 0 COMRAM 1 cstackCOMRAM dist/default/production\fuzzy.X.product
 ___ftpack@arg 1 0 COMRAM 1 cstackCOMRAM dist/default/production\fuzzy.X.production.obj
 __CFG_WRT1$OFF 0 0 ABS 0 - dist/default/production\fuzzy.X.production.obj
 tri_mf@temp 60 0 BANK0 1 cstackBANK0 dist/default/production\fuzzy.X.production.obj
-_PWM_DutyCycle2 6852 0 CODE 0 text9 dist/default/production\fuzzy.X.production.obj
+_PWM_DutyCycle2 6850 0 CODE 0 text9 dist/default/production\fuzzy.X.production.obj
 SetDCPWM1@dutycycle 1 0 COMRAM 1 cstackCOMRAM dist/default/production\fuzzy.X.production.obj
 ___ftadd@exp2 26 0 COMRAM 1 cstackCOMRAM dist/default/production\fuzzy.X.production.obj
 __HbssBANK0 0 0 ABS 0 bssBANK0 dist/default/production\fuzzy.X.production.obj
@@ -938,53 +940,53 @@ __Htext10 0 0 ABS 0 text10 dist/default/production\fuzzy.X.production.obj
 __Ltext10 0 0 ABS 0 text10 dist/default/production\fuzzy.X.production.obj
 __Htext20 0 0 ABS 0 text20 dist/default/production\fuzzy.X.production.obj
 __Ltext20 0 0 ABS 0 text20 dist/default/production\fuzzy.X.production.obj
-__ptext10 672C 0 CODE 0 text10 dist/default/production\fuzzy.X.production.obj
+__ptext10 672A 0 CODE 0 text10 dist/default/production\fuzzy.X.production.obj
 __Htext30 0 0 ABS 0 text30 dist/default/production\fuzzy.X.production.obj
 __Htext11 0 0 ABS 0 text11 dist/default/production\fuzzy.X.production.obj
 __Ltext30 0 0 ABS 0 text30 dist/default/production\fuzzy.X.production.obj
 __Ltext11 0 0 ABS 0 text11 dist/default/production\fuzzy.X.production.obj
-__ptext20 66A2 0 CODE 0 text20 dist/default/production\fuzzy.X.production.obj
+__ptext20 66A0 0 CODE 0 text20 dist/default/production\fuzzy.X.production.obj
 __Htext21 0 0 ABS 0 text21 dist/default/production\fuzzy.X.production.obj
 __Ltext21 0 0 ABS 0 text21 dist/default/production\fuzzy.X.production.obj
-__ptext11 67E8 0 CODE 0 text11 dist/default/production\fuzzy.X.production.obj
+__ptext11 67E6 0 CODE 0 text11 dist/default/production\fuzzy.X.production.obj
 __ptext30 7310 0 CODE 0 text30 dist/default/production\fuzzy.X.production.obj
 __Htext31 0 0 ABS 0 text31 dist/default/production\fuzzy.X.production.obj
 __Htext12 0 0 ABS 0 text12 dist/default/production\fuzzy.X.production.obj
 __Ltext31 0 0 ABS 0 text31 dist/default/production\fuzzy.X.production.obj
 __Ltext12 0 0 ABS 0 text12 dist/default/production\fuzzy.X.production.obj
 __ptext21 6EA2 0 CODE 0 text21 dist/default/production\fuzzy.X.production.obj
-__end_of_mcu_init 69EA 0 CODE 0 text2 dist/default/production\fuzzy.X.production.obj
+__end_of_mcu_init 69E8 0 CODE 0 text2 dist/default/production\fuzzy.X.production.obj
 __Htext22 0 0 ABS 0 text22 dist/default/production\fuzzy.X.production.obj
 __Ltext22 0 0 ABS 0 text22 dist/default/production\fuzzy.X.production.obj
-__ptext12 6658 0 CODE 0 text12 dist/default/production\fuzzy.X.production.obj
-__ptext31 69EA 0 CODE 0 text31 dist/default/production\fuzzy.X.production.obj
+__ptext12 6656 0 CODE 0 text12 dist/default/production\fuzzy.X.production.obj
+__ptext31 69E8 0 CODE 0 text31 dist/default/production\fuzzy.X.production.obj
 __Htext13 0 0 ABS 0 text13 dist/default/production\fuzzy.X.production.obj
 __Ltext13 0 0 ABS 0 text13 dist/default/production\fuzzy.X.production.obj
-_PWM_init1 661C 0 CODE 0 text5 dist/default/production\fuzzy.X.production.obj
+_PWM_init1 661A 0 CODE 0 text5 dist/default/production\fuzzy.X.production.obj
 __ptext22 76A2 0 CODE 0 text22 dist/default/production\fuzzy.X.production.obj
-_OpenPWM1 65F6 0 CODE 0 text6 dist/default/production\fuzzy.X.production.obj
+_OpenPWM1 65F4 0 CODE 0 text6 dist/default/production\fuzzy.X.production.obj
 __Htext23 0 0 ABS 0 text23 dist/default/production\fuzzy.X.production.obj
 __Ltext23 0 0 ABS 0 text23 dist/default/production\fuzzy.X.production.obj
 __ptext13 6C14 0 CODE 0 text13 dist/default/production\fuzzy.X.production.obj
 __Htext14 0 0 ABS 0 text14 dist/default/production\fuzzy.X.production.obj
 __Ltext14 0 0 ABS 0 text14 dist/default/production\fuzzy.X.production.obj
-__ptext23 68BC 0 CODE 0 text23 dist/default/production\fuzzy.X.production.obj
-_OpenPWM2 6766 0 CODE 0 text4 dist/default/production\fuzzy.X.production.obj
+__ptext23 68BA 0 CODE 0 text23 dist/default/production\fuzzy.X.production.obj
+_OpenPWM2 6764 0 CODE 0 text4 dist/default/production\fuzzy.X.production.obj
 __Htext24 0 0 ABS 0 text24 dist/default/production\fuzzy.X.production.obj
 __Ltext24 0 0 ABS 0 text24 dist/default/production\fuzzy.X.production.obj
-__ptext14 66F2 0 CODE 0 text14 dist/default/production\fuzzy.X.production.obj
+__ptext14 66F0 0 CODE 0 text14 dist/default/production\fuzzy.X.production.obj
 __Htext15 0 0 ABS 0 text15 dist/default/production\fuzzy.X.production.obj
 __Ltext15 0 0 ABS 0 text15 dist/default/production\fuzzy.X.production.obj
-_PWM_init2 663A 0 CODE 0 text3 dist/default/production\fuzzy.X.production.obj
+_PWM_init2 6638 0 CODE 0 text3 dist/default/production\fuzzy.X.production.obj
 __ptext24 6F8A 0 CODE 0 text24 dist/default/production\fuzzy.X.production.obj
 __Htext25 0 0 ABS 0 text25 dist/default/production\fuzzy.X.production.obj
 __Ltext25 0 0 ABS 0 text25 dist/default/production\fuzzy.X.production.obj
-_getCNY70Value 6A92 0 CODE 0 text15 dist/default/production\fuzzy.X.production.obj
-__ptext15 6A92 0 CODE 0 text15 dist/default/production\fuzzy.X.production.obj
-___inthi_sp 0 0 STACK 2 stack C:\Users\MCC\AppData\Local\Temp\s7as.obj
+_getCNY70Value 6A90 0 CODE 0 text15 dist/default/production\fuzzy.X.production.obj
+__ptext15 6A90 0 CODE 0 text15 dist/default/production\fuzzy.X.production.obj
+___inthi_sp 0 0 STACK 2 stack C:\Users\MCC\AppData\Local\Temp\s5q0.obj
 __Htext16 0 0 ABS 0 text16 dist/default/production\fuzzy.X.production.obj
 __Ltext16 0 0 ABS 0 text16 dist/default/production\fuzzy.X.production.obj
-__ptext25 67A0 0 CODE 0 text25 dist/default/production\fuzzy.X.production.obj
+__ptext25 679E 0 CODE 0 text25 dist/default/production\fuzzy.X.production.obj
 __Htext26 0 0 ABS 0 text26 dist/default/production\fuzzy.X.production.obj
 __Ltext26 0 0 ABS 0 text26 dist/default/production\fuzzy.X.production.obj
 __ptext16 7C7E 0 CODE 0 text16 dist/default/production\fuzzy.X.production.obj
@@ -997,7 +999,7 @@ __ptext17 78FC 0 CODE 0 text17 dist/default/production\fuzzy.X.production.obj
 __Htext18 0 0 ABS 0 text18 dist/default/production\fuzzy.X.production.obj
 __Ltext18 0 0 ABS 0 text18 dist/default/production\fuzzy.X.production.obj
 _Timer2Config 5F 0 COMRAM 1 bssCOMRAM dist/default/production\fuzzy.X.production.obj
-__ptext27 667C 0 CODE 0 text27 dist/default/production\fuzzy.X.production.obj
+__ptext27 667A 0 CODE 0 text27 dist/default/production\fuzzy.X.production.obj
 __Htext28 0 0 ABS 0 text28 dist/default/production\fuzzy.X.production.obj
 __Ltext28 0 0 ABS 0 text28 dist/default/production\fuzzy.X.production.obj
 __ptext18 708C 0 CODE 0 text18 dist/default/production\fuzzy.X.production.obj
@@ -1009,19 +1011,19 @@ __Htext29 0 0 ABS 0 text29 dist/default/production\fuzzy.X.production.obj
 __Ltext29 0 0 ABS 0 text29 dist/default/production\fuzzy.X.production.obj
 __ptext19 74BC 0 CODE 0 text19 dist/default/production\fuzzy.X.production.obj
 __CFG_BORV$3 0 0 ABS 0 - dist/default/production\fuzzy.X.production.obj
-___intlo_sp 0 0 STACK 2 stack C:\Users\MCC\AppData\Local\Temp\s7as.obj
+___intlo_sp 0 0 STACK 2 stack C:\Users\MCC\AppData\Local\Temp\s5q0.obj
 __ptext29 6CE8 0 CODE 0 text29 dist/default/production\fuzzy.X.production.obj
 _OSCCONbits FD3 0 ABS 0 - dist/default/production\fuzzy.X.production.obj
-__end_of_motor_forward 65F6 0 CODE 0 text1 dist/default/production\fuzzy.X.production.obj
+__end_of_motor_forward 65F4 0 CODE 0 text1 dist/default/production\fuzzy.X.production.obj
 __Hend_init 4 0 CODE 0 end_init dist/default/production\fuzzy.X.production.obj
 __Lend_init 0 0 CODE 0 end_init dist/default/production\fuzzy.X.production.obj
 __end_of_out_mf 78FC 0 CODE 0 text22 dist/default/production\fuzzy.X.production.obj
 ___ftpack@exp 4 0 COMRAM 1 cstackCOMRAM dist/default/production\fuzzy.X.production.obj
 __end_of___ftmul 6EA2 0 CODE 0 text28 dist/default/production\fuzzy.X.production.obj
-__end_of_OpenPWM1 6608 0 CODE 0 text6 dist/default/production\fuzzy.X.production.obj
-__end_of_OpenPWM2 67A0 0 CODE 0 text4 dist/default/production\fuzzy.X.production.obj
+__end_of_OpenPWM1 6606 0 CODE 0 text6 dist/default/production\fuzzy.X.production.obj
+__end_of_OpenPWM2 679E 0 CODE 0 text4 dist/default/production\fuzzy.X.production.obj
 __CFG_CP0$OFF 0 0 ABS 0 - dist/default/production\fuzzy.X.production.obj
-__smallconst 0 0 SMALLCONST 0 smallconst C:\Users\MCC\AppData\Local\Temp\s7as.obj
+__smallconst 0 0 SMALLCONST 0 smallconst C:\Users\MCC\AppData\Local\Temp\s5q0.obj
 SetDCPWM1@DCycle 5 0 COMRAM 1 cstackCOMRAM dist/default/production\fuzzy.X.production.obj
 __CFG_CP1$OFF 0 0 ABS 0 - dist/default/production\fuzzy.X.production.obj
 __size_of___wmul 0 0 ABS 0 - dist/default/production\fuzzy.X.production.obj
@@ -1034,33 +1036,33 @@ __CFG_CP2$OFF 0 0 ABS 0 - dist/default/production\fuzzy.X.production.obj
 __pcstackBANK3 300 0 BANK3 1 cstackBANK3 dist/default/production\fuzzy.X.production.obj
 __CFG_CP3$OFF 0 0 ABS 0 - dist/default/production\fuzzy.X.production.obj
 defuzzy@sum1 3E 0 COMRAM 1 cstackCOMRAM dist/default/production\fuzzy.X.production.obj
-__accesstop 60 0 ABS 0 - C:\Users\MCC\AppData\Local\Temp\s7as.obj
+__accesstop 60 0 ABS 0 - C:\Users\MCC\AppData\Local\Temp\s5q0.obj
 __size_of_qualified 0 0 ABS 0 - dist/default/production\fuzzy.X.production.obj
 __Hintcode_body 0 0 ABS 0 intcode_body dist/default/production\fuzzy.X.production.obj
 __Lintcode_body 0 0 ABS 0 intcode_body dist/default/production\fuzzy.X.production.obj
-intlevel0 0 0 CODE 0 text C:\Users\MCC\AppData\Local\Temp\s7as.obj
-intlevel1 0 0 CODE 0 text C:\Users\MCC\AppData\Local\Temp\s7as.obj
+intlevel0 0 0 CODE 0 text C:\Users\MCC\AppData\Local\Temp\s5q0.obj
+intlevel1 0 0 CODE 0 text C:\Users\MCC\AppData\Local\Temp\s5q0.obj
 __CFG_WRTB$OFF 0 0 ABS 0 - dist/default/production\fuzzy.X.production.obj
 defuzzy@out 3B 0 COMRAM 1 cstackCOMRAM dist/default/production\fuzzy.X.production.obj
-intlevel2 0 0 CODE 0 text C:\Users\MCC\AppData\Local\Temp\s7as.obj
-__end_of___awtoft 67E8 0 CODE 0 text25 dist/default/production\fuzzy.X.production.obj
+intlevel2 0 0 CODE 0 text C:\Users\MCC\AppData\Local\Temp\s5q0.obj
+__end_of___awtoft 67E6 0 CODE 0 text25 dist/default/production\fuzzy.X.production.obj
 __end_of_linspace 708C 0 CODE 0 text24 dist/default/production\fuzzy.X.production.obj
-intlevel3 0 0 CODE 0 text C:\Users\MCC\AppData\Local\Temp\s7as.obj
+intlevel3 0 0 CODE 0 text C:\Users\MCC\AppData\Local\Temp\s5q0.obj
 __CFG_WRTC$OFF 0 0 ABS 0 - dist/default/production\fuzzy.X.production.obj
 __size_of_PWM_DutyCycle1 0 0 ABS 0 - dist/default/production\fuzzy.X.production.obj
 __size_of_PWM_DutyCycle2 0 0 ABS 0 - dist/default/production\fuzzy.X.production.obj
 __CFG_WRTD$OFF 0 0 ABS 0 - dist/default/production\fuzzy.X.production.obj
 defuzzy@sum2 41 0 COMRAM 1 cstackCOMRAM dist/default/production\fuzzy.X.production.obj
-__end_of_SetDCPWM1 672C 0 CODE 0 text14 dist/default/production\fuzzy.X.production.obj
-__end_of_SetDCPWM2 6766 0 CODE 0 text10 dist/default/production\fuzzy.X.production.obj
+__end_of_SetDCPWM1 672A 0 CODE 0 text14 dist/default/production\fuzzy.X.production.obj
+__end_of_SetDCPWM2 6764 0 CODE 0 text10 dist/default/production\fuzzy.X.production.obj
 triangular@x 40 0 COMRAM 1 cstackCOMRAM dist/default/production\fuzzy.X.production.obj
 _fuzzy_system_single1 78FC 0 CODE 0 text17 dist/default/production\fuzzy.X.production.obj
 _fuzzy_system_single2 7C7E 0 CODE 0 text16 dist/default/production\fuzzy.X.production.obj
 triangular@a 37 0 COMRAM 1 cstackCOMRAM dist/default/production\fuzzy.X.production.obj
 __CFG_CPB$OFF 0 0 ABS 0 - dist/default/production\fuzzy.X.production.obj
-__end_of___wmul 66A2 0 CODE 0 text27 dist/default/production\fuzzy.X.production.obj
+__end_of___wmul 66A0 0 CODE 0 text27 dist/default/production\fuzzy.X.production.obj
 __CFG_CPD$OFF 0 0 ABS 0 - dist/default/production\fuzzy.X.production.obj
-start_initialization 66C8 0 CODE 0 cinit dist/default/production\fuzzy.X.production.obj
+start_initialization 66C6 0 CODE 0 cinit dist/default/production\fuzzy.X.production.obj
 __size_of___ftge 0 0 ABS 0 - dist/default/production\fuzzy.X.production.obj
 __CFG_IESO$OFF 0 0 ABS 0 - dist/default/production\fuzzy.X.production.obj
 triangular@b 3A 0 COMRAM 1 cstackCOMRAM dist/default/production\fuzzy.X.production.obj
@@ -1073,8 +1075,8 @@ fuzzy_system_single2@qualified_cons_mf2 478 0 BANK4 1 cstackBANK4 dist/default/p
 fuzzy_system_single1@qualified_cons_mf3 400 0 BANK4 1 cstackBANK4 dist/default/production\fuzzy.X.production.obj
 fuzzy_system_single2@qualified_cons_mf3 400 0 BANK4 1 cstackBANK4 dist/default/production\fuzzy.X.production.obj
 __size_of_mcu_init 0 0 ABS 0 - dist/default/production\fuzzy.X.production.obj
-__initialization 66C8 0 CODE 0 cinit dist/default/production\fuzzy.X.production.obj
-__end_of___ftge 694C 0 CODE 0 text23 dist/default/production\fuzzy.X.production.obj
+__initialization 66C6 0 CODE 0 cinit dist/default/production\fuzzy.X.production.obj
+__end_of___ftge 694A 0 CODE 0 text23 dist/default/production\fuzzy.X.production.obj
 __end_of_defuzzy 7310 0 CODE 0 text26 dist/default/production\fuzzy.X.production.obj
 PWM_DutyCycle1@DC 32 0 COMRAM 1 cstackCOMRAM dist/default/production\fuzzy.X.production.obj
 __CFG_LPT1OSC$OFF 0 0 ABS 0 - dist/default/production\fuzzy.X.production.obj
@@ -1139,25 +1141,25 @@ text21 0 6EA2 6EA2 E8 1
 text28 0 6DBE 6DBE E4 1
 text29 0 6CE8 6CE8 D6 1
 text13 0 6C14 6C14 D4 1
-text0 0 6B4A 6B4A CA 1
-text15 0 6A92 6A92 B8 1
-text31 0 69EA 69EA A8 1
-text2 0 694C 694C 9E 1
-text23 0 68BC 68BC 90 1
-text9 0 6852 6852 6A 1
-text11 0 67E8 67E8 6A 1
-text25 0 67A0 67A0 48 1
-text4 0 6766 6766 3A 1
-text10 0 672C 672C 3A 1
-text14 0 66F2 66F2 3A 1
-cinit 0 66C8 66C8 2A 1
-text20 0 66A2 66A2 26 1
-text27 0 667C 667C 26 1
-text12 0 6658 6658 24 1
-text3 0 663A 663A 1E 1
-text5 0 661C 661C 1E 1
-text7 0 6608 6608 14 1
-text6 0 65F6 65F6 12 1
-text1 0 65EC 65EC A 1
-text8 0 65E2 65E2 A 1
-idataBANK0 0 65E0 65E0 2 1
+text0 0 6B48 6B48 CC 1
+text15 0 6A90 6A90 B8 1
+text31 0 69E8 69E8 A8 1
+text2 0 694A 694A 9E 1
+text23 0 68BA 68BA 90 1
+text9 0 6850 6850 6A 1
+text11 0 67E6 67E6 6A 1
+text25 0 679E 679E 48 1
+text4 0 6764 6764 3A 1
+text10 0 672A 672A 3A 1
+text14 0 66F0 66F0 3A 1
+cinit 0 66C6 66C6 2A 1
+text20 0 66A0 66A0 26 1
+text27 0 667A 667A 26 1
+text12 0 6656 6656 24 1
+text3 0 6638 6638 1E 1
+text5 0 661A 661A 1E 1
+text7 0 6606 6606 14 1
+text6 0 65F4 65F4 12 1
+text1 0 65EA 65EA A 1
+text8 0 65E0 65E0 A 1
+idataBANK0 0 65DE 65DE 2 1
