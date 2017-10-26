@@ -1,0 +1,1045 @@
+Version 3.2 HI-TECH Software Intermediate Code
+[; ;fuzzy.h: 38: void linspace(double x[], double start, double end, int size) ;
+[; ;fuzzy.h: 39: double minimo(double x[]) ;
+[; ;fuzzy.h: 40: double maximo(double x[]);
+[; ;fuzzy.h: 41: double triangular(double a, double b, double c, double x);
+[; ;fuzzy.h: 42: void tri_mf(double t_value[],double x[],double a, double b, double c);
+[; ;fuzzy.h: 43: double trapezoidal(double a, double b, double c, double d, double x);
+[; ;fuzzy.h: 44: void trap_mf(double t_value[],double x[],double a, double b, double c, double d);
+[; ;fuzzy.h: 45: void qualified(double y[],double x[],double w);
+[; ;fuzzy.h: 46: void out_mf(double result[],double x[],double y[],double z[]);
+[; ;fuzzy.h: 47: double defuzzy(double x[],double mf[]);
+[; ;fuzzy.h: 48: void fuzzy_system(void);
+[; ;fuzzy.h: 49: double fuzzy_system_single(double input);
+[; ;fuzzy.h: 50: double fuzzy_system_single2(double input);
+[; ;fuzzy.h: 51: double fuzzy_system_single1(double input);
+"12 fuzzy.c
+[v _linspace `(v ~T0 @X0 1 ef4`*d`d`d`i ]
+"13
+{
+[; ;fuzzy.c: 12: void linspace(double x[], double start, double end, int size)
+[; ;fuzzy.c: 13: {
+[e :U _linspace ]
+"12
+[v _x `*d ~T0 @X0 1 r1 ]
+[v _start `d ~T0 @X0 1 r2 ]
+[v _end `d ~T0 @X0 1 r3 ]
+[v _size `i ~T0 @X0 1 r4 ]
+"13
+[f ]
+"14
+[v _i `i ~T0 @X0 1 a ]
+[; ;fuzzy.c: 14: int i;
+[; ;fuzzy.c: 15: for (i=0; i<size; i++)
+"15
+{
+[e = _i -> 0 `i ]
+[e $U 5  ]
+"16
+[e :U 2 ]
+[; ;fuzzy.c: 16: x[i] = ( i*end + (size-1-i)*start ) / (size-1);
+[e = *U + _x * -> _i `x -> -> # *U _x `i `x / + * -> _i `d _end * -> - - _size -> 1 `i _i `d _start -> - _size -> 1 `i `d ]
+"15
+[e ++ _i -> 1 `i ]
+[e :U 5 ]
+[e $ < _i _size 2  ]
+[e :U 3 ]
+"16
+}
+[; ;fuzzy.c: 17: return;
+"17
+[e $UE 1  ]
+[; ;fuzzy.c: 18: }
+"18
+[e :UE 1 ]
+}
+"22
+[v _minimo `(d ~T0 @X0 1 ef1`*d ]
+"23
+{
+[; ;fuzzy.c: 22: double minimo(double x[])
+[; ;fuzzy.c: 23: {
+[e :U _minimo ]
+"22
+[v _x `*d ~T0 @X0 1 r1 ]
+"23
+[f ]
+"24
+[v _i `i ~T0 @X0 1 a ]
+"25
+[v _min `d ~T0 @X0 1 a ]
+[; ;fuzzy.c: 24: int i;
+[; ;fuzzy.c: 25: double min;
+[; ;fuzzy.c: 27: min = x[0];
+"27
+[e = _min *U + _x * -> -> 0 `i `x -> -> # *U _x `i `x ]
+[; ;fuzzy.c: 28: for (i = 1; i < 40; i++)
+"28
+{
+[e = _i -> 1 `i ]
+[e $ < _i -> 40 `i 7  ]
+[e $U 8  ]
+"29
+[e :U 7 ]
+[; ;fuzzy.c: 29: if (x[i] < min)
+[e $ ! < *U + _x * -> _i `x -> -> # *U _x `i `x _min 10  ]
+[; ;fuzzy.c: 30: min = x[i];
+"30
+[e = _min *U + _x * -> _i `x -> -> # *U _x `i `x ]
+[e :U 10 ]
+"28
+[e ++ _i -> 1 `i ]
+[e $ < _i -> 40 `i 7  ]
+[e :U 8 ]
+"31
+}
+[; ;fuzzy.c: 31: return (min);
+[e ) _min ]
+[e $UE 6  ]
+[; ;fuzzy.c: 32: }
+"32
+[e :UE 6 ]
+}
+"34
+[v _maximo `(d ~T0 @X0 1 ef1`*d ]
+"35
+{
+[; ;fuzzy.c: 34: double maximo(double x[])
+[; ;fuzzy.c: 35: {
+[e :U _maximo ]
+"34
+[v _x `*d ~T0 @X0 1 r1 ]
+"35
+[f ]
+"36
+[v _i `i ~T0 @X0 1 a ]
+"37
+[v _max `d ~T0 @X0 1 a ]
+[; ;fuzzy.c: 36: int i;
+[; ;fuzzy.c: 37: double max;
+[; ;fuzzy.c: 38: max = x[0];
+"38
+[e = _max *U + _x * -> -> 0 `i `x -> -> # *U _x `i `x ]
+[; ;fuzzy.c: 39: for (i = 1; i < 40; i++)
+"39
+{
+[e = _i -> 1 `i ]
+[e $ < _i -> 40 `i 12  ]
+[e $U 13  ]
+"40
+[e :U 12 ]
+[; ;fuzzy.c: 40: if (x[i] > max)
+[e $ ! > *U + _x * -> _i `x -> -> # *U _x `i `x _max 15  ]
+[; ;fuzzy.c: 41: max = x[i];
+"41
+[e = _max *U + _x * -> _i `x -> -> # *U _x `i `x ]
+[e :U 15 ]
+"39
+[e ++ _i -> 1 `i ]
+[e $ < _i -> 40 `i 12  ]
+[e :U 13 ]
+"42
+}
+[; ;fuzzy.c: 42: return (max);
+[e ) _max ]
+[e $UE 11  ]
+[; ;fuzzy.c: 43: }
+"43
+[e :UE 11 ]
+}
+"46
+[v _triangular `(d ~T0 @X0 1 ef4`d`d`d`d ]
+"47
+{
+[; ;fuzzy.c: 46: double triangular(double a, double b, double c, double x)
+[; ;fuzzy.c: 47: {
+[e :U _triangular ]
+"46
+[v _a `d ~T0 @X0 1 r1 ]
+[v _b `d ~T0 @X0 1 r2 ]
+[v _c `d ~T0 @X0 1 r3 ]
+[v _x `d ~T0 @X0 1 r4 ]
+"47
+[f ]
+"48
+[v _ux `d ~T0 @X0 1 a ]
+[; ;fuzzy.c: 48: double ux=0;
+[e = _ux -> -> 0 `i `d ]
+[; ;fuzzy.c: 49: if(x<=a){
+"49
+[e $ ! <= _x _a 17  ]
+{
+[; ;fuzzy.c: 50: ux=0;
+"50
+[e = _ux -> -> 0 `i `d ]
+"51
+}
+[e :U 17 ]
+[; ;fuzzy.c: 51: }
+[; ;fuzzy.c: 52: if(x>a && x<b){
+"52
+[e $ ! && > _x _a < _x _b 18  ]
+{
+[; ;fuzzy.c: 53: ux=(x-a)/(b-a);
+"53
+[e = _ux / - _x _a - _b _a ]
+"54
+}
+[e :U 18 ]
+[; ;fuzzy.c: 54: }
+[; ;fuzzy.c: 55: if(x==b){
+"55
+[e $ ! == _x _b 19  ]
+{
+[; ;fuzzy.c: 56: ux=1;
+"56
+[e = _ux -> -> 1 `i `d ]
+"57
+}
+[e :U 19 ]
+[; ;fuzzy.c: 57: }
+[; ;fuzzy.c: 58: if(x>b && x<c){
+"58
+[e $ ! && > _x _b < _x _c 20  ]
+{
+[; ;fuzzy.c: 59: ux = (c-x)/(c-b);
+"59
+[e = _ux / - _c _x - _c _b ]
+"60
+}
+[e :U 20 ]
+[; ;fuzzy.c: 60: }
+[; ;fuzzy.c: 61: return ux;
+"61
+[e ) _ux ]
+[e $UE 16  ]
+[; ;fuzzy.c: 62: }
+"62
+[e :UE 16 ]
+}
+"64
+[v _tri_mf `(v ~T0 @X0 1 ef5`*d`*d`d`d`d ]
+"65
+{
+[; ;fuzzy.c: 64: void tri_mf(double t_value[],double x[],double a, double b, double c)
+[; ;fuzzy.c: 65: {
+[e :U _tri_mf ]
+"64
+[v _t_value `*d ~T0 @X0 1 r1 ]
+[v _x `*d ~T0 @X0 1 r2 ]
+[v _a `d ~T0 @X0 1 r3 ]
+[v _b `d ~T0 @X0 1 r4 ]
+[v _c `d ~T0 @X0 1 r5 ]
+"65
+[f ]
+"66
+[v _i `i ~T0 @X0 1 a ]
+"67
+[v _temp `d ~T0 @X0 -> 40 `i a ]
+[; ;fuzzy.c: 66: int i;
+[; ;fuzzy.c: 67: double temp[40];
+[; ;fuzzy.c: 68: for(i=0; i<40; i++)
+"68
+{
+[e = _i -> 0 `i ]
+[e $ < _i -> 40 `i 22  ]
+[e $U 23  ]
+"69
+[e :U 22 ]
+[; ;fuzzy.c: 69: temp[i]= x[i];
+[e = *U + &U _temp * -> -> _i `ui `ux -> -> # *U &U _temp `ui `ux *U + _x * -> _i `x -> -> # *U _x `i `x ]
+"68
+[e ++ _i -> 1 `i ]
+[e $ < _i -> 40 `i 22  ]
+[e :U 23 ]
+"69
+}
+[; ;fuzzy.c: 70: for(i=0; i<40; i++)
+"70
+{
+[e = _i -> 0 `i ]
+[e $ < _i -> 40 `i 25  ]
+[e $U 26  ]
+"71
+[e :U 25 ]
+[; ;fuzzy.c: 71: t_value[i]= triangular(a,b,c,x[i]);
+[e = *U + _t_value * -> _i `x -> -> # *U _t_value `i `x ( _triangular (4 , , , _a _b _c *U + _x * -> _i `x -> -> # *U _x `i `x ]
+"70
+[e ++ _i -> 1 `i ]
+[e $ < _i -> 40 `i 25  ]
+[e :U 26 ]
+"71
+}
+[; ;fuzzy.c: 73: }
+"73
+[e :UE 21 ]
+}
+"74
+[v _trapezoidal `(d ~T0 @X0 1 ef5`d`d`d`d`d ]
+"75
+{
+[; ;fuzzy.c: 74: double trapezoidal(double a, double b, double c, double d, double x)
+[; ;fuzzy.c: 75: {
+[e :U _trapezoidal ]
+"74
+[v _a `d ~T0 @X0 1 r1 ]
+[v _b `d ~T0 @X0 1 r2 ]
+[v _c `d ~T0 @X0 1 r3 ]
+[v _d `d ~T0 @X0 1 r4 ]
+[v _x `d ~T0 @X0 1 r5 ]
+"75
+[f ]
+"76
+[v _ux `d ~T0 @X0 1 a ]
+[; ;fuzzy.c: 76: double ux=0;
+[e = _ux -> -> 0 `i `d ]
+[; ;fuzzy.c: 77: if(x<=a){
+"77
+[e $ ! <= _x _a 29  ]
+{
+[; ;fuzzy.c: 78: ux=0;
+"78
+[e = _ux -> -> 0 `i `d ]
+"79
+}
+[e :U 29 ]
+[; ;fuzzy.c: 79: }
+[; ;fuzzy.c: 80: if(x>a && x<b){
+"80
+[e $ ! && > _x _a < _x _b 30  ]
+{
+[; ;fuzzy.c: 81: ux=(x-a)/(b-a);
+"81
+[e = _ux / - _x _a - _b _a ]
+"82
+}
+[e :U 30 ]
+[; ;fuzzy.c: 82: }
+[; ;fuzzy.c: 83: if(x>=b && x<=c){
+"83
+[e $ ! && >= _x _b <= _x _c 31  ]
+{
+[; ;fuzzy.c: 84: ux=1;
+"84
+[e = _ux -> -> 1 `i `d ]
+"85
+}
+[e :U 31 ]
+[; ;fuzzy.c: 85: }
+[; ;fuzzy.c: 86: if(x>c && x<d){
+"86
+[e $ ! && > _x _c < _x _d 32  ]
+{
+[; ;fuzzy.c: 87: ux = (d-x)/(d-c);
+"87
+[e = _ux / - _d _x - _d _c ]
+"88
+}
+[e :U 32 ]
+[; ;fuzzy.c: 88: }
+[; ;fuzzy.c: 89: if(x>d){
+"89
+[e $ ! > _x _d 33  ]
+{
+[; ;fuzzy.c: 90: ux=0;
+"90
+[e = _ux -> -> 0 `i `d ]
+"91
+}
+[e :U 33 ]
+[; ;fuzzy.c: 91: }
+[; ;fuzzy.c: 92: return ux;
+"92
+[e ) _ux ]
+[e $UE 28  ]
+[; ;fuzzy.c: 93: }
+"93
+[e :UE 28 ]
+}
+"97
+[v _trap_mf `(v ~T0 @X0 1 ef6`*d`*d`d`d`d`d ]
+"98
+{
+[; ;fuzzy.c: 97: void trap_mf(double t_value[],double x[],double a, double b, double c, double d)
+[; ;fuzzy.c: 98: {
+[e :U _trap_mf ]
+"97
+[v _t_value `*d ~T0 @X0 1 r1 ]
+[v _x `*d ~T0 @X0 1 r2 ]
+[v _a `d ~T0 @X0 1 r3 ]
+[v _b `d ~T0 @X0 1 r4 ]
+[v _c `d ~T0 @X0 1 r5 ]
+[v _d `d ~T0 @X0 1 r6 ]
+"98
+[f ]
+"99
+[v _i `i ~T0 @X0 1 a ]
+"100
+[v _temp `d ~T0 @X0 -> 40 `i a ]
+[; ;fuzzy.c: 99: int i;
+[; ;fuzzy.c: 100: double temp[40];
+[; ;fuzzy.c: 101: for(i=0; i<40; i++)
+"101
+{
+[e = _i -> 0 `i ]
+[e $ < _i -> 40 `i 35  ]
+[e $U 36  ]
+"102
+[e :U 35 ]
+[; ;fuzzy.c: 102: temp[i]= x[i];
+[e = *U + &U _temp * -> -> _i `ui `ux -> -> # *U &U _temp `ui `ux *U + _x * -> _i `x -> -> # *U _x `i `x ]
+"101
+[e ++ _i -> 1 `i ]
+[e $ < _i -> 40 `i 35  ]
+[e :U 36 ]
+"102
+}
+[; ;fuzzy.c: 103: for(i=0; i<40; i++)
+"103
+{
+[e = _i -> 0 `i ]
+[e $ < _i -> 40 `i 38  ]
+[e $U 39  ]
+"104
+[e :U 38 ]
+[; ;fuzzy.c: 104: t_value[i]= trapezoidal(a,b,c,d,x[i]);
+[e = *U + _t_value * -> _i `x -> -> # *U _t_value `i `x ( _trapezoidal (4 , , , , _a _b _c _d *U + _x * -> _i `x -> -> # *U _x `i `x ]
+"103
+[e ++ _i -> 1 `i ]
+[e $ < _i -> 40 `i 38  ]
+[e :U 39 ]
+"104
+}
+[; ;fuzzy.c: 106: }
+"106
+[e :UE 34 ]
+}
+"108
+[v _qualified `(v ~T0 @X0 1 ef3`*d`*d`d ]
+"109
+{
+[; ;fuzzy.c: 108: void qualified(double y[],double x[], double w)
+[; ;fuzzy.c: 109: {
+[e :U _qualified ]
+"108
+[v _y `*d ~T0 @X0 1 r1 ]
+[v _x `*d ~T0 @X0 1 r2 ]
+[v _w `d ~T0 @X0 1 r3 ]
+"109
+[f ]
+"110
+[v _min `d ~T0 @X0 1 a ]
+"111
+[v _i `i ~T0 @X0 1 a ]
+[; ;fuzzy.c: 110: double min;
+[; ;fuzzy.c: 111: int i;
+[; ;fuzzy.c: 112: min=w;
+"112
+[e = _min _w ]
+[; ;fuzzy.c: 113: for(i=0;i<40;i++){
+"113
+{
+[e = _i -> 0 `i ]
+[e $ < _i -> 40 `i 42  ]
+[e $U 43  ]
+[e :U 42 ]
+{
+[; ;fuzzy.c: 114: if (x[i] < w)
+"114
+[e $ ! < *U + _x * -> _i `x -> -> # *U _x `i `x _w 45  ]
+[; ;fuzzy.c: 115: y[i] = x[i];
+"115
+[e = *U + _y * -> _i `x -> -> # *U _y `i `x *U + _x * -> _i `x -> -> # *U _x `i `x ]
+[e $U 46  ]
+"116
+[e :U 45 ]
+[; ;fuzzy.c: 116: else
+[; ;fuzzy.c: 117: y[i] = w;
+"117
+[e = *U + _y * -> _i `x -> -> # *U _y `i `x _w ]
+[e :U 46 ]
+"118
+}
+"113
+[e ++ _i -> 1 `i ]
+[e $ < _i -> 40 `i 42  ]
+[e :U 43 ]
+"118
+}
+[; ;fuzzy.c: 118: }
+[; ;fuzzy.c: 120: return;
+"120
+[e $UE 41  ]
+[; ;fuzzy.c: 121: }
+"121
+[e :UE 41 ]
+}
+"123
+[v _out_mf `(v ~T0 @X0 1 ef4`*d`*d`*d`*d ]
+"124
+{
+[; ;fuzzy.c: 123: void out_mf(double result[],double x[],double y[],double z[])
+[; ;fuzzy.c: 124: {
+[e :U _out_mf ]
+"123
+[v _result `*d ~T0 @X0 1 r1 ]
+[v _x `*d ~T0 @X0 1 r2 ]
+[v _y `*d ~T0 @X0 1 r3 ]
+[v _z `*d ~T0 @X0 1 r4 ]
+"124
+[f ]
+"125
+[v _i `i ~T0 @X0 1 a ]
+[; ;fuzzy.c: 125: int i;
+[; ;fuzzy.c: 126: for(i=0; i<40;i++){
+"126
+{
+[e = _i -> 0 `i ]
+[e $ < _i -> 40 `i 48  ]
+[e $U 49  ]
+[e :U 48 ]
+{
+[; ;fuzzy.c: 127: if(x[i] > y[i] && x[i] > z[i])
+"127
+[e $ ! && > *U + _x * -> _i `x -> -> # *U _x `i `x *U + _y * -> _i `x -> -> # *U _y `i `x > *U + _x * -> _i `x -> -> # *U _x `i `x *U + _z * -> _i `x -> -> # *U _z `i `x 51  ]
+[; ;fuzzy.c: 128: {
+"128
+{
+[; ;fuzzy.c: 130: result[i]=x[i];
+"130
+[e = *U + _result * -> _i `x -> -> # *U _result `i `x *U + _x * -> _i `x -> -> # *U _x `i `x ]
+"131
+}
+[; ;fuzzy.c: 131: }
+[e $U 52  ]
+"132
+[e :U 51 ]
+[; ;fuzzy.c: 132: else
+[; ;fuzzy.c: 133: {
+"133
+{
+[; ;fuzzy.c: 134: if( y[i] > x[i] && y[i] > z[i]){
+"134
+[e $ ! && > *U + _y * -> _i `x -> -> # *U _y `i `x *U + _x * -> _i `x -> -> # *U _x `i `x > *U + _y * -> _i `x -> -> # *U _y `i `x *U + _z * -> _i `x -> -> # *U _z `i `x 53  ]
+{
+[; ;fuzzy.c: 136: result[i]=y[i];
+"136
+[e = *U + _result * -> _i `x -> -> # *U _result `i `x *U + _y * -> _i `x -> -> # *U _y `i `x ]
+"137
+}
+[; ;fuzzy.c: 137: }
+[e $U 54  ]
+"138
+[e :U 53 ]
+[; ;fuzzy.c: 138: else
+[; ;fuzzy.c: 139: {
+"139
+{
+[; ;fuzzy.c: 141: result[i]=z[i];
+"141
+[e = *U + _result * -> _i `x -> -> # *U _result `i `x *U + _z * -> _i `x -> -> # *U _z `i `x ]
+"142
+}
+[e :U 54 ]
+"143
+}
+[e :U 52 ]
+"144
+}
+"126
+[e ++ _i -> 1 `i ]
+[e $ < _i -> 40 `i 48  ]
+[e :U 49 ]
+"144
+}
+[; ;fuzzy.c: 142: }
+[; ;fuzzy.c: 143: }
+[; ;fuzzy.c: 144: }
+[; ;fuzzy.c: 145: }
+"145
+[e :UE 47 ]
+}
+"147
+[v _defuzzy `(d ~T0 @X0 1 ef2`*d`*d ]
+"148
+{
+[; ;fuzzy.c: 147: double defuzzy(double x[],double mf[])
+[; ;fuzzy.c: 148: {
+[e :U _defuzzy ]
+"147
+[v _x `*d ~T0 @X0 1 r1 ]
+[v _mf `*d ~T0 @X0 1 r2 ]
+"148
+[f ]
+"149
+[v _sum1 `d ~T0 @X0 1 a ]
+[; ;fuzzy.c: 149: double sum1=0, sum2=0,out=0;
+[e = _sum1 -> -> 0 `i `d ]
+[v _sum2 `d ~T0 @X0 1 a ]
+[e = _sum2 -> -> 0 `i `d ]
+[v _out `d ~T0 @X0 1 a ]
+[e = _out -> -> 0 `i `d ]
+"150
+[v _i `i ~T0 @X0 1 a ]
+[; ;fuzzy.c: 150: int i;
+[; ;fuzzy.c: 151: for(i=0;i<40; i++)
+"151
+{
+[e = _i -> 0 `i ]
+[e $ < _i -> 40 `i 56  ]
+[e $U 57  ]
+"152
+[e :U 56 ]
+[; ;fuzzy.c: 152: sum1+=x[i]*mf[i];
+[e =+ _sum1 * *U + _x * -> _i `x -> -> # *U _x `i `x *U + _mf * -> _i `x -> -> # *U _mf `i `x ]
+"151
+[e ++ _i -> 1 `i ]
+[e $ < _i -> 40 `i 56  ]
+[e :U 57 ]
+"152
+}
+[; ;fuzzy.c: 153: for(i=0;i<40; i++)
+"153
+{
+[e = _i -> 0 `i ]
+[e $ < _i -> 40 `i 59  ]
+[e $U 60  ]
+"154
+[e :U 59 ]
+[; ;fuzzy.c: 154: sum2+=mf[i];
+[e =+ _sum2 *U + _mf * -> _i `x -> -> # *U _mf `i `x ]
+"153
+[e ++ _i -> 1 `i ]
+[e $ < _i -> 40 `i 59  ]
+[e :U 60 ]
+"154
+}
+[; ;fuzzy.c: 155: out=sum1/sum2;
+"155
+[e = _out / _sum1 _sum2 ]
+[; ;fuzzy.c: 156: return out;
+"156
+[e ) _out ]
+[e $UE 55  ]
+[; ;fuzzy.c: 157: }
+"157
+[e :UE 55 ]
+}
+"159
+[v _fuzzy_system `(v ~T0 @X0 1 ef ]
+"160
+{
+[; ;fuzzy.c: 159: void fuzzy_system(void)
+[; ;fuzzy.c: 160: {
+[e :U _fuzzy_system ]
+[f ]
+"161
+[v _ante_mf1 `d ~T0 @X0 -> 40 `i a ]
+[v _cons_mf1 `d ~T0 @X0 -> 40 `i a ]
+"162
+[v _ante_mf2 `d ~T0 @X0 -> 40 `i a ]
+[v _cons_mf2 `d ~T0 @X0 -> 40 `i a ]
+"163
+[v _ante_mf3 `d ~T0 @X0 -> 40 `i a ]
+[v _cons_mf3 `d ~T0 @X0 -> 40 `i a ]
+"164
+[v _x `d ~T0 @X0 -> 40 `i a ]
+[v _y `d ~T0 @X0 -> 40 `i a ]
+"165
+[v _qualified_cons_mf1 `d ~T0 @X0 -> 40 `i a ]
+[v _qualified_cons_mf2 `d ~T0 @X0 -> 40 `i a ]
+[v _qualified_cons_mf3 `d ~T0 @X0 -> 40 `i a ]
+"166
+[v _overall_out_mf `d ~T0 @X0 -> 40 `i a ]
+"167
+[v _w1 `d ~T0 @X0 1 a ]
+[v _w2 `d ~T0 @X0 1 a ]
+[v _w3 `d ~T0 @X0 1 a ]
+"168
+[v _output `d ~T0 @X0 -> 40 `i a ]
+"169
+[v _i `i ~T0 @X0 1 a ]
+[; ;fuzzy.c: 161: double ante_mf1[40],cons_mf1[40];
+[; ;fuzzy.c: 162: double ante_mf2[40],cons_mf2[40];
+[; ;fuzzy.c: 163: double ante_mf3[40],cons_mf3[40];
+[; ;fuzzy.c: 164: double x[40],y[40];
+[; ;fuzzy.c: 165: double qualified_cons_mf1[40],qualified_cons_mf2[40],qualified_cons_mf3[40];
+[; ;fuzzy.c: 166: double overall_out_mf[40];
+[; ;fuzzy.c: 167: double w1,w2,w3;
+[; ;fuzzy.c: 168: double output[40];
+[; ;fuzzy.c: 169: int i;
+[; ;fuzzy.c: 170: linspace(x,-10,10,40);
+"170
+[e ( _linspace (4 , , , &U _x -> -U -> 10 `i `d -> -> 10 `i `d -> 40 `i ]
+[; ;fuzzy.c: 171: linspace(y,0,10,40);
+"171
+[e ( _linspace (4 , , , &U _y -> -> 0 `i `d -> -> 10 `i `d -> 40 `i ]
+[; ;fuzzy.c: 174: trap_mf(ante_mf1,x,-20,-15,-6,-3);
+"174
+[e ( _trap_mf (4 , , , , , &U _ante_mf1 &U _x -> -U -> 20 `i `d -> -U -> 15 `i `d -> -U -> 6 `i `d -> -U -> 3 `i `d ]
+[; ;fuzzy.c: 175: trap_mf(ante_mf2,x,-6,-3,3,6);
+"175
+[e ( _trap_mf (4 , , , , , &U _ante_mf2 &U _x -> -U -> 6 `i `d -> -U -> 3 `i `d -> -> 3 `i `d -> -> 6 `i `d ]
+[; ;fuzzy.c: 176: trap_mf(ante_mf3,x,3,6,15,20);
+"176
+[e ( _trap_mf (4 , , , , , &U _ante_mf3 &U _x -> -> 3 `i `d -> -> 6 `i `d -> -> 15 `i `d -> -> 20 `i `d ]
+[; ;fuzzy.c: 179: trap_mf(cons_mf1,y,-2.46,-1.46,1.46,2.46);
+"179
+[e ( _trap_mf (4 , , , , , &U _cons_mf1 &U _y -U .2.46 -U .1.46 .1.46 .2.46 ]
+[; ;fuzzy.c: 180: trap_mf(cons_mf2,y,1.46,2.46,5,7);
+"180
+[e ( _trap_mf (4 , , , , , &U _cons_mf2 &U _y .1.46 .2.46 -> -> 5 `i `d -> -> 7 `i `d ]
+[; ;fuzzy.c: 181: trap_mf(cons_mf3,y,5,7,13,15);
+"181
+[e ( _trap_mf (4 , , , , , &U _cons_mf3 &U _y -> -> 5 `i `d -> -> 7 `i `d -> -> 13 `i `d -> -> 15 `i `d ]
+[; ;fuzzy.c: 184: for(i=0;i<40;i++){
+"184
+{
+[e = _i -> 0 `i ]
+[e $ < _i -> 40 `i 63  ]
+[e $U 64  ]
+[e :U 63 ]
+{
+[; ;fuzzy.c: 185: w1=trapezoidal(-20,-15,-6,-3,x[i]);
+"185
+[e = _w1 ( _trapezoidal (4 , , , , -> -U -> 20 `i `d -> -U -> 15 `i `d -> -U -> 6 `i `d -> -U -> 3 `i `d *U + &U _x * -> -> _i `ui `ux -> -> # *U &U _x `ui `ux ]
+[; ;fuzzy.c: 186: w2=trapezoidal(-6,-3,3,6,x[i]);
+"186
+[e = _w2 ( _trapezoidal (4 , , , , -> -U -> 6 `i `d -> -U -> 3 `i `d -> -> 3 `i `d -> -> 6 `i `d *U + &U _x * -> -> _i `ui `ux -> -> # *U &U _x `ui `ux ]
+[; ;fuzzy.c: 187: w3=trapezoidal(3,6,15,20,x[i]);
+"187
+[e = _w3 ( _trapezoidal (4 , , , , -> -> 3 `i `d -> -> 6 `i `d -> -> 15 `i `d -> -> 20 `i `d *U + &U _x * -> -> _i `ui `ux -> -> # *U &U _x `ui `ux ]
+[; ;fuzzy.c: 188: qualified(qualified_cons_mf1,cons_mf1,w1);
+"188
+[e ( _qualified (3 , , &U _qualified_cons_mf1 &U _cons_mf1 _w1 ]
+[; ;fuzzy.c: 189: qualified(qualified_cons_mf2,cons_mf2,w2);
+"189
+[e ( _qualified (3 , , &U _qualified_cons_mf2 &U _cons_mf2 _w2 ]
+[; ;fuzzy.c: 190: qualified(qualified_cons_mf3,cons_mf3,w3);
+"190
+[e ( _qualified (3 , , &U _qualified_cons_mf3 &U _cons_mf3 _w3 ]
+[; ;fuzzy.c: 191: out_mf(overall_out_mf,qualified_cons_mf1,qualified_cons_mf2,qualified_cons_mf3);
+"191
+[e ( _out_mf (4 , , , &U _overall_out_mf &U _qualified_cons_mf1 &U _qualified_cons_mf2 &U _qualified_cons_mf3 ]
+[; ;fuzzy.c: 192: output[i]= defuzzy(y,overall_out_mf);
+"192
+[e = *U + &U _output * -> -> _i `ui `ux -> -> # *U &U _output `ui `ux ( _defuzzy (2 , &U _y &U _overall_out_mf ]
+"193
+}
+"184
+[e ++ _i -> 1 `i ]
+[e $ < _i -> 40 `i 63  ]
+[e :U 64 ]
+"193
+}
+[; ;fuzzy.c: 193: }
+[; ;fuzzy.c: 194: }
+"194
+[e :UE 62 ]
+}
+"196
+[v _fuzzy_system_single `(d ~T0 @X0 1 ef1`d ]
+"197
+{
+[; ;fuzzy.c: 196: double fuzzy_system_single(double input)
+[; ;fuzzy.c: 197: {
+[e :U _fuzzy_system_single ]
+"196
+[v _input `d ~T0 @X0 1 r1 ]
+"197
+[f ]
+"198
+[v _ante_mf1 `d ~T0 @X0 -> 40 `i a ]
+[v _cons_mf1 `d ~T0 @X0 -> 40 `i a ]
+"199
+[v _ante_mf2 `d ~T0 @X0 -> 40 `i a ]
+[v _cons_mf2 `d ~T0 @X0 -> 40 `i a ]
+"200
+[v _ante_mf3 `d ~T0 @X0 -> 40 `i a ]
+[v _cons_mf3 `d ~T0 @X0 -> 40 `i a ]
+"201
+[v _x `d ~T0 @X0 -> 40 `i a ]
+[v _y `d ~T0 @X0 -> 40 `i a ]
+"202
+[v _qualified_cons_mf1 `d ~T0 @X0 -> 40 `i a ]
+[v _qualified_cons_mf2 `d ~T0 @X0 -> 40 `i a ]
+[v _qualified_cons_mf3 `d ~T0 @X0 -> 40 `i a ]
+"203
+[v _overall_out_mf `d ~T0 @X0 -> 40 `i a ]
+"204
+[v _w1 `d ~T0 @X0 1 a ]
+[v _w2 `d ~T0 @X0 1 a ]
+[v _w3 `d ~T0 @X0 1 a ]
+"205
+[v _output `d ~T0 @X0 1 a ]
+"206
+[v _i `i ~T0 @X0 1 a ]
+[; ;fuzzy.c: 198: double ante_mf1[40],cons_mf1[40];
+[; ;fuzzy.c: 199: double ante_mf2[40],cons_mf2[40];
+[; ;fuzzy.c: 200: double ante_mf3[40],cons_mf3[40];
+[; ;fuzzy.c: 201: double x[40],y[40];
+[; ;fuzzy.c: 202: double qualified_cons_mf1[40],qualified_cons_mf2[40],qualified_cons_mf3[40];
+[; ;fuzzy.c: 203: double overall_out_mf[40];
+[; ;fuzzy.c: 204: double w1,w2,w3;
+[; ;fuzzy.c: 205: double output;
+[; ;fuzzy.c: 206: int i;
+[; ;fuzzy.c: 207: linspace(x,0,100,40);
+"207
+[e ( _linspace (4 , , , &U _x -> -> 0 `i `d -> -> 100 `i `d -> 40 `i ]
+[; ;fuzzy.c: 208: linspace(y,0,100,40);
+"208
+[e ( _linspace (4 , , , &U _y -> -> 0 `i `d -> -> 100 `i `d -> 40 `i ]
+[; ;fuzzy.c: 211: trap_mf(ante_mf1,x,-36,-4,14.68,36);
+"211
+[e ( _trap_mf (4 , , , , , &U _ante_mf1 &U _x -> -U -> 36 `i `d -> -U -> 4 `i `d .14.68 -> -> 36 `i `d ]
+[; ;fuzzy.c: 212: trap_mf(ante_mf2,x,15.6,33.47,60.7,87.6);
+"212
+[e ( _trap_mf (4 , , , , , &U _ante_mf2 &U _x .15.6 .33.47 .60.7 .87.6 ]
+[; ;fuzzy.c: 213: trap_mf(ante_mf3,x,64,79.76,104,136);
+"213
+[e ( _trap_mf (4 , , , , , &U _ante_mf3 &U _x -> -> 64 `i `d .79.76 -> -> 104 `i `d -> -> 136 `i `d ]
+[; ;fuzzy.c: 216: trap_mf(cons_mf1,y,-36,-4,17.59,36);
+"216
+[e ( _trap_mf (4 , , , , , &U _cons_mf1 &U _y -> -U -> 36 `i `d -> -U -> 4 `i `d .17.59 -> -> 36 `i `d ]
+[; ;fuzzy.c: 217: trap_mf(cons_mf2,y,14,46,54,86);
+"217
+[e ( _trap_mf (4 , , , , , &U _cons_mf2 &U _y -> -> 14 `i `d -> -> 46 `i `d -> -> 54 `i `d -> -> 86 `i `d ]
+[; ;fuzzy.c: 218: trap_mf(cons_mf3,y,64,85.32,104,136);
+"218
+[e ( _trap_mf (4 , , , , , &U _cons_mf3 &U _y -> -> 64 `i `d .85.32 -> -> 104 `i `d -> -> 136 `i `d ]
+[; ;fuzzy.c: 222: w1=trapezoidal(-36,-4,14.68,36,input);
+"222
+[e = _w1 ( _trapezoidal (4 , , , , -> -U -> 36 `i `d -> -U -> 4 `i `d .14.68 -> -> 36 `i `d _input ]
+[; ;fuzzy.c: 223: w2=trapezoidal(15.6,33.47,60.7,87.6,input);
+"223
+[e = _w2 ( _trapezoidal (4 , , , , .15.6 .33.47 .60.7 .87.6 _input ]
+[; ;fuzzy.c: 224: w3=trapezoidal(64,79.76,104,136,input);
+"224
+[e = _w3 ( _trapezoidal (4 , , , , -> -> 64 `i `d .79.76 -> -> 104 `i `d -> -> 136 `i `d _input ]
+[; ;fuzzy.c: 225: qualified(qualified_cons_mf1,cons_mf1,w1);
+"225
+[e ( _qualified (3 , , &U _qualified_cons_mf1 &U _cons_mf1 _w1 ]
+[; ;fuzzy.c: 226: qualified(qualified_cons_mf2,cons_mf2,w2);
+"226
+[e ( _qualified (3 , , &U _qualified_cons_mf2 &U _cons_mf2 _w2 ]
+[; ;fuzzy.c: 227: qualified(qualified_cons_mf3,cons_mf3,w3);
+"227
+[e ( _qualified (3 , , &U _qualified_cons_mf3 &U _cons_mf3 _w3 ]
+[; ;fuzzy.c: 228: out_mf(overall_out_mf,qualified_cons_mf1,qualified_cons_mf2,qualified_cons_mf3);
+"228
+[e ( _out_mf (4 , , , &U _overall_out_mf &U _qualified_cons_mf1 &U _qualified_cons_mf2 &U _qualified_cons_mf3 ]
+[; ;fuzzy.c: 229: output= defuzzy(y,overall_out_mf);
+"229
+[e = _output ( _defuzzy (2 , &U _y &U _overall_out_mf ]
+[; ;fuzzy.c: 230: return output;
+"230
+[e ) _output ]
+[e $UE 66  ]
+[; ;fuzzy.c: 232: }
+"232
+[e :UE 66 ]
+}
+"234
+[v _fuzzy_system_single2 `(d ~T0 @X0 1 ef1`d ]
+"235
+{
+[; ;fuzzy.c: 234: double fuzzy_system_single2(double input)
+[; ;fuzzy.c: 235: {
+[e :U _fuzzy_system_single2 ]
+"234
+[v _input `d ~T0 @X0 1 r1 ]
+"235
+[f ]
+"236
+[v _ante_mf1 `d ~T0 @X0 -> 40 `i a ]
+[v _cons_mf1 `d ~T0 @X0 -> 40 `i a ]
+"237
+[v _ante_mf2 `d ~T0 @X0 -> 40 `i a ]
+[v _cons_mf2 `d ~T0 @X0 -> 40 `i a ]
+"238
+[v _ante_mf3 `d ~T0 @X0 -> 40 `i a ]
+[v _cons_mf3 `d ~T0 @X0 -> 40 `i a ]
+"239
+[v _x `d ~T0 @X0 -> 40 `i a ]
+[v _y `d ~T0 @X0 -> 40 `i a ]
+"240
+[v _qualified_cons_mf1 `d ~T0 @X0 -> 40 `i a ]
+[v _qualified_cons_mf2 `d ~T0 @X0 -> 40 `i a ]
+[v _qualified_cons_mf3 `d ~T0 @X0 -> 40 `i a ]
+"241
+[v _overall_out_mf `d ~T0 @X0 -> 40 `i a ]
+"242
+[v _w1 `d ~T0 @X0 1 a ]
+[v _w2 `d ~T0 @X0 1 a ]
+[v _w3 `d ~T0 @X0 1 a ]
+"243
+[v _output `d ~T0 @X0 1 a ]
+"244
+[v _i `i ~T0 @X0 1 a ]
+[; ;fuzzy.c: 236: double ante_mf1[40],cons_mf1[40];
+[; ;fuzzy.c: 237: double ante_mf2[40],cons_mf2[40];
+[; ;fuzzy.c: 238: double ante_mf3[40],cons_mf3[40];
+[; ;fuzzy.c: 239: double x[40],y[40];
+[; ;fuzzy.c: 240: double qualified_cons_mf1[40],qualified_cons_mf2[40],qualified_cons_mf3[40];
+[; ;fuzzy.c: 241: double overall_out_mf[40];
+[; ;fuzzy.c: 242: double w1,w2,w3;
+[; ;fuzzy.c: 243: double output;
+[; ;fuzzy.c: 244: int i;
+[; ;fuzzy.c: 245: linspace(x,-2,2,40);
+"245
+[e ( _linspace (4 , , , &U _x -> -U -> 2 `i `d -> -> 2 `i `d -> 40 `i ]
+[; ;fuzzy.c: 246: linspace(y,0,100,40);
+"246
+[e ( _linspace (4 , , , &U _y -> -> 0 `i `d -> -> 100 `i `d -> 40 `i ]
+[; ;fuzzy.c: 249: tri_mf(ante_mf1,x,-3.6, -2, -0.4);
+"249
+[e ( _tri_mf (4 , , , , &U _ante_mf1 &U _x -U .3.6 -> -U -> 2 `i `d -U .0.4 ]
+[; ;fuzzy.c: 250: tri_mf(ante_mf2,x,-1.6, 0, 1.6);
+"250
+[e ( _tri_mf (4 , , , , &U _ante_mf2 &U _x -U .1.6 -> -> 0 `i `d .1.6 ]
+[; ;fuzzy.c: 251: tri_mf(ante_mf3,x,0.4, 2, 3.6);
+"251
+[e ( _tri_mf (4 , , , , &U _ante_mf3 &U _x .0.4 -> -> 2 `i `d .3.6 ]
+[; ;fuzzy.c: 254: tri_mf(cons_mf1,y,-40, 0, 40);
+"254
+[e ( _tri_mf (4 , , , , &U _cons_mf1 &U _y -> -U -> 40 `i `d -> -> 0 `i `d -> -> 40 `i `d ]
+[; ;fuzzy.c: 255: tri_mf(cons_mf2,y,10, 50, 90);
+"255
+[e ( _tri_mf (4 , , , , &U _cons_mf2 &U _y -> -> 10 `i `d -> -> 50 `i `d -> -> 90 `i `d ]
+[; ;fuzzy.c: 256: tri_mf(cons_mf3,y,60, 100, 140);
+"256
+[e ( _tri_mf (4 , , , , &U _cons_mf3 &U _y -> -> 60 `i `d -> -> 100 `i `d -> -> 140 `i `d ]
+[; ;fuzzy.c: 260: w1=triangular(-3.6, -2, -0.4,input);
+"260
+[e = _w1 ( _triangular (4 , , , -U .3.6 -> -U -> 2 `i `d -U .0.4 _input ]
+[; ;fuzzy.c: 261: w2=triangular(-1.6, 0, 1.6,input);
+"261
+[e = _w2 ( _triangular (4 , , , -U .1.6 -> -> 0 `i `d .1.6 _input ]
+[; ;fuzzy.c: 262: w3=triangular(0.4, 2, 3.6,input);
+"262
+[e = _w3 ( _triangular (4 , , , .0.4 -> -> 2 `i `d .3.6 _input ]
+[; ;fuzzy.c: 263: qualified(qualified_cons_mf1,cons_mf1,w1);
+"263
+[e ( _qualified (3 , , &U _qualified_cons_mf1 &U _cons_mf1 _w1 ]
+[; ;fuzzy.c: 264: qualified(qualified_cons_mf2,cons_mf3,w2);
+"264
+[e ( _qualified (3 , , &U _qualified_cons_mf2 &U _cons_mf3 _w2 ]
+[; ;fuzzy.c: 265: qualified(qualified_cons_mf3,cons_mf3,w3);
+"265
+[e ( _qualified (3 , , &U _qualified_cons_mf3 &U _cons_mf3 _w3 ]
+[; ;fuzzy.c: 266: out_mf(overall_out_mf,qualified_cons_mf1,qualified_cons_mf2,qualified_cons_mf3);
+"266
+[e ( _out_mf (4 , , , &U _overall_out_mf &U _qualified_cons_mf1 &U _qualified_cons_mf2 &U _qualified_cons_mf3 ]
+[; ;fuzzy.c: 267: output= defuzzy(y,overall_out_mf);
+"267
+[e = _output ( _defuzzy (2 , &U _y &U _overall_out_mf ]
+[; ;fuzzy.c: 268: return output;
+"268
+[e ) _output ]
+[e $UE 67  ]
+[; ;fuzzy.c: 270: }
+"270
+[e :UE 67 ]
+}
+"275
+[v _fuzzy_system_single1 `(d ~T0 @X0 1 ef1`d ]
+"276
+{
+[; ;fuzzy.c: 275: double fuzzy_system_single1(double input)
+[; ;fuzzy.c: 276: {
+[e :U _fuzzy_system_single1 ]
+"275
+[v _input `d ~T0 @X0 1 r1 ]
+"276
+[f ]
+"277
+[v _ante_mf1 `d ~T0 @X0 -> 40 `i a ]
+[v _cons_mf1 `d ~T0 @X0 -> 40 `i a ]
+"278
+[v _ante_mf2 `d ~T0 @X0 -> 40 `i a ]
+[v _cons_mf2 `d ~T0 @X0 -> 40 `i a ]
+"279
+[v _ante_mf3 `d ~T0 @X0 -> 40 `i a ]
+[v _cons_mf3 `d ~T0 @X0 -> 40 `i a ]
+"280
+[v _x `d ~T0 @X0 -> 40 `i a ]
+[v _y `d ~T0 @X0 -> 40 `i a ]
+"281
+[v _qualified_cons_mf1 `d ~T0 @X0 -> 40 `i a ]
+[v _qualified_cons_mf2 `d ~T0 @X0 -> 40 `i a ]
+[v _qualified_cons_mf3 `d ~T0 @X0 -> 40 `i a ]
+"282
+[v _overall_out_mf `d ~T0 @X0 -> 40 `i a ]
+"283
+[v _w1 `d ~T0 @X0 1 a ]
+[v _w2 `d ~T0 @X0 1 a ]
+[v _w3 `d ~T0 @X0 1 a ]
+"284
+[v _output `d ~T0 @X0 1 a ]
+"285
+[v _i `i ~T0 @X0 1 a ]
+[; ;fuzzy.c: 277: double ante_mf1[40],cons_mf1[40];
+[; ;fuzzy.c: 278: double ante_mf2[40],cons_mf2[40];
+[; ;fuzzy.c: 279: double ante_mf3[40],cons_mf3[40];
+[; ;fuzzy.c: 280: double x[40],y[40];
+[; ;fuzzy.c: 281: double qualified_cons_mf1[40],qualified_cons_mf2[40],qualified_cons_mf3[40];
+[; ;fuzzy.c: 282: double overall_out_mf[40];
+[; ;fuzzy.c: 283: double w1,w2,w3;
+[; ;fuzzy.c: 284: double output;
+[; ;fuzzy.c: 285: int i;
+[; ;fuzzy.c: 286: linspace(x,-2,2,40);
+"286
+[e ( _linspace (4 , , , &U _x -> -U -> 2 `i `d -> -> 2 `i `d -> 40 `i ]
+[; ;fuzzy.c: 287: linspace(y,0,100,40);
+"287
+[e ( _linspace (4 , , , &U _y -> -> 0 `i `d -> -> 100 `i `d -> 40 `i ]
+[; ;fuzzy.c: 290: tri_mf(ante_mf1,x,-3.6, -2, -0.4);
+"290
+[e ( _tri_mf (4 , , , , &U _ante_mf1 &U _x -U .3.6 -> -U -> 2 `i `d -U .0.4 ]
+[; ;fuzzy.c: 291: tri_mf(ante_mf2,x,-1.6, 0, 1.6);
+"291
+[e ( _tri_mf (4 , , , , &U _ante_mf2 &U _x -U .1.6 -> -> 0 `i `d .1.6 ]
+[; ;fuzzy.c: 292: tri_mf(ante_mf3,x,0.4, 2, 3.6);
+"292
+[e ( _tri_mf (4 , , , , &U _ante_mf3 &U _x .0.4 -> -> 2 `i `d .3.6 ]
+[; ;fuzzy.c: 295: tri_mf(cons_mf1,y,-40, 0, 40);
+"295
+[e ( _tri_mf (4 , , , , &U _cons_mf1 &U _y -> -U -> 40 `i `d -> -> 0 `i `d -> -> 40 `i `d ]
+[; ;fuzzy.c: 296: tri_mf(cons_mf2,y,10, 50, 90);
+"296
+[e ( _tri_mf (4 , , , , &U _cons_mf2 &U _y -> -> 10 `i `d -> -> 50 `i `d -> -> 90 `i `d ]
+[; ;fuzzy.c: 297: tri_mf(cons_mf3,y,60, 100, 140);
+"297
+[e ( _tri_mf (4 , , , , &U _cons_mf3 &U _y -> -> 60 `i `d -> -> 100 `i `d -> -> 140 `i `d ]
+[; ;fuzzy.c: 301: w1=triangular(-3.6, -2, -0.4,input);
+"301
+[e = _w1 ( _triangular (4 , , , -U .3.6 -> -U -> 2 `i `d -U .0.4 _input ]
+[; ;fuzzy.c: 302: w2=triangular(-1.6, 0, 1.6,input);
+"302
+[e = _w2 ( _triangular (4 , , , -U .1.6 -> -> 0 `i `d .1.6 _input ]
+[; ;fuzzy.c: 303: w3=triangular(0.4, 2, 3.6,input);
+"303
+[e = _w3 ( _triangular (4 , , , .0.4 -> -> 2 `i `d .3.6 _input ]
+[; ;fuzzy.c: 304: qualified(qualified_cons_mf1,cons_mf3,w1);
+"304
+[e ( _qualified (3 , , &U _qualified_cons_mf1 &U _cons_mf3 _w1 ]
+[; ;fuzzy.c: 305: qualified(qualified_cons_mf2,cons_mf3,w2);
+"305
+[e ( _qualified (3 , , &U _qualified_cons_mf2 &U _cons_mf3 _w2 ]
+[; ;fuzzy.c: 306: qualified(qualified_cons_mf3,cons_mf1,w3);
+"306
+[e ( _qualified (3 , , &U _qualified_cons_mf3 &U _cons_mf1 _w3 ]
+[; ;fuzzy.c: 307: out_mf(overall_out_mf,qualified_cons_mf1,qualified_cons_mf2,qualified_cons_mf3);
+"307
+[e ( _out_mf (4 , , , &U _overall_out_mf &U _qualified_cons_mf1 &U _qualified_cons_mf2 &U _qualified_cons_mf3 ]
+[; ;fuzzy.c: 308: output= defuzzy(y,overall_out_mf);
+"308
+[e = _output ( _defuzzy (2 , &U _y &U _overall_out_mf ]
+[; ;fuzzy.c: 309: return output;
+"309
+[e ) _output ]
+[e $UE 68  ]
+[; ;fuzzy.c: 311: }
+"311
+[e :UE 68 ]
+}

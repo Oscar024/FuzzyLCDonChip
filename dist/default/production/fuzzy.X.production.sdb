@@ -1,0 +1,751 @@
+[p LITE_MODE AUTOSTATIC LFSROK EMI_WORD ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 18F4550 ]
+[d frameptr 4065 ]
+"4 C:\Program Files\Microchip\xc8\v1.33\sources\common\abdiv.c
+[v ___abdiv __abdiv `(c  1 e 1 0 ]
+"4 C:\Program Files\Microchip\xc8\v1.33\sources\common\abmod.c
+[v ___abmod __abmod `(c  1 e 1 0 ]
+"31 C:\Program Files\Microchip\xc8\v1.33\sources\common\abtofl.c
+[v ___abtofl __abtofl `(d  1 e 3 0 ]
+"33 C:\Program Files\Microchip\xc8\v1.33\sources\common\abtoft.c
+[v ___abtoft __abtoft `(f  1 e 3 0 ]
+"8 C:\Program Files\Microchip\xc8\v1.33\sources\common\aldiv.c
+[v ___aldiv __aldiv `(l  1 e 4 0 ]
+"8 C:\Program Files\Microchip\xc8\v1.33\sources\common\almod.c
+[v ___almod __almod `(l  1 e 4 0 ]
+"36 C:\Program Files\Microchip\xc8\v1.33\sources\common\altofl.c
+[v ___altofl __altofl `(d  1 e 3 0 ]
+"42 C:\Program Files\Microchip\xc8\v1.33\sources\common\altoft.c
+[v ___altoft __altoft `(f  1 e 3 0 ]
+"8 C:\Program Files\Microchip\xc8\v1.33\sources\common\atdiv.c
+[v ___atdiv __atdiv `(m  1 e 3 0 ]
+"8 C:\Program Files\Microchip\xc8\v1.33\sources\common\atmod.c
+[v ___atmod __atmod `(m  1 e 3 0 ]
+"37 C:\Program Files\Microchip\xc8\v1.33\sources\common\attofl.c
+[v ___attofl __attofl `(d  1 e 3 0 ]
+"37 C:\Program Files\Microchip\xc8\v1.33\sources\common\attoft.c
+[v ___attoft __attoft `(f  1 e 3 0 ]
+"8 C:\Program Files\Microchip\xc8\v1.33\sources\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+"8 C:\Program Files\Microchip\xc8\v1.33\sources\common\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+"31 C:\Program Files\Microchip\xc8\v1.33\sources\common\awtofl.c
+[v ___awtofl __awtofl `(d  1 e 3 0 ]
+"32 C:\Program Files\Microchip\xc8\v1.33\sources\common\awtoft.c
+[v ___awtoft __awtoft `(f  1 e 3 0 ]
+"63 C:\Program Files\Microchip\xc8\v1.33\sources\common\double.c
+[v ___flpack __flpack `(d  1 e 3 0 ]
+"88 C:\Program Files\Microchip\xc8\v1.33\sources\common\fladd.c
+[v ___fladd __fladd `(d  1 e 3 0 ]
+"49 C:\Program Files\Microchip\xc8\v1.33\sources\common\fldiv.c
+[v ___fldiv __fldiv `(d  1 e 3 0 ]
+"4 C:\Program Files\Microchip\xc8\v1.33\sources\common\flge.c
+[v ___flge __flge `(b  1 e 0 0 ]
+"62 C:\Program Files\Microchip\xc8\v1.33\sources\common\flmul.c
+[v ___flmul __flmul `(d  1 e 3 0 ]
+"15 C:\Program Files\Microchip\xc8\v1.33\sources\common\flneg.c
+[v ___flneg __flneg `(d  1 e 3 0 ]
+"62 C:\Program Files\Microchip\xc8\v1.33\sources\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+"20 C:\Program Files\Microchip\xc8\v1.33\sources\common\flsub.c
+[v ___flsub __flsub `(d  1 e 3 0 ]
+"43 C:\Program Files\Microchip\xc8\v1.33\sources\common\fltol.c
+[v ___fltol __fltol `(l  1 e 4 0 ]
+"86 C:\Program Files\Microchip\xc8\v1.33\sources\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+"49 C:\Program Files\Microchip\xc8\v1.33\sources\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 3 0 ]
+"4 C:\Program Files\Microchip\xc8\v1.33\sources\common\ftge.c
+[v ___ftge __ftge `(b  1 e 0 0 ]
+"62 C:\Program Files\Microchip\xc8\v1.33\sources\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 3 0 ]
+"15 C:\Program Files\Microchip\xc8\v1.33\sources\common\ftneg.c
+[v ___ftneg __ftneg `(f  1 e 3 0 ]
+"20 C:\Program Files\Microchip\xc8\v1.33\sources\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 3 0 ]
+"44 C:\Program Files\Microchip\xc8\v1.33\sources\common\fttol.c
+[v ___fttol __fttol `(l  1 e 4 0 ]
+"4 C:\Program Files\Microchip\xc8\v1.33\sources\common\lbdiv.c
+[v ___lbdiv __lbdiv `(uc  1 e 1 0 ]
+"4 C:\Program Files\Microchip\xc8\v1.33\sources\common\lbmod.c
+[v ___lbmod __lbmod `(uc  1 e 1 0 ]
+"27 C:\Program Files\Microchip\xc8\v1.33\sources\common\lbtofl.c
+[v ___lbtofl __lbtofl `(d  1 e 3 0 ]
+"27 C:\Program Files\Microchip\xc8\v1.33\sources\common\lbtoft.c
+[v ___lbtoft __lbtoft `(f  1 e 3 0 ]
+"8 C:\Program Files\Microchip\xc8\v1.33\sources\common\lldiv.c
+[v ___lldiv __lldiv `(ul  1 e 4 0 ]
+"8 C:\Program Files\Microchip\xc8\v1.33\sources\common\llmod.c
+[v ___llmod __llmod `(ul  1 e 4 0 ]
+"30 C:\Program Files\Microchip\xc8\v1.33\sources\common\lltofl.c
+[v ___lltofl __lltofl `(d  1 e 3 0 ]
+"35 C:\Program Files\Microchip\xc8\v1.33\sources\common\lltoft.c
+[v ___lltoft __lltoft `(f  1 e 3 0 ]
+"8 C:\Program Files\Microchip\xc8\v1.33\sources\common\ltdiv.c
+[v ___ltdiv __ltdiv `(um  1 e 3 0 ]
+"8 C:\Program Files\Microchip\xc8\v1.33\sources\common\ltmod.c
+[v ___ltmod __ltmod `(um  1 e 3 0 ]
+"30 C:\Program Files\Microchip\xc8\v1.33\sources\common\lttofl.c
+[v ___lttofl __lttofl `(d  1 e 3 0 ]
+"30 C:\Program Files\Microchip\xc8\v1.33\sources\common\lttoft.c
+[v ___lttoft __lttoft `(f  1 e 3 0 ]
+"8 C:\Program Files\Microchip\xc8\v1.33\sources\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+"8 C:\Program Files\Microchip\xc8\v1.33\sources\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+"28 C:\Program Files\Microchip\xc8\v1.33\sources\common\lwtofl.c
+[v ___lwtofl __lwtofl `(d  1 e 3 0 ]
+"28 C:\Program Files\Microchip\xc8\v1.33\sources\common\lwtoft.c
+[v ___lwtoft __lwtoft `(f  1 e 3 0 ]
+"15 C:\Program Files\Microchip\xc8\v1.33\sources\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+"15 C:\Program Files\Microchip\xc8\v1.33\sources\common\Umul24.c
+[v ___tmul __tmul `(um  1 e 3 0 ]
+"15 C:\Program Files\Microchip\xc8\v1.33\sources\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"4 C:\Program Files\Microchip\xc8\v1.33\sources\common\Umul8.c
+[v ___bmul __bmul `(uc  1 e 1 0 ]
+"6 C:\Program Files\Microchip\xc8\v1.33\sources\pic18\asfladd.c
+[v ___asfladd __asfladd `(d  1 e 3 0 ]
+"6 C:\Program Files\Microchip\xc8\v1.33\sources\pic18\asfldiv.c
+[v ___asfldiv __asfldiv `(d  1 e 3 0 ]
+"6 C:\Program Files\Microchip\xc8\v1.33\sources\pic18\asflmul.c
+[v ___asflmul __asflmul `(d  1 e 3 0 ]
+"6 C:\Program Files\Microchip\xc8\v1.33\sources\pic18\asflsub.c
+[v ___asflsub __asflsub `(d  1 e 3 0 ]
+"6 C:\Program Files\Microchip\xc8\v1.33\sources\pic18\asftadd.c
+[v ___asftadd __asftadd `(f  1 e 3 0 ]
+"6 C:\Program Files\Microchip\xc8\v1.33\sources\pic18\asftdiv.c
+[v ___asftdiv __asftdiv `(f  1 e 3 0 ]
+"6 C:\Program Files\Microchip\xc8\v1.33\sources\pic18\asftmul.c
+[v ___asftmul __asftmul `(f  1 e 3 0 ]
+"6 C:\Program Files\Microchip\xc8\v1.33\sources\pic18\asftsub.c
+[v ___asftsub __asftsub `(f  1 e 3 0 ]
+"6 C:\Program Files\Microchip\xc8\v1.33\sources\pic18\aslmul.c
+[v ___aslmul __aslmul `(ul  1 e 4 0 ]
+"8 C:\Program Files\Microchip\xc8\v1.33\sources\pic18\plib\PWM\pw1open.c
+[v _OpenPWM1 OpenPWM1 `(v  1 e 0 0 ]
+"23
+[v _OpenPWM1ConfigIO OpenPWM1ConfigIO `(v  1 e 0 0 ]
+"7 C:\Program Files\Microchip\xc8\v1.33\sources\pic18\plib\PWM\pw1setdc.c
+[v _SetDCPWM1 SetDCPWM1 `(v  1 e 0 0 ]
+"18 C:\Program Files\Microchip\xc8\v1.33\sources\pic18\plib\PWM\pw2open.c
+[v _OpenPWM2 OpenPWM2 `(v  1 e 0 0 ]
+"7 C:\Program Files\Microchip\xc8\v1.33\sources\pic18\plib\PWM\pw2setdc.c
+[v _SetDCPWM2 SetDCPWM2 `(v  1 e 0 0 ]
+"4 C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\cny70.c
+[v _getCNY70Value getCNY70Value `(i  1 e 2 0 ]
+"99
+[v _right right `(v  1 e 0 0 ]
+"108
+[v _left left `(v  1 e 0 0 ]
+"117
+[v _go_straight go_straight `(v  1 e 0 0 ]
+"125
+[v _go_back go_back `(v  1 e 0 0 ]
+"14 C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\funciones.c
+[v _mcu_init mcu_init `(i  1 e 2 0 ]
+"12 C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\fuzzy.c
+[v _linspace linspace `(v  1 e 0 0 ]
+"22
+[v _minimo minimo `(d  1 e 3 0 ]
+"34
+[v _maximo maximo `(d  1 e 3 0 ]
+"46
+[v _triangular triangular `(d  1 e 3 0 ]
+"64
+[v _tri_mf tri_mf `(v  1 e 0 0 ]
+"74
+[v _trapezoidal trapezoidal `(d  1 e 3 0 ]
+"97
+[v _trap_mf trap_mf `(v  1 e 0 0 ]
+"108
+[v _qualified qualified `(v  1 e 0 0 ]
+"123
+[v _out_mf out_mf `(v  1 e 0 0 ]
+"147
+[v _defuzzy defuzzy `(d  1 e 3 0 ]
+"159
+[v _fuzzy_system fuzzy_system `(v  1 e 0 0 ]
+"196
+[v _fuzzy_system_single fuzzy_system_single `(d  1 e 3 0 ]
+"234
+[v _fuzzy_system_single2 fuzzy_system_single2 `(d  1 e 3 0 ]
+"275
+[v _fuzzy_system_single1 fuzzy_system_single1 `(d  1 e 3 0 ]
+"25 C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\main.c
+[v _main main `(i  1 e 2 0 ]
+"11 C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\motor.c
+[v _motor_forward1 motor_forward1 `(i  1 e 2 0 ]
+"20
+[v _motor_Backforward1 motor_Backforward1 `(i  1 e 2 0 ]
+"29
+[v _motor_forward2 motor_forward2 `(i  1 e 2 0 ]
+"38
+[v _motor_Backforward2 motor_Backforward2 `(i  1 e 2 0 ]
+"47
+[v _motor_forward motor_forward `(v  1 e 0 0 ]
+"57
+[v _motor_Backforward motor_Backforward `(i  1 e 2 0 ]
+"20 C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\pwm.c
+[v _PWM_init1 PWM_init1 `(v  1 e 0 0 ]
+"33
+[v _PWM_DutyCycle1 PWM_DutyCycle1 `(v  1 e 0 0 ]
+"42
+[v _PWM_init2 PWM_init2 `(v  1 e 0 0 ]
+"55
+[v _PWM_DutyCycle2 PWM_DutyCycle2 `(v  1 e 0 0 ]
+"2569 C:\Program Files\Microchip\xc8\v1.33\include\pic18f4550.h
+[v _PORTA PORTA `VEuc  1 e 1 @3968 ]
+"2725
+[v _PORTB PORTB `VEuc  1 e 1 @3969 ]
+[s S39 . 1 `uc 1 RB0 1 0 :1:0 
+`uc 1 RB1 1 0 :1:1 
+`uc 1 RB2 1 0 :1:2 
+`uc 1 RB3 1 0 :1:3 
+`uc 1 RB4 1 0 :1:4 
+`uc 1 RB5 1 0 :1:5 
+`uc 1 RB6 1 0 :1:6 
+`uc 1 RB7 1 0 :1:7 
+]
+"2755
+[s S48 . 1 `uc 1 INT0 1 0 :1:0 
+`uc 1 INT1 1 0 :1:1 
+`uc 1 INT2 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 PGM 1 0 :1:5 
+`uc 1 PGC 1 0 :1:6 
+`uc 1 PGD 1 0 :1:7 
+]
+[s S56 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 CCP2_PA2 1 0 :1:3 
+]
+[u S59 . 1 `S39 1 . 1 0 `S48 1 . 1 0 `S56 1 . 1 0 ]
+[v _PORTBbits PORTBbits `VES59  1 e 1 @3969 ]
+"2834
+[v _PORTC PORTC `VEuc  1 e 1 @3970 ]
+"2987
+[v _PORTD PORTD `VEuc  1 e 1 @3971 ]
+[s S663 . 1 `uc 1 RD0 1 0 :1:0 
+`uc 1 RD1 1 0 :1:1 
+`uc 1 RD2 1 0 :1:2 
+`uc 1 RD3 1 0 :1:3 
+`uc 1 RD4 1 0 :1:4 
+`uc 1 RD5 1 0 :1:5 
+`uc 1 RD6 1 0 :1:6 
+`uc 1 RD7 1 0 :1:7 
+]
+"3018
+[s S672 . 1 `uc 1 SPP0 1 0 :1:0 
+`uc 1 SPP1 1 0 :1:1 
+`uc 1 SPP2 1 0 :1:2 
+`uc 1 SPP3 1 0 :1:3 
+`uc 1 SPP4 1 0 :1:4 
+`uc 1 SPP5 1 0 :1:5 
+`uc 1 SPP6 1 0 :1:6 
+`uc 1 SPP7 1 0 :1:7 
+]
+[s S681 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 SS2 1 0 :1:7 
+]
+[u S684 . 1 `S663 1 . 1 0 `S672 1 . 1 0 `S681 1 . 1 0 ]
+[v _PORTDbits PORTDbits `VES684  1 e 1 @3971 ]
+"3107
+[v _PORTE PORTE `VEuc  1 e 1 @3972 ]
+"3974
+[v _TRISA TRISA `VEuc  1 e 1 @3986 ]
+"4171
+[v _TRISB TRISB `VEuc  1 e 1 @3987 ]
+[s S197 . 1 `uc 1 TRISB0 1 0 :1:0 
+`uc 1 TRISB1 1 0 :1:1 
+`uc 1 TRISB2 1 0 :1:2 
+`uc 1 TRISB3 1 0 :1:3 
+`uc 1 TRISB4 1 0 :1:4 
+`uc 1 TRISB5 1 0 :1:5 
+`uc 1 TRISB6 1 0 :1:6 
+`uc 1 TRISB7 1 0 :1:7 
+]
+"4203
+[u S215 . 1 `S197 1 . 1 0 `S39 1 . 1 0 ]
+[v _TRISBbits TRISBbits `VES215  1 e 1 @3987 ]
+"4392
+[v _TRISC TRISC `VEuc  1 e 1 @3988 ]
+[s S158 . 1 `uc 1 TRISC0 1 0 :1:0 
+`uc 1 TRISC1 1 0 :1:1 
+`uc 1 TRISC2 1 0 :1:2 
+`uc 1 . 1 0 :3:3 
+`uc 1 TRISC6 1 0 :1:6 
+`uc 1 TRISC7 1 0 :1:7 
+]
+"4424
+[s S165 . 1 `uc 1 RC0 1 0 :1:0 
+`uc 1 RC1 1 0 :1:1 
+`uc 1 RC2 1 0 :1:2 
+`uc 1 . 1 0 :3:3 
+`uc 1 RC6 1 0 :1:6 
+`uc 1 RC7 1 0 :1:7 
+]
+[s S172 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 TRISC3 1 0 :1:3 
+]
+[u S175 . 1 `S158 1 . 1 0 `S165 1 . 1 0 `S172 1 . 1 0 ]
+[v _TRISCbits TRISCbits `VES175  1 e 1 @3988 ]
+"4563
+[v _TRISD TRISD `VEuc  1 e 1 @3989 ]
+"4784
+[v _TRISE TRISE `VEuc  1 e 1 @3990 ]
+[s S422 . 1 `uc 1 TMR1IF 1 0 :1:0 
+`uc 1 TMR2IF 1 0 :1:1 
+`uc 1 CCP1IF 1 0 :1:2 
+`uc 1 SSPIF 1 0 :1:3 
+`uc 1 TXIF 1 0 :1:4 
+`uc 1 RCIF 1 0 :1:5 
+`uc 1 ADIF 1 0 :1:6 
+`uc 1 SPPIF 1 0 :1:7 
+]
+"4972
+[s S431 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 PSPIF 1 0 :1:7 
+]
+[s S434 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 RC1IF 1 0 :1:5 
+]
+[s S437 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 TX1IF 1 0 :1:4 
+]
+[u S440 . 1 `S422 1 . 1 0 `S431 1 . 1 0 `S434 1 . 1 0 `S437 1 . 1 0 ]
+[v _PIE1bits PIE1bits `VES440  1 e 1 @3997 ]
+"5060
+[v _PIR1bits PIR1bits `VES440  1 e 1 @3998 ]
+"6841
+[v _CCP2CON CCP2CON `VEuc  1 e 1 @4026 ]
+"6910
+[v _CCPR2L CCPR2L `VEuc  1 e 1 @4027 ]
+"6922
+[v _CCP1CON CCP1CON `VEuc  1 e 1 @4029 ]
+"7089
+[v _CCPR1L CCPR1L `VEuc  1 e 1 @4030 ]
+"7809
+[v _T2CON T2CON `VEuc  1 e 1 @4042 ]
+[s S506 . 1 `uc 1 T2CKPS 1 0 :2:0 
+`uc 1 TMR2ON 1 0 :1:2 
+`uc 1 TOUTPS 1 0 :4:3 
+]
+"7837
+[s S510 . 1 `uc 1 T2CKPS0 1 0 :1:0 
+`uc 1 T2CKPS1 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 T2OUTPS0 1 0 :1:3 
+`uc 1 T2OUTPS1 1 0 :1:4 
+`uc 1 T2OUTPS2 1 0 :1:5 
+`uc 1 T2OUTPS3 1 0 :1:6 
+]
+[s S518 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 TOUTPS0 1 0 :1:3 
+`uc 1 TOUTPS1 1 0 :1:4 
+`uc 1 TOUTPS2 1 0 :1:5 
+`uc 1 TOUTPS3 1 0 :1:6 
+]
+[u S524 . 1 `S506 1 . 1 0 `S510 1 . 1 0 `S518 1 . 1 0 ]
+[v _T2CONbits T2CONbits `VES524  1 e 1 @4042 ]
+"7906
+[v _PR2 PR2 `VEuc  1 e 1 @4043 ]
+"8015
+[v _TMR2 TMR2 `VEuc  1 e 1 @4044 ]
+[s S126 . 1 `uc 1 SCS 1 0 :2:0 
+`uc 1 IOFS 1 0 :1:2 
+`uc 1 OSTS 1 0 :1:3 
+`uc 1 IRCF 1 0 :3:4 
+`uc 1 IDLEN 1 0 :1:7 
+]
+"8610
+[s S132 . 1 `uc 1 SCS0 1 0 :1:0 
+`uc 1 SCS1 1 0 :1:1 
+`uc 1 FLTS 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 IRCF0 1 0 :1:4 
+`uc 1 IRCF1 1 0 :1:5 
+`uc 1 IRCF2 1 0 :1:6 
+]
+[u S140 . 1 `S126 1 . 1 0 `S132 1 . 1 0 ]
+[v _OSCCONbits OSCCONbits `VES140  1 e 1 @4051 ]
+"15 C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\pwm.c
+[v _i i `i  1 e 2 0 ]
+"16
+[v _countup countup `i  1 e 2 0 ]
+"17
+[v _DutyCycle DutyCycle `i  1 e 2 0 ]
+"18
+[v _Timer2Config Timer2Config `uc  1 e 1 0 ]
+"25 C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\main.c
+[v _main main `(i  1 e 2 0 ]
+{
+"32
+[v main@a a `d  1 a 3 135 ]
+[v main@b b `d  1 a 3 129 ]
+"58
+} 0
+"47 C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\motor.c
+[v _motor_forward motor_forward `(v  1 e 0 0 ]
+{
+"55
+} 0
+"14 C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\funciones.c
+[v _mcu_init mcu_init `(i  1 e 2 0 ]
+{
+"21
+[v mcu_init@i i `i  1 a 2 52 ]
+"54
+} 0
+"42 C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\pwm.c
+[v _PWM_init2 PWM_init2 `(v  1 e 0 0 ]
+{
+[v PWM_init2@period period `uc  1 a 1 wreg ]
+[v PWM_init2@period period `uc  1 a 1 wreg ]
+[v PWM_init2@period period `uc  1 a 1 3 ]
+"54
+} 0
+"18 C:\Program Files\Microchip\xc8\v1.33\sources\pic18\plib\PWM\pw2open.c
+[v _OpenPWM2 OpenPWM2 `(v  1 e 0 0 ]
+{
+[v OpenPWM2@period period `uc  1 a 1 wreg ]
+"23
+[v OpenPWM2@ccp2mx ccp2mx `uc  1 a 1 2 ]
+"18
+[v OpenPWM2@period period `uc  1 a 1 wreg ]
+"33
+[v OpenPWM2@period period `uc  1 a 1 1 ]
+"80
+} 0
+"20 C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\pwm.c
+[v _PWM_init1 PWM_init1 `(v  1 e 0 0 ]
+{
+[v PWM_init1@period period `uc  1 a 1 wreg ]
+[v PWM_init1@period period `uc  1 a 1 wreg ]
+[v PWM_init1@period period `uc  1 a 1 1 ]
+"32
+} 0
+"8 C:\Program Files\Microchip\xc8\v1.33\sources\pic18\plib\PWM\pw1open.c
+[v _OpenPWM1 OpenPWM1 `(v  1 e 0 0 ]
+{
+[v OpenPWM1@period period `uc  1 a 1 wreg ]
+[v OpenPWM1@period period `uc  1 a 1 wreg ]
+"11
+[v OpenPWM1@period period `uc  1 a 1 0 ]
+"19
+} 0
+"125 C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\cny70.c
+[v _go_back go_back `(v  1 e 0 0 ]
+{
+[v go_back@m_right m_right `uc  1 a 1 wreg ]
+[v go_back@m_right m_right `uc  1 a 1 wreg ]
+[v go_back@m_left m_left `uc  1 p 1 51 ]
+"127
+[v go_back@m_right m_right `uc  1 a 1 52 ]
+"131
+} 0
+"57 C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\motor.c
+[v _motor_Backforward motor_Backforward `(i  1 e 2 0 ]
+{
+"65
+} 0
+"55 C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\pwm.c
+[v _PWM_DutyCycle2 PWM_DutyCycle2 `(v  1 e 0 0 ]
+{
+[v PWM_DutyCycle2@percentageDuty percentageDuty `uc  1 a 1 wreg ]
+[v PWM_DutyCycle2@DC DC `ui  1 a 2 49 ]
+"57
+[v PWM_DutyCycle2@DutyCycle DutyCycle `ui  1 a 2 46 ]
+"55
+[v PWM_DutyCycle2@percentageDuty percentageDuty `uc  1 a 1 wreg ]
+"57
+[v PWM_DutyCycle2@percentageDuty percentageDuty `uc  1 a 1 48 ]
+"62
+} 0
+"7 C:\Program Files\Microchip\xc8\v1.33\sources\pic18\plib\PWM\pw2setdc.c
+[v _SetDCPWM2 SetDCPWM2 `(v  1 e 0 0 ]
+{
+[u S774 PWMDC 2 `ui 1 lpwm 2 0 `[2]uc 1 bpwm 2 0 ]
+"9
+[v SetDCPWM2@DCycle DCycle `S774  1 a 2 4 ]
+"7
+[v SetDCPWM2@dutycycle dutycycle `ui  1 p 2 0 ]
+"19
+} 0
+"33 C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\pwm.c
+[v _PWM_DutyCycle1 PWM_DutyCycle1 `(v  1 e 0 0 ]
+{
+[v PWM_DutyCycle1@percentageDuty percentageDuty `uc  1 a 1 wreg ]
+[v PWM_DutyCycle1@DC DC `ui  1 a 2 49 ]
+"35
+[v PWM_DutyCycle1@DutyCycle DutyCycle `ui  1 a 2 46 ]
+"33
+[v PWM_DutyCycle1@percentageDuty percentageDuty `uc  1 a 1 wreg ]
+"35
+[v PWM_DutyCycle1@percentageDuty percentageDuty `uc  1 a 1 48 ]
+"40
+} 0
+"27 C:\Program Files\Microchip\xc8\v1.33\sources\common\lbtoft.c
+[v ___lbtoft __lbtoft `(f  1 e 3 0 ]
+{
+[v ___lbtoft@c c `uc  1 a 1 wreg ]
+[v ___lbtoft@c c `uc  1 a 1 wreg ]
+"29
+[v ___lbtoft@c c `uc  1 a 1 11 ]
+"30
+} 0
+"44 C:\Program Files\Microchip\xc8\v1.33\sources\common\fttol.c
+[v ___fttol __fttol `(l  1 e 4 0 ]
+{
+"47
+[v ___fttol@lval lval `ul  1 a 4 37 ]
+"46
+[v ___fttol@exp1 exp1 `uc  1 a 1 41 ]
+[v ___fttol@sign1 sign1 `uc  1 a 1 36 ]
+"44
+[v ___fttol@f1 f1 `f  1 p 3 27 ]
+"73
+} 0
+"7 C:\Program Files\Microchip\xc8\v1.33\sources\pic18\plib\PWM\pw1setdc.c
+[v _SetDCPWM1 SetDCPWM1 `(v  1 e 0 0 ]
+{
+[u S774 PWMDC 2 `ui 1 lpwm 2 0 `[2]uc 1 bpwm 2 0 ]
+"9
+[v SetDCPWM1@DCycle DCycle `S774  1 a 2 4 ]
+"7
+[v SetDCPWM1@dutycycle dutycycle `ui  1 p 2 0 ]
+"19
+} 0
+"4 C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\cny70.c
+[v _getCNY70Value getCNY70Value `(i  1 e 2 0 ]
+{
+"97
+} 0
+"234 C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\fuzzy.c
+[v _fuzzy_system_single2 fuzzy_system_single2 `(d  1 e 3 0 ]
+{
+"239
+[v fuzzy_system_single2@y y `[40]d  1 a 120 120 ]
+[v fuzzy_system_single2@x x `[40]d  1 a 120 0 ]
+"241
+[v fuzzy_system_single2@overall_out_mf overall_out_mf `[40]d  1 a 120 120 ]
+"240
+[v fuzzy_system_single2@qualified_cons_mf2 qualified_cons_mf2 `[40]d  1 a 120 120 ]
+[v fuzzy_system_single2@qualified_cons_mf1 qualified_cons_mf1 `[40]d  1 a 120 120 ]
+"238
+[v fuzzy_system_single2@cons_mf3 cons_mf3 `[40]d  1 a 120 0 ]
+"240
+[v fuzzy_system_single2@qualified_cons_mf3 qualified_cons_mf3 `[40]d  1 a 120 0 ]
+"236
+[v fuzzy_system_single2@cons_mf1 cons_mf1 `[40]d  1 a 120 0 ]
+"238
+[v fuzzy_system_single2@ante_mf3 ante_mf3 `[40]d  1 a 120 120 ]
+"237
+[v fuzzy_system_single2@cons_mf2 cons_mf2 `[40]d  1 a 120 0 ]
+[v fuzzy_system_single2@ante_mf2 ante_mf2 `[40]d  1 a 120 120 ]
+"236
+[v fuzzy_system_single2@ante_mf1 ante_mf1 `[40]d  1 a 120 0 ]
+"243
+[v fuzzy_system_single2@output output `d  1 a 3 122 ]
+"242
+[v fuzzy_system_single2@w3 w3 `d  1 a 3 91 ]
+[v fuzzy_system_single2@w2 w2 `d  1 a 3 88 ]
+[v fuzzy_system_single2@w1 w1 `d  1 a 3 85 ]
+"234
+[v fuzzy_system_single2@input input `d  1 p 3 82 ]
+"270
+} 0
+"275
+[v _fuzzy_system_single1 fuzzy_system_single1 `(d  1 e 3 0 ]
+{
+"280
+[v fuzzy_system_single1@y y `[40]d  1 a 120 120 ]
+[v fuzzy_system_single1@x x `[40]d  1 a 120 0 ]
+"282
+[v fuzzy_system_single1@overall_out_mf overall_out_mf `[40]d  1 a 120 120 ]
+"281
+[v fuzzy_system_single1@qualified_cons_mf2 qualified_cons_mf2 `[40]d  1 a 120 120 ]
+[v fuzzy_system_single1@qualified_cons_mf1 qualified_cons_mf1 `[40]d  1 a 120 120 ]
+"279
+[v fuzzy_system_single1@cons_mf3 cons_mf3 `[40]d  1 a 120 0 ]
+"281
+[v fuzzy_system_single1@qualified_cons_mf3 qualified_cons_mf3 `[40]d  1 a 120 0 ]
+"277
+[v fuzzy_system_single1@cons_mf1 cons_mf1 `[40]d  1 a 120 0 ]
+"279
+[v fuzzy_system_single1@ante_mf3 ante_mf3 `[40]d  1 a 120 120 ]
+"278
+[v fuzzy_system_single1@cons_mf2 cons_mf2 `[40]d  1 a 120 0 ]
+[v fuzzy_system_single1@ante_mf2 ante_mf2 `[40]d  1 a 120 120 ]
+"277
+[v fuzzy_system_single1@ante_mf1 ante_mf1 `[40]d  1 a 120 0 ]
+"284
+[v fuzzy_system_single1@output output `d  1 a 3 122 ]
+"283
+[v fuzzy_system_single1@w3 w3 `d  1 a 3 91 ]
+[v fuzzy_system_single1@w2 w2 `d  1 a 3 88 ]
+[v fuzzy_system_single1@w1 w1 `d  1 a 3 85 ]
+"275
+[v fuzzy_system_single1@input input `d  1 p 3 82 ]
+"311
+} 0
+"64
+[v _tri_mf tri_mf `(v  1 e 0 0 ]
+{
+"67
+[v tri_mf@temp temp `[40]d  1 a 120 0 ]
+"66
+[v tri_mf@i i `i  1 a 2 120 ]
+"64
+[v tri_mf@t_value t_value `*.39d  1 p 2 69 ]
+[v tri_mf@x x `*.39d  1 p 2 71 ]
+[v tri_mf@a a `d  1 p 3 73 ]
+[v tri_mf@b b `d  1 p 3 76 ]
+[v tri_mf@c c `d  1 p 3 79 ]
+"73
+} 0
+"46
+[v _triangular triangular `(d  1 e 3 0 ]
+{
+"48
+[v triangular@ux ux `d  1 a 3 66 ]
+"46
+[v triangular@a a `d  1 p 3 54 ]
+[v triangular@b b `d  1 p 3 57 ]
+[v triangular@c c `d  1 p 3 60 ]
+[v triangular@x x `d  1 p 3 63 ]
+"62
+} 0
+"15 C:\Program Files\Microchip\xc8\v1.33\sources\common\ftneg.c
+[v ___ftneg __ftneg `(f  1 e 3 0 ]
+{
+[v ___ftneg@f1 f1 `f  1 p 3 0 ]
+"20
+} 0
+"108 C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\fuzzy.c
+[v _qualified qualified `(v  1 e 0 0 ]
+{
+"110
+[v qualified@min min `d  1 a 3 22 ]
+"111
+[v qualified@i i `i  1 a 2 25 ]
+"108
+[v qualified@y y `*.39d  1 p 2 15 ]
+[v qualified@x x `*.39d  1 p 2 17 ]
+[v qualified@w w `d  1 p 3 19 ]
+"121
+} 0
+"123
+[v _out_mf out_mf `(v  1 e 0 0 ]
+{
+"125
+[v out_mf@i i `i  1 a 2 23 ]
+"123
+[v out_mf@result result `*.39d  1 p 2 15 ]
+[v out_mf@x x `*.39d  1 p 2 17 ]
+[v out_mf@y y `*.39d  1 p 2 19 ]
+[v out_mf@z z `*.39d  1 p 2 21 ]
+"145
+} 0
+"4 C:\Program Files\Microchip\xc8\v1.33\sources\common\ftge.c
+[v ___ftge __ftge `(b  1 e 0 0 ]
+{
+[v ___ftge@ff1 ff1 `f  1 p 3 6 ]
+[v ___ftge@ff2 ff2 `f  1 p 3 9 ]
+"13
+} 0
+"12 C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\fuzzy.c
+[v _linspace linspace `(v  1 e 0 0 ]
+{
+"14
+[v linspace@i i `i  1 a 2 66 ]
+"12
+[v linspace@x x `*.39d  1 p 2 54 ]
+[v linspace@start start `d  1 p 3 56 ]
+[v linspace@end end `d  1 p 3 59 ]
+[v linspace@size size `i  1 p 2 62 ]
+"18
+} 0
+"32 C:\Program Files\Microchip\xc8\v1.33\sources\common\awtoft.c
+[v ___awtoft __awtoft `(f  1 e 3 0 ]
+{
+"34
+[v ___awtoft@sign sign `uc  1 a 1 11 ]
+"32
+[v ___awtoft@c c `i  1 p 2 8 ]
+"42
+} 0
+"147 C:\Users\MCC\Documents\MPLAB X IDE\fuzzyTemperature-master\fuzzyTemperature-master\fuzzy.X\fuzzy.c
+[v _defuzzy defuzzy `(d  1 e 3 0 ]
+{
+"149
+[v defuzzy@sum2 sum2 `d  1 a 3 64 ]
+[v defuzzy@sum1 sum1 `d  1 a 3 61 ]
+[v defuzzy@out out `d  1 a 3 58 ]
+"150
+[v defuzzy@i i `i  1 a 2 67 ]
+"147
+[v defuzzy@x x `*.39d  1 p 2 54 ]
+[v defuzzy@mf mf `*.39d  1 p 2 56 ]
+"157
+} 0
+"15 C:\Program Files\Microchip\xc8\v1.33\sources\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+{
+"17
+[v ___wmul@product product `ui  1 a 2 4 ]
+"15
+[v ___wmul@multiplier multiplier `ui  1 p 2 0 ]
+[v ___wmul@multiplicand multiplicand `ui  1 p 2 2 ]
+"53
+} 0
+"62 C:\Program Files\Microchip\xc8\v1.33\sources\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 3 0 ]
+{
+"65
+[v ___ftmul@f3_as_product f3_as_product `um  1 a 3 22 ]
+"64
+[v ___ftmul@sign sign `uc  1 a 1 26 ]
+[v ___ftmul@cntr cntr `uc  1 a 1 25 ]
+[v ___ftmul@exp exp `uc  1 a 1 21 ]
+"62
+[v ___ftmul@f1 f1 `f  1 p 3 12 ]
+[v ___ftmul@f2 f2 `f  1 p 3 15 ]
+"157
+} 0
+"49 C:\Program Files\Microchip\xc8\v1.33\sources\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 3 0 ]
+{
+"52
+[v ___ftdiv@f3 f3 `f  1 a 3 49 ]
+"51
+[v ___ftdiv@sign sign `uc  1 a 1 53 ]
+[v ___ftdiv@exp exp `uc  1 a 1 52 ]
+[v ___ftdiv@cntr cntr `uc  1 a 1 48 ]
+"49
+[v ___ftdiv@f1 f1 `f  1 p 3 39 ]
+[v ___ftdiv@f2 f2 `f  1 p 3 42 ]
+"78
+} 0
+"86 C:\Program Files\Microchip\xc8\v1.33\sources\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+{
+"88
+[v ___ftadd@exp1 exp1 `uc  1 a 1 38 ]
+[v ___ftadd@exp2 exp2 `uc  1 a 1 37 ]
+[v ___ftadd@sign sign `uc  1 a 1 36 ]
+"86
+[v ___ftadd@f1 f1 `f  1 p 3 27 ]
+[v ___ftadd@f2 f2 `f  1 p 3 30 ]
+"148
+} 0
+"62 C:\Program Files\Microchip\xc8\v1.33\sources\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+{
+[v ___ftpack@arg arg `um  1 p 3 0 ]
+[v ___ftpack@exp exp `uc  1 p 1 3 ]
+[v ___ftpack@sign sign `uc  1 p 1 4 ]
+"86
+} 0
