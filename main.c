@@ -2,9 +2,9 @@
  * Archivo: main.c
  * Autores: Ing. Oscar Rigoberto Carvajal Ortiz
  * Fecha: 28 de Osctubre de 2016, 07:03 PM
- * Versión: 1.0
+ * VersiÃ³n: 1.0
  * IDE: MPLAB XC8
- * Empresa: Maestría en Ciencias de la Computación ITT
+ * Empresa: MaestrÃ­a en Ciencias de la ComputaciÃ³n ITT
  * MCU: PIC18F4550
 
  ******************************************************************************/
@@ -27,11 +27,11 @@ int main()
 
   mcu_init();
   PORTAbits.RA0 = 1;
-  
+  ADCON1bits.PCFG=0b1111;
   
   while(1){
       double a, b;
-      
+      int sensed;
 //      temperatura=temp_sense(0);
 //      duty=fuzzy_system_single(temperatura);
 //      duty=(float)duty;
@@ -39,8 +39,9 @@ int main()
 //      Lcd_Write_String("%PWM: ");
 //      Lcd_Write_Float(duty);
 //      PWM_DutyCycle(duty);
-      a = fuzzy_system_single1(getCNY70Value());
-      b = fuzzy_system_single2(a);
+       sensed = getCNY70Value();
+      a = fuzzy_system_single1(sensed);
+      b = fuzzy_system_single2(sensed);
       
       if(SL2 == 1  && SL1 == 1 && SM == 1 && SR1 == 1 && SR2 == 1){
             go_back(100,100);
